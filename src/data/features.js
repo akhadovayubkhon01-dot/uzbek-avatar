@@ -1,0 +1,42 @@
+export const FEATURES = [
+  {
+    id: 'daily-fact',
+    icon: '💡',
+    titleEn: 'Daily fact',
+    titleUz: 'Kun fakti',
+    promptEn: 'Share one surprising fact about Uzbek history or culture that I might not know.',
+    promptUz: "O'zbekiston tarixi yoki madaniyati haqida men bilmasligim mumkin bo'lgan hayratlanarli fakt bilan bo'lishing.",
+  },
+  {
+    id: 'phrase',
+    icon: '🗣️',
+    titleEn: 'Phrase of the day',
+    titleUz: 'Kun iborasi',
+    promptEn: 'Teach me a useful Uzbek phrase for travelers, with pronunciation and when to use it.',
+    promptUz: "Sayohatchilar uchun foydali o'zbek iborasini talaffuz va qachon ishlatish kerakligi bilan o'rgating.",
+  },
+  {
+    id: 'timeline',
+    icon: '📅',
+    titleEn: 'Timeline explorer',
+    titleUz: 'Tarix chizig\'i',
+    promptEn: 'Walk me through a brief timeline of Uzbekistan from ancient times to today.',
+    promptUz: "Qadimgi davrlardan bugungi kungacha O'zbekiston tarixining qisqa chizig'ini tushuntirib bering.",
+  },
+  {
+    id: 'compare',
+    icon: '⚖️',
+    titleEn: 'Compare eras',
+    titleUz: 'Davrlarni solishtirish',
+    promptEn: 'Compare life in Samarkand during the Timurid era versus today. What changed and what survived?',
+    promptUz: "Temuriylar davridagi Samarqand hayoti va bugungi kunni solishtiring. Nima o'zgardi va nima saqlanib qoldi?",
+  },
+  {
+    id: 'story',
+    icon: '📖',
+    titleEn: 'Story mode',
+    titleUz: 'Hikoya rejimi',
+    promptEn: 'Tell me a short story set in old Bukhara that teaches me something about Uzbek culture.',
+    promptUz: "Qadimgi Buxoroda bo'lib o'tadigan va o'zbek madaniyati haqida biror narsa o'rgatadigan qisqa hikoya aytib bering.",
+  },
+]

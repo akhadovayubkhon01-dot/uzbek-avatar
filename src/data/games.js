@@ -1,0 +1,43 @@
+export const GAMES = [
+  {
+    id: 'history-quiz',
+    icon: '🎯',
+    titleEn: 'History quiz',
+    titleUz: 'Tarix viktorinasi',
+    promptEn: 'Start a 5-question quiz about Uzbek history. Ask one question at a time and wait for my answer.',
+    promptUz: "O'zbekiston tarixi bo'yicha 5 savollik viktorina boshlang. Bir vaqtning o'zida bitta savol bering va javobimni kuting.",
+  },
+  {
+    id: 'guess-city',
+    icon: '🗺️',
+    titleEn: 'Guess the city',
+    titleUz: 'Shaharni toping',
+    promptEn: "Let's play Guess the City! Describe a historic Uzbek city without naming it, and I'll try to guess.",
+    promptUz: "Keling, Shaharni toping o'yinini o'ynaymiz! O'zbekistondagi qadimiy shaharni nomlamasdan tasvirlab bering, men topishga harakat qilaman.",
+  },
+  {
+    id: 'culture-trivia',
+    icon: '🧠',
+    titleEn: 'Culture trivia',
+    titleUz: 'Madaniyat trivia',
+    promptEn: 'Start a fun trivia game about Uzbek food, crafts, and traditions. One question at a time!',
+    promptUz: "O'zbek taomlari, hunarmandchiligi va an'analari haqida qiziqarli trivia o'yinini boshlang. Bir vaqtning o'zida bitta savol!",
+  },
+  {
+    id: 'who-said',
+    icon: '👤',
+    titleEn: 'Who said it?',
+    titleUz: 'Kim aytdi?',
+    promptEn: 'Play "Who said it?" with famous quotes from Uzbek poets and rulers. Give me a quote and four choices.',
+    promptUz: "O'zbek shoirlar va hukmdorlar iqtiboslari bilan \"Kim aytdi?\" o'yinini o'ynang. Iqtibos va to'rtta variant bering.",
+  },
+  {
+    id: 'word-chain',
+    icon: '🔗',
+    titleEn: 'Word chain',
+    titleUz: 'So\'z zanjiri',
+    comingSoon: true,
+    titleEnSoon: 'Word chain (soon)',
+    titleUzSoon: "So'z zanjiri (tez orada)",
+  },
+]
