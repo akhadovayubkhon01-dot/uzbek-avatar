@@ -15,18 +15,21 @@ export default function AvatarMenuBar({
   onFeatureSelect,
   onGameSelect,
   topicsDisabled,
+  lastModel,
 }) {
   const [openMenu, setOpenMenu] = useState(null)
   const [aiReady, setAiReady] = useState(false)
   const [serverOk, setServerOk] = useState(false)
+  const [chunks, setChunks] = useState(0)
   const [topics, setTopics] = useState(TOPICS)
   const [features, setFeatures] = useState(FEATURES)
   const [games, setGames] = useState(GAMES)
 
   useEffect(() => {
-    checkAiStatus().then(({ ok, ai }) => {
+    checkAiStatus().then(({ ok, ai, chunks }) => {
       setServerOk(ok)
       setAiReady(ai)
+      setChunks(chunks ?? 0)
     })
 
     fetchContent().then(({ topics, features, games }) => {
@@ -215,6 +218,27 @@ export default function AvatarMenuBar({
                       ? 'Demo rejimi — .env faylida GEMINI_API_KEY qo\'ying'
                       : 'Demo mode — set GEMINI_API_KEY in .env'}
               </p>
+
+              <p className="menu-dropdown-label">
+                {language === 'uz' ? 'RAG bilim bazasi' : 'RAG knowledge base'}
+              </p>
+              <p className="settings-status">
+                {chunks > 0
+                  ? language === 'uz'
+                    ? `✓ ${chunks} ta bo'lak indekslangan`
+                    : `✓ ${chunks} chunks indexed`
+                  : language === 'uz'
+                    ? 'Indeks yo\'q — npm run index ni ishga tushiring'
+                    : 'No index — run npm run index'}
+              </p>
+
+              {lastModel && (
+                <p className="settings-status">
+                  {language === 'uz'
+                    ? `Javob bergan model: ${lastModel}`
+                    : `Answered by: ${lastModel}`}
+                </p>
+              )}
             </div>
           )}
         </div>

@@ -22,6 +22,7 @@ export default function App() {
   const [listening, setListening] = useState(false)
   const [autoSpeak, setAutoSpeak] = useState(true)
   const [activeTopic, setActiveTopic] = useState(null)
+  const [lastModel, setLastModel] = useState(null)
   const stopSpeechRef = useRef(null)
   const recognitionRef = useRef(null)
 
@@ -61,8 +62,9 @@ export default function App() {
       setLoading(true)
 
       try {
-        const { content } = await chat(nextMessages, language, topicId)
+        const { content, model } = await chat(nextMessages, language, topicId)
         setMessages((prev) => [...prev, { role: 'assistant', content }])
+        setLastModel(model ?? null)
         if (autoSpeak) readAloud(content)
       } catch (err) {
         setMessages((prev) => [
@@ -140,6 +142,7 @@ export default function App() {
         onFeatureSelect={handleFeature}
         onGameSelect={handleGame}
         topicsDisabled={loading}
+        lastModel={lastModel}
       />
 
       <main className="main-layout">

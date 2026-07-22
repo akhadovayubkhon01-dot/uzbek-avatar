@@ -10,6 +10,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "index": "node server/index-knowledge.js",
+    "models": "node server/list-models.js",
     "start": "node server/index.js"
   },
   "dependencies": {
