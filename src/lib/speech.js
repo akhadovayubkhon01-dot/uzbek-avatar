@@ -1,4 +1,4 @@
-const KOTIB_KEY = () => import.meta.env.VITE_KOTIBAI_API_KEY || ''
+const LOCAL_TTS_URL = 'http://127.0.0.1:8000/tts'
 
 export function pickVoice(language) {
   const voices = speechSynthesis.getVoices()
@@ -12,8 +12,32 @@ export function pickVoice(language) {
 }
 
 export function speak(text, language, onStart, onEnd) {
-  if (KOTIB_KEY() && language === 'uz') {
-    return speakKotib(text, onStart, onEnd)
+  if (language === 'uz') {
+    let currentAudio = null
+    let cancelled = false
+
+    speakLocal(
+      text,
+      onStart,
+      onEnd,
+      (audio) => {
+        // speakLocal hands us the audio element once it's ready
+        if (cancelled) {
+          audio.pause()
+        } else {
+          currentAudio = audio
+        }
+      },
+    )
+
+    // Return a plain stop-function immediately
+    return () => {
+      cancelled = true
+      if (currentAudio) {
+        currentAudio.pause()
+      }
+      onEnd?.()
+    }
   }
 
   return speakBrowser(text, language, onStart, onEnd)
@@ -42,18 +66,17 @@ function speakBrowser(text, language, onStart, onEnd) {
   }
 }
 
-async function speakKotib(text, onStart, onEnd) {
+async function speakLocal(text, onStart, onEnd, onAudioReady) {
   try {
-    const res = await fetch('https://developer.kotib.ai/api/v1/tts', {
+    const res = await fetch(LOCAL_TTS_URL, {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${KOTIB_KEY()}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ text, lang: 'uz', blocking: true }),
+      body: JSON.stringify({ text }),
     })
 
-    if (!res.ok) throw new Error('KotibAI TTS failed')
+    if (!res.ok) throw new Error('Local TTS service returned an error')
 
     const blob = await res.blob()
     const url = URL.createObjectURL(blob)
@@ -69,14 +92,11 @@ async function speakKotib(text, onStart, onEnd) {
       onEnd?.()
     }
 
+    onAudioReady?.(audio)
     await audio.play()
-    return () => {
-      audio.pause()
-      URL.revokeObjectURL(url)
-      onEnd?.()
-    }
-  } catch {
-    return speakBrowser(text, 'uz', onStart, onEnd)
+  } catch (err) {
+    console.warn('Local Uzbek TTS unavailable, falling back to browser voice:', err)
+    speakBrowser(text, 'uz', onStart, onEnd)
   }
 }
 
