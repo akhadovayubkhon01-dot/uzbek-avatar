@@ -70,7 +70,10 @@ export async function handleChat(messages, language = 'en', topicId = null) {
     systemInstruction: { parts: [{ text: system }] },
     contents,
     generationConfig: {
-      maxOutputTokens: 800,
+      maxOutputTokens: 500,
+      thinkingConfig: {
+        thinkingBudget: 0,
+      },
     },
   })
 
