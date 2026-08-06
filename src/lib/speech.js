@@ -1,3 +1,5 @@
+import { attachAudio, stopAnalysis } from './lipsync'
+
 const LOCAL_TTS_URL = 'http://127.0.0.1:8000/tts'
 
 export function pickVoice(language) {
@@ -26,6 +28,8 @@ export function speak(text, language, onStart, onEnd) {
           audio.pause()
         } else {
           currentAudio = audio
+          // Route through the analyser so the 3D avatar can lip-sync to it.
+          attachAudio(audio)
         }
       },
     )
@@ -36,6 +40,7 @@ export function speak(text, language, onStart, onEnd) {
       if (currentAudio) {
         currentAudio.pause()
       }
+      stopAnalysis()
       onEnd?.()
     }
   }
@@ -102,6 +107,7 @@ async function speakLocal(text, onStart, onEnd, onAudioReady) {
 
 export function stopSpeaking() {
   speechSynthesis.cancel()
+  stopAnalysis()
 }
 
 export function isSpeechRecognitionSupported() {

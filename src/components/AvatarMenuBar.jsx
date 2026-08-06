@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { TOPICS } from '../data/topics'
-import { FEATURES } from '../data/features'
-import { GAMES } from '../data/games'
 import { checkAiStatus } from '../lib/ai'
 import { fetchContent } from '../lib/content'
 import { TEACHER_NAME } from '../lib/prompts'
@@ -12,18 +11,15 @@ export default function AvatarMenuBar({
   autoSpeak,
   onToggleSpeak,
   onTopicSelect,
-  onFeatureSelect,
-  onGameSelect,
   topicsDisabled,
   lastModel,
 }) {
+  const navigate = useNavigate()
   const [openMenu, setOpenMenu] = useState(null)
   const [aiReady, setAiReady] = useState(false)
   const [serverOk, setServerOk] = useState(false)
   const [chunks, setChunks] = useState(0)
   const [topics, setTopics] = useState(TOPICS)
-  const [features, setFeatures] = useState(FEATURES)
-  const [games, setGames] = useState(GAMES)
 
   useEffect(() => {
     checkAiStatus().then(({ ok, ai, chunks }) => {
@@ -32,12 +28,11 @@ export default function AvatarMenuBar({
       setChunks(chunks ?? 0)
     })
 
-    fetchContent().then(({ topics, features, games }) => {
+    fetchContent().then(({ topics }) => {
       setTopics(topics)
-      setFeatures(features)
-      setGames(games)
     })
   }, [])
+
   const close = () => setOpenMenu(null)
 
   const toggle = (menu) => setOpenMenu((current) => (current === menu ? null : menu))
@@ -78,71 +73,16 @@ export default function AvatarMenuBar({
           )}
         </div>
 
-        <div className="menu-item">
-          <button
-            type="button"
-            className={`menu-btn ${openMenu === 'features' ? 'active' : ''}`}
-            onClick={() => toggle('features')}
-            aria-expanded={openMenu === 'features'}
-          >
-            {language === 'uz' ? 'Imkoniyatlar' : 'Features'}
-          </button>
-          {openMenu === 'features' && (
-            <div className="menu-dropdown menu-dropdown-wide">
-              {features.map((feature) => (
-                <button
-                  key={feature.id}
-                  type="button"
-                  className="menu-dropdown-item"
-                  disabled={topicsDisabled}
-                  onClick={() => {
-                    onFeatureSelect(feature)
-                    close()
-                  }}
-                >
-                  {language === 'uz' ? feature.titleUz : feature.titleEn}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className="menu-item">
-          <button
-            type="button"
-            className={`menu-btn ${openMenu === 'games' ? 'active' : ''}`}
-            onClick={() => toggle('games')}
-            aria-expanded={openMenu === 'games'}
-          >
-            {language === 'uz' ? 'O\'yinlar' : 'Games'}
-          </button>
-          {openMenu === 'games' && (
-            <div className="menu-dropdown menu-dropdown-wide">
-              {games.map((game) => (
-                <button
-                  key={game.id}
-                  type="button"
-                  className={`menu-dropdown-item ${game.comingSoon ? 'menu-dropdown-item-soon' : ''}`}
-                  disabled={topicsDisabled || game.comingSoon}
-                  onClick={() => {
-                    if (!game.comingSoon) {
-                      onGameSelect(game)
-                      close()
-                    }
-                  }}
-                >
-                  {language === 'uz'
-                    ? game.comingSoon
-                      ? game.titleUzSoon ?? game.titleUz
-                      : game.titleUz
-                    : game.comingSoon
-                      ? game.titleEnSoon ?? game.titleEn
-                      : game.titleEn}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
+        <button
+          type="button"
+          className="menu-btn"
+          onClick={() => {
+            close()
+            navigate('/games')
+          }}
+        >
+          {language === 'uz' ? "O'yinlar" : 'Games'}
+        </button>
 
         <div className="menu-item">
           <button

@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import Avatar from './components/Avatar'
 import AvatarMenuBar from './components/AvatarMenuBar'
 import Chat from './components/Chat'
+import Games from './pages/Games'
 import { chat } from './lib/ai'
 import { loadVoices, listen, speak, stopSpeaking } from './lib/speech'
 import { TEACHER_NAME } from './lib/prompts'
@@ -91,18 +93,6 @@ export default function App() {
     sendMessage(prompt, topic.id)
   }
 
-  const handleFeature = (feature) => {
-    setActiveTopic(null)
-    const prompt = language === 'uz' ? feature.promptUz : feature.promptEn
-    sendMessage(prompt)
-  }
-
-  const handleGame = (game) => {
-    setActiveTopic(null)
-    const prompt = language === 'uz' ? game.promptUz : game.promptEn
-    sendMessage(prompt)
-  }
-
   const handleMic = () => {
     if (listening) {
       recognitionRef.current?.stop()
@@ -131,7 +121,7 @@ export default function App() {
     setListening(true)
   }
 
-  return (
+  const home = (
     <div className="app">
       <AvatarMenuBar
         language={language}
@@ -139,15 +129,13 @@ export default function App() {
         autoSpeak={autoSpeak}
         onToggleSpeak={() => setAutoSpeak((v) => !v)}
         onTopicSelect={handleTopic}
-        onFeatureSelect={handleFeature}
-        onGameSelect={handleGame}
         topicsDisabled={loading}
         lastModel={lastModel}
       />
 
       <main className="main-layout">
         <section className="avatar-column" aria-label="Teacher avatar">
-          <Avatar speaking={speaking} listening={listening} />
+          <Avatar speaking={speaking} listening={listening} language={language} />
         </section>
 
         <Chat
@@ -165,10 +153,17 @@ export default function App() {
       <footer className="app-footer">
         <p>
           {language === 'uz'
-            ? 'Demo rejim mavjud. 3D avatar va yaxshiroq o\'zbek ovozi keyingi bosqichda.'
-            : 'Demo mode included. 3D avatar & premium Uzbek TTS are planned next.'}
+            ? "Demo rejim mavjud. 3D avatar ovozga qarab lab harakatini bajaradi."
+            : 'Demo mode included. The 3D avatar lip-syncs to the generated speech.'}
         </p>
       </footer>
     </div>
+  )
+
+  return (
+    <Routes>
+      <Route path="/" element={home} />
+      <Route path="/games" element={<Games language={language} />} />
+    </Routes>
   )
 }

@@ -1,6 +1,6 @@
 # Asilbek — Uzbek History & Culture AI Avatar
 
-An interactive web app featuring **Asilbek**, a bilingual (Uzbek / English) AI teacher focused on Uzbek history, culture, and traditions.
+An interactive web app featuring **Asilbek**, a bilingual (Uzbek / English) AI teacher focused on Uzbek history, culture, and traditions. He is rendered as an illustrated portrait that lip-syncs to the generated Uzbek speech.
 
 ## Features
 
@@ -44,10 +44,39 @@ Sign up at [KotibAI](https://developer.kotib.ai) and set `VITE_KOTIBAI_API_KEY` 
 
 ```
 src/
-  components/   Avatar, Chat, Header, TopicPicker
+  assets/       asilbek.jpg — the avatar artwork
+  components/   Avatar, Chat, AvatarMenuBar
   data/         Topics and demo lesson content
-  lib/          AI chat, speech, system prompts
+  lib/          AI chat, speech, lip-sync, system prompts
 ```
+
+## Avatar & lip-sync
+
+Asilbek is a single illustrated portrait. The mouth is an SVG overlay drawn on
+top of the artwork, positioned in the image's own pixel space so it stays
+aligned at any size.
+
+He is painted mid-smile with his upper teeth showing, so the overlay does not
+try to replace his mouth. It is anchored just below the teeth and grows
+downward, the way a real jaw moves, leaving the smile intact. The edge is
+feathered so the shape sits in the painting rather than looking pasted on.
+
+Lip-sync is driven by the audio itself, not by phonemes: `src/lib/lipsync.js`
+runs the playing speech through a Web Audio `AnalyserNode` and reads the
+spectrum each frame. Loudness sets how far the mouth opens and the spectral
+centroid decides whether the shape is rounded ("o", "u") or wide ("i", "e").
+Because it never looks at the text, it works for Uzbek as well as any other
+language.
+
+When nothing is being spoken the overlay is hidden entirely, so the untouched
+painting shows through.
+
+This only applies to Uzbek replies, which come from the local TTS service as
+real audio. English uses the browser's speech synthesis, which exposes no audio
+stream, so there is nothing to analyse there.
+
+If you replace `src/assets/asilbek.jpg`, update the mouth coordinates at the top
+of `src/components/Avatar.jsx` to match the new artwork.
 
 ## License
 

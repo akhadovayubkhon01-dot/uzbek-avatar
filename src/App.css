@@ -11,6 +11,31 @@
   overflow: hidden;
 }
 
+/* ── Standalone pages ── */
+
+.page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--text-h);
+}
+
+.page-hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* ── Compact header ── */
 
 .app-header {
@@ -353,6 +378,45 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* The portrait's exact ratio, so object-fit has nothing to crop and the mouth
+   overlay stays locked to the painted mouth at any size. */
+.portrait-card-photo {
+  aspect-ratio: 765 / 1024;
+}
+
+.mouth-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.avatar-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.avatar-placeholder-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.avatar-placeholder-hint {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--text-muted);
 }
 
 /* Idle: subtle breathing */

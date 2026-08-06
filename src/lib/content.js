@@ -1,8 +1,7 @@
 import { TOPICS } from '../data/topics'
-import { FEATURES } from '../data/features'
 import { GAMES } from '../data/games'
 
-const fallback = { topics: TOPICS, features: FEATURES, games: GAMES }
+const fallback = { topics: TOPICS, games: GAMES }
 
 export async function fetchContent() {
   try {
