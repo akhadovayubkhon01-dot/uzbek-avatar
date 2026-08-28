@@ -8,6 +8,8 @@ import { TEACHER_NAME } from '../lib/prompts'
 export default function AvatarMenuBar({
   language,
   onLanguageChange,
+  voiceGender,
+  onVoiceGenderChange,
   autoSpeak,
   onToggleSpeak,
   onTopicSelect,
@@ -118,7 +120,54 @@ export default function AvatarMenuBar({
             </div>
           )}
         </div>
-
+        <div className="menu-item">
+          <button
+            type="button"
+            className={`menu-btn ${openMenu === 'voice' ? 'active' : ''}`}
+            onClick={() => toggle('voice')}
+            aria-expanded={openMenu === 'voice'}
+            title={
+              language === 'uz'
+                ? "O'zbekcha ovoz faqat ayol"
+                : 'Voice gender (English only)'
+            }
+          >
+            {voiceGender === 'male'
+              ? language === 'uz'
+                ? 'Erkak'
+                : 'Male'
+              : language === 'uz'
+                ? 'Ayol'
+                : 'Female'}
+          </button>
+          {openMenu === 'voice' && (
+            <div className="menu-dropdown">
+              <button
+                type="button"
+                className={`menu-dropdown-item ${voiceGender === 'female' ? 'selected' : ''}`}
+                onClick={() => {
+                  onVoiceGenderChange('female')
+                  close()
+                }}
+              >
+                {language === 'uz' ? 'Ayol' : 'Female'}
+              </button>
+              <button
+                type="button"
+                className={`menu-dropdown-item ${voiceGender === 'male' ? 'selected' : ''}`}
+                disabled={language === 'uz'}
+                onClick={() => {
+                  onVoiceGenderChange('male')
+                  close()
+                }}
+              >
+                {language === 'uz'
+                  ? 'Erkak (faqat inglizcha)'
+                  : 'Male'}
+              </button>
+            </div>
+          )}
+        </div>
         <button
           type="button"
           className={`menu-btn menu-btn-icon ${autoSpeak ? 'active' : ''}`}

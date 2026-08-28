@@ -17,6 +17,7 @@ function welcomeMessage(language) {
 
 export default function App() {
   const [language, setLanguage] = useState('en')
+  const [voiceGender, setVoiceGender] = useState('female')
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -45,11 +46,12 @@ export default function App() {
       stopSpeechRef.current = speak(
         text,
         language,
+        voiceGender,
         () => setSpeaking(true),
         () => setSpeaking(false),
       )
     },
-    [language],
+    [language, voiceGender],
   )
 
   const sendMessage = useCallback(
@@ -126,6 +128,8 @@ export default function App() {
       <AvatarMenuBar
         language={language}
         onLanguageChange={setLanguage}
+        voiceGender={voiceGender}
+        onVoiceGenderChange={setVoiceGender}
         autoSpeak={autoSpeak}
         onToggleSpeak={() => setAutoSpeak((v) => !v)}
         onTopicSelect={handleTopic}

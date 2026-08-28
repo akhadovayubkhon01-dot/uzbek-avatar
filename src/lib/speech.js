@@ -2,18 +2,32 @@ import { attachAudio, stopAnalysis } from './lipsync'
 
 const LOCAL_TTS_URL = 'http://127.0.0.1:8000/tts'
 
-export function pickVoice(language) {
+// Names that commonly indicate a male or female browser voice.
+// Browser voices have no reliable "gender" field, so we match on the name.
+const MALE_VOICE_HINTS = ['david', 'mark', 'george', 'james', 'male', 'guy', 'daniel', 'alex']
+const FEMALE_VOICE_HINTS = ['zira', 'susan', 'hazel', 'linda', 'female', 'samantha', 'victoria', 'karen']
+
+export function pickVoice(language, gender = 'female') {
   const voices = speechSynthesis.getVoices()
   const langPrefix = language === 'uz' ? 'uz' : 'en'
 
+  // Only English browser voices offer a gender choice.
+  const englishVoices = voices.filter((v) => v.lang.toLowerCase().startsWith('en'))
+  const hints = gender === 'male' ? MALE_VOICE_HINTS : FEMALE_VOICE_HINTS
+
+  const genderMatch = englishVoices.find((v) =>
+    hints.some((h) => v.name.toLowerCase().includes(h)),
+  )
+
   return (
+    genderMatch ||
     voices.find((v) => v.lang.toLowerCase().startsWith(langPrefix)) ||
-    voices.find((v) => v.lang.toLowerCase().startsWith('en')) ||
+    englishVoices[0] ||
     voices[0]
   )
 }
 
-export function speak(text, language, onStart, onEnd) {
+export function speak(text, language, gender, onStart, onEnd) {
   if (language === 'uz') {
     let currentAudio = null
     let cancelled = false
@@ -45,10 +59,10 @@ export function speak(text, language, onStart, onEnd) {
     }
   }
 
-  return speakBrowser(text, language, onStart, onEnd)
+  return speakBrowser(text, language, gender, onStart, onEnd)
 }
 
-function speakBrowser(text, language, onStart, onEnd) {
+function speakBrowser(text, language, gender, onStart, onEnd) {
   speechSynthesis.cancel()
 
   const utterance = new SpeechSynthesisUtterance(text)
@@ -56,7 +70,7 @@ function speakBrowser(text, language, onStart, onEnd) {
   utterance.rate = 0.95
   utterance.pitch = 1
 
-  const voice = pickVoice(language)
+  const voice = pickVoice(language, gender)
   if (voice) utterance.voice = voice
 
   utterance.onstart = () => onStart?.()
@@ -101,7 +115,7 @@ async function speakLocal(text, onStart, onEnd, onAudioReady) {
     await audio.play()
   } catch (err) {
     console.warn('Local Uzbek TTS unavailable, falling back to browser voice:', err)
-    speakBrowser(text, 'uz', onStart, onEnd)
+    speakBrowser(text, 'uz', 'female', onStart, onEnd)
   }
 }
 
