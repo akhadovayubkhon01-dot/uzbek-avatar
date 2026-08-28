@@ -77,15 +77,21 @@ export async function handleChat(messages, language = 'en', topicId = null) {
     },
   })
 
-  const callModel = (model) =>
-    fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': apiKey,
-      },
-      body: requestBody,
-    })
+  const callModel = async (model) => {
+    try {
+      return await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-goog-api-key': apiKey,
+        },
+        body: requestBody,
+      })
+    } catch (err) {
+      console.error('[Gemini REAL ERROR]', err.cause || err.message || err)
+      throw err
+    }
+  }
 
   const maxAttempts = 3
   const retryDelays = [2000, 4000]

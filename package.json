@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:client": "vite",
-    "dev:server": "node --watch server/index.js",
+    "dev:server": "node --watch --use-system-ca server/index.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "index": "node server/index-knowledge.js",
     "models": "node server/list-models.js",
-    "start": "node server/index.js"
+    "start": "node --use-system-ca server/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
