@@ -9,7 +9,12 @@ import { loadVoices, listen, speak, stopSpeaking } from './lib/speech'
 import { TEACHER_NAME } from './lib/prompts'
 import './App.css'
 import { getCurrentUser, onAuthChange, signOut } from './lib/auth'
-
+import {
+  createConversation,
+  listConversations,
+  loadMessages,
+  saveMessage,
+} from './lib/history'
 
 function welcomeMessage(language) {
   return language === 'uz'
@@ -22,6 +27,8 @@ export default function App() {
   const [voiceGender, setVoiceGender] = useState('female')
   const [user, setUser] = useState(null)
   const [authOpen, setAuthOpen] = useState(false)
+  const [conversationId, setConversationId] = useState(null)
+  const [conversations, setConversations] = useState([])
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -36,11 +43,23 @@ export default function App() {
   useEffect(() => {
     loadVoices()
   }, [])
+
   useEffect(() => {
     getCurrentUser().then(setUser)
     const unsubscribe = onAuthChange(setUser)
     return unsubscribe
   }, [])
+
+  useEffect(() => {
+    if (!user) {
+      setConversations([])
+      setConversationId(null)
+      return
+    }
+    listConversations()
+      .then(setConversations)
+      .catch((err) => console.warn('Could not load conversations:', err))
+  }, [user])
 
   useEffect(() => {
     setMessages([{ role: 'assistant', content: welcomeMessage(language) }])
@@ -74,10 +93,36 @@ export default function App() {
       setInput('')
       setLoading(true)
 
+      let convId = conversationId
+      if (user && !convId) {
+        try {
+          const title = trimmed.length > 50 ? `${trimmed.slice(0, 50)}...` : trimmed
+          const conv = await createConversation(user.id, title)
+          convId = conv.id
+          setConversationId(convId)
+          setConversations((prev) => [conv, ...prev])
+        } catch (err) {
+          console.warn('Could not create conversation:', err)
+        }
+      }
+
+      if (convId) {
+        saveMessage(convId, 'user', trimmed).catch((err) =>
+          console.warn('Could not save user message:', err),
+        )
+      }
+
       try {
         const { content, model } = await chat(nextMessages, language, topicId)
         setMessages((prev) => [...prev, { role: 'assistant', content }])
         setLastModel(model ?? null)
+
+        if (convId) {
+          saveMessage(convId, 'assistant', content).catch((err) =>
+            console.warn('Could not save reply:', err),
+          )
+        }
+
         if (autoSpeak) readAloud(content)
       } catch (err) {
         setMessages((prev) => [
@@ -94,9 +139,26 @@ export default function App() {
         setLoading(false)
       }
     },
-    [messages, loading, language, activeTopic, autoSpeak, readAloud],
+    [messages, loading, language, activeTopic, autoSpeak, readAloud, user, conversationId],
   )
 
+  const handleSelectConversation = async (id) => {
+    stopSpeaking()
+    setConversationId(id)
+    try {
+      const past = await loadMessages(id)
+      setMessages(past.length ? past : [{ role: 'assistant', content: welcomeMessage(language) }])
+    } catch (err) {
+      console.warn('Could not load messages:', err)
+    }
+  }
+
+  const handleNewChat = () => {
+    stopSpeaking()
+    setConversationId(null)
+    setActiveTopic(null)
+    setMessages([{ role: 'assistant', content: welcomeMessage(language) }])
+  }
 
   const handleTopic = (topic) => {
     setActiveTopic(topic.id)
@@ -146,6 +208,10 @@ export default function App() {
           await signOut()
           setAuthOpen(false)
         }}
+        conversations={conversations}
+        conversationId={conversationId}
+        onSelectConversation={handleSelectConversation}
+        onNewChat={handleNewChat}
         autoSpeak={autoSpeak}
         onToggleSpeak={() => setAutoSpeak((v) => !v)}
         onTopicSelect={handleTopic}
