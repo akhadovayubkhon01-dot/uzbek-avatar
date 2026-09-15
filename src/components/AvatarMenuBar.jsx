@@ -4,12 +4,17 @@ import { TOPICS } from '../data/topics'
 import { checkAiStatus } from '../lib/ai'
 import { fetchContent } from '../lib/content'
 import { TEACHER_NAME } from '../lib/prompts'
+import AuthPanel from './AuthPanel'
 
 export default function AvatarMenuBar({
   language,
   onLanguageChange,
   voiceGender,
   onVoiceGenderChange,
+  user,
+  authOpen,
+  onToggleAuth,
+  onSignOut,
   autoSpeak,
   onToggleSpeak,
   onTopicSelect,
@@ -178,6 +183,41 @@ export default function AvatarMenuBar({
         >
           🔊
         </button>
+        <div className="menu-item">
+          <button
+            type="button"
+            className={`menu-btn ${authOpen ? 'active' : ''}`}
+            onClick={() => {
+              close()
+              onToggleAuth()
+            }}
+            aria-expanded={authOpen}
+          >
+            {user
+              ? user.email.split('@')[0]
+              : language === 'uz'
+                ? 'Kirish'
+                : 'Sign in'}
+          </button>
+          {authOpen && (
+            <div className="menu-dropdown menu-dropdown-auth">
+              {user ? (
+                <>
+                  <p className="menu-dropdown-label">{user.email}</p>
+                  <button
+                    type="button"
+                    className="menu-dropdown-item"
+                    onClick={onSignOut}
+                  >
+                    {language === 'uz' ? 'Chiqish' : 'Sign out'}
+                  </button>
+                </>
+              ) : (
+                <AuthPanel language={language} onClose={onToggleAuth} />
+              )}
+            </div>
+          )}
+        </div>
 
         <div className="menu-item">
           <button

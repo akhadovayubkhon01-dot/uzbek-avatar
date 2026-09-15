@@ -8,6 +8,8 @@ import { chat } from './lib/ai'
 import { loadVoices, listen, speak, stopSpeaking } from './lib/speech'
 import { TEACHER_NAME } from './lib/prompts'
 import './App.css'
+import { getCurrentUser, onAuthChange, signOut } from './lib/auth'
+
 
 function welcomeMessage(language) {
   return language === 'uz'
@@ -18,6 +20,8 @@ function welcomeMessage(language) {
 export default function App() {
   const [language, setLanguage] = useState('en')
   const [voiceGender, setVoiceGender] = useState('female')
+  const [user, setUser] = useState(null)
+  const [authOpen, setAuthOpen] = useState(false)
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -31,6 +35,11 @@ export default function App() {
 
   useEffect(() => {
     loadVoices()
+  }, [])
+  useEffect(() => {
+    getCurrentUser().then(setUser)
+    const unsubscribe = onAuthChange(setUser)
+    return unsubscribe
   }, [])
 
   useEffect(() => {
@@ -130,6 +139,13 @@ export default function App() {
         onLanguageChange={setLanguage}
         voiceGender={voiceGender}
         onVoiceGenderChange={setVoiceGender}
+        user={user}
+        authOpen={authOpen}
+        onToggleAuth={() => setAuthOpen((v) => !v)}
+        onSignOut={async () => {
+          await signOut()
+          setAuthOpen(false)
+        }}
         autoSpeak={autoSpeak}
         onToggleSpeak={() => setAutoSpeak((v) => !v)}
         onTopicSelect={handleTopic}
