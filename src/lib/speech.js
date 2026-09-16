@@ -2,21 +2,34 @@ import { attachAudio, stopAnalysis } from './lipsync'
 
 const LOCAL_TTS_URL = 'http://127.0.0.1:8000/tts'
 
-// Names that commonly indicate a male or female browser voice.
-// Browser voices have no reliable "gender" field, so we match on the name.
-const MALE_VOICE_HINTS = ['david', 'mark', 'george', 'james', 'male', 'guy', 'daniel', 'alex']
-const FEMALE_VOICE_HINTS = ['zira', 'susan', 'hazel', 'linda', 'female', 'samantha', 'victoria', 'karen']
-
 export function pickVoice(language, gender = 'female') {
   const voices = speechSynthesis.getVoices()
   const langPrefix = language === 'uz' ? 'uz' : 'en'
 
-  // Only English browser voices offer a gender choice.
   const englishVoices = voices.filter((v) => v.lang.toLowerCase().startsWith('en'))
-  const hints = gender === 'male' ? MALE_VOICE_HINTS : FEMALE_VOICE_HINTS
+
+  const isFemaleName = (name) => {
+    const n = name.toLowerCase()
+    return (
+      n.includes('female') ||
+      ['zira', 'susan', 'hazel', 'linda', 'samantha', 'victoria', 'karen'].some((h) =>
+        n.includes(h),
+      )
+    )
+  }
+
+  // Checked after female, because "female" contains the substring "male".
+  const isMaleName = (name) => {
+    const n = name.toLowerCase()
+    if (isFemaleName(name)) return false
+    return (
+      n.includes('male') ||
+      ['david', 'mark', 'george', 'james', 'daniel', 'alex'].some((h) => n.includes(h))
+    )
+  }
 
   const genderMatch = englishVoices.find((v) =>
-    hints.some((h) => v.name.toLowerCase().includes(h)),
+    gender === 'male' ? isMaleName(v.name) : isFemaleName(v.name),
   )
 
   return (
@@ -42,7 +55,7 @@ export function speak(text, language, gender, onStart, onEnd) {
           audio.pause()
         } else {
           currentAudio = audio
-          // Route through the analyser so the 3D avatar can lip-sync to it.
+          // Route through the analyser so the avatar can lip-sync to it.
           attachAudio(audio)
         }
       },
