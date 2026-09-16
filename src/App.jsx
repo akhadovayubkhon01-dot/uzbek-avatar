@@ -4,6 +4,7 @@ import Avatar from './components/Avatar'
 import AvatarMenuBar from './components/AvatarMenuBar'
 import Chat from './components/Chat'
 import Games from './pages/Games'
+import Duels from './pages/Duels'
 import { chat } from './lib/ai'
 import { loadVoices, listen, speak, stopSpeaking } from './lib/speech'
 import { TEACHER_NAME } from './lib/prompts'
@@ -250,6 +251,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={home} />
       <Route path="/games" element={<Games language={language} />} />
+      <Route path="/games/duels" element={<Duels language={language} />} />
     </Routes>
   )
 }
