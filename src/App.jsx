@@ -38,6 +38,7 @@ export default function App() {
   const [autoSpeak, setAutoSpeak] = useState(true)
   const [activeTopic, setActiveTopic] = useState(null)
   const [lastModel, setLastModel] = useState(null)
+
   const stopSpeechRef = useRef(null)
   const recognitionRef = useRef(null)
 
@@ -57,6 +58,7 @@ export default function App() {
       setConversationId(null)
       return
     }
+
     listConversations()
       .then(setConversations)
       .catch((err) => console.warn('Could not load conversations:', err))
@@ -90,11 +92,13 @@ export default function App() {
 
       const userMsg = { role: 'user', content: trimmed }
       const nextMessages = [...messages, userMsg]
+
       setMessages(nextMessages)
       setInput('')
       setLoading(true)
 
       let convId = conversationId
+
       if (user && !convId) {
         try {
           const title = trimmed.length > 50 ? `${trimmed.slice(0, 50)}...` : trimmed
@@ -115,6 +119,7 @@ export default function App() {
 
       try {
         const { content, model } = await chat(nextMessages, language, topicId)
+
         setMessages((prev) => [...prev, { role: 'assistant', content }])
         setLastModel(model ?? null)
 
@@ -140,15 +145,30 @@ export default function App() {
         setLoading(false)
       }
     },
-    [messages, loading, language, activeTopic, autoSpeak, readAloud, user, conversationId],
+    [
+      messages,
+      loading,
+      language,
+      activeTopic,
+      autoSpeak,
+      readAloud,
+      user,
+      conversationId,
+    ],
   )
 
   const handleSelectConversation = async (id) => {
     stopSpeaking()
     setConversationId(id)
+
     try {
       const past = await loadMessages(id)
-      setMessages(past.length ? past : [{ role: 'assistant', content: welcomeMessage(language) }])
+
+      setMessages(
+        past.length
+          ? past
+          : [{ role: 'assistant', content: welcomeMessage(language) }],
+      )
     } catch (err) {
       console.warn('Could not load messages:', err)
     }
@@ -163,6 +183,7 @@ export default function App() {
 
   const handleTopic = (topic) => {
     setActiveTopic(topic.id)
+
     const prompt = language === 'uz' ? topic.promptUz : topic.promptEn
     sendMessage(prompt, topic.id)
   }
@@ -222,7 +243,11 @@ export default function App() {
 
       <main className="main-layout">
         <section className="avatar-column" aria-label="Teacher avatar">
-          <Avatar speaking={speaking} listening={listening} language={language} />
+          <Avatar
+            speaking={speaking}
+            listening={listening}
+            language={language}
+          />
         </section>
 
         <Chat
@@ -240,8 +265,8 @@ export default function App() {
       <footer className="app-footer">
         <p>
           {language === 'uz'
-            ? "Demo rejim mavjud. 3D avatar ovozga qarab lab harakatini bajaradi."
-            : 'Demo mode included. The 3D avatar lip-syncs to the generated speech.'}
+            ? "Asilbek — O'zbekiston tarixi, madaniyati va an'analari bo'yicha AI qo'llanma. Ovoz imkoniyatlari til va brauzerga qarab farq qiladi."
+            : 'Asilbek is an AI guide to Uzbek history, culture, and traditions. Voice features vary by language and browser.'}
         </p>
       </footer>
     </div>
