@@ -327,6 +327,7 @@ export default function App() {
             listening={listening}
             language={language}
             name={teacherName}
+            portrait={voiceGender}
           />
         </section>
 
