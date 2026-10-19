@@ -33,3 +33,17 @@ export function onAuthChange(callback) {
   })
   return () => data.subscription.unsubscribe()
 }
+
+// The avatar name a logged-in user chose, stored in their account metadata so it
+// follows them across devices. Empty string means "use the default name".
+export function getSavedTeacherName(user) {
+  return user?.user_metadata?.teacher_name ?? ''
+}
+
+export async function saveTeacherName(name) {
+  const { data, error } = await supabase.auth.updateUser({
+    data: { teacher_name: name },
+  })
+  if (error) throw error
+  return data.user
+}

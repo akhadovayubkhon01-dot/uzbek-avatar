@@ -3,13 +3,20 @@ import { Route, Routes } from 'react-router-dom'
 import Avatar from './components/Avatar'
 import AvatarMenuBar from './components/AvatarMenuBar'
 import Chat from './components/Chat'
+import NamePrompt from './components/NamePrompt'
 import Games from './pages/Games'
 import Duels from './pages/Duels'
 import { chat } from './lib/ai'
 import { loadVoices, listen, speak, stopSpeaking } from './lib/speech'
-import { TEACHER_NAME } from './lib/prompts'
+import { nameSuggestionFor, resolveTeacherName, sanitizeTeacherName } from './lib/prompts'
 import './App.css'
-import { getCurrentUser, onAuthChange, signOut } from './lib/auth'
+import {
+  getCurrentUser,
+  getSavedTeacherName,
+  onAuthChange,
+  saveTeacherName,
+  signOut,
+} from './lib/auth'
 import {
   createConversation,
   listConversations,
@@ -17,15 +24,38 @@ import {
   saveMessage,
 } from './lib/history'
 
-function welcomeMessage(language) {
+const LOCAL_NAME_KEY = 'teacherName'
+
+// Visitors who aren't signed in keep their chosen name in this browser only.
+// Storage can be blocked (private windows), so failures fall back to the default.
+function readLocalName() {
+  try {
+    return localStorage.getItem(LOCAL_NAME_KEY) ?? ''
+  } catch {
+    return ''
+  }
+}
+
+function writeLocalName(name) {
+  try {
+    if (name) localStorage.setItem(LOCAL_NAME_KEY, name)
+    else localStorage.removeItem(LOCAL_NAME_KEY)
+  } catch {
+    // Not persisted; the name still applies for this visit.
+  }
+}
+
+function welcomeMessage(language, name) {
   return language === 'uz'
-    ? `Assalomu alaykum! Men ${TEACHER_NAME}man — O'zbekiston tarixi, madaniyati va an'analari bo'yicha sizning AI o'qituvchingizman. Savol bering yoki quyidagi mavzulardan birini tanlang!`
-    : `Welcome! I'm ${TEACHER_NAME}, your AI guide to Uzbek history, culture, and traditions. Ask me anything or choose a topic below!`
+    ? `Assalomu alaykum! Men ${name}man — O'zbekiston tarixi, madaniyati va an'analari bo'yicha sizning AI o'qituvchingizman. Savol bering yoki quyidagi mavzulardan birini tanlang!`
+    : `Welcome! I'm ${name}, your AI guide to Uzbek history, culture, and traditions. Ask me anything or choose a topic below!`
 }
 
 export default function App() {
   const [language, setLanguage] = useState('en')
-  const [voiceGender, setVoiceGender] = useState('female')
+  const [voiceGender, setVoiceGender] = useState('male')
+  const [localName, setLocalName] = useState(readLocalName)
+  const [namePrompt, setNamePrompt] = useState(null)
   const [user, setUser] = useState(null)
   const [authOpen, setAuthOpen] = useState(false)
   const [conversationId, setConversationId] = useState(null)
@@ -38,6 +68,16 @@ export default function App() {
   const [autoSpeak, setAutoSpeak] = useState(true)
   const [activeTopic, setActiveTopic] = useState(null)
   const [lastModel, setLastModel] = useState(null)
+
+  // Signed-in users carry their name in their account; visitors keep it locally.
+  const teacherName = resolveTeacherName({
+    customName: user ? getSavedTeacherName(user) : localName,
+  })
+
+  const welcome = useCallback(
+    () => ({ role: 'assistant', content: welcomeMessage(language, teacherName), welcome: true }),
+    [language, teacherName],
+  )
 
   const stopSpeechRef = useRef(null)
   const recognitionRef = useRef(null)
@@ -65,9 +105,19 @@ export default function App() {
   }, [user])
 
   useEffect(() => {
-    setMessages([{ role: 'assistant', content: welcomeMessage(language) }])
+    setMessages([welcome()])
     setActiveTopic(null)
+    // Only a language switch starts a fresh chat.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language])
+
+  // When only the greeting is showing, keep it in step with the current name.
+  // An ongoing conversation is left untouched.
+  useEffect(() => {
+    setMessages((prev) =>
+      prev.length === 1 && prev[0].welcome ? [welcome()] : prev,
+    )
+  }, [welcome])
 
   const readAloud = useCallback(
     (text) => {
@@ -118,7 +168,7 @@ export default function App() {
       }
 
       try {
-        const { content, model } = await chat(nextMessages, language, topicId)
+        const { content, model } = await chat(nextMessages, language, topicId, teacherName)
 
         setMessages((prev) => [...prev, { role: 'assistant', content }])
         setLastModel(model ?? null)
@@ -154,6 +204,7 @@ export default function App() {
       readAloud,
       user,
       conversationId,
+      teacherName,
     ],
   )
 
@@ -167,7 +218,7 @@ export default function App() {
       setMessages(
         past.length
           ? past
-          : [{ role: 'assistant', content: welcomeMessage(language) }],
+          : [welcome()],
       )
     } catch (err) {
       console.warn('Could not load messages:', err)
@@ -178,7 +229,32 @@ export default function App() {
     stopSpeaking()
     setConversationId(null)
     setActiveTopic(null)
-    setMessages([{ role: 'assistant', content: welcomeMessage(language) }])
+    setMessages([welcome()])
+  }
+
+  const handleSaveName = async (name) => {
+    const clean = sanitizeTeacherName(name)
+    if (user) {
+      const updated = await saveTeacherName(clean)
+      setUser(updated)
+    } else {
+      setLocalName(clean)
+      writeLocalName(clean)
+    }
+  }
+
+  const handleVoiceGenderChange = (gender) => {
+    setVoiceGender(gender)
+    const suggestion = nameSuggestionFor(gender, teacherName)
+    if (suggestion) setNamePrompt({ gender, suggestion })
+  }
+
+  // The voice setting stays the same across languages, so the avatar keeps
+  // its gender and name when switching. Note: Uzbek speech currently has only
+  // a female voice, so "male" in Uzbek still plays the female model until a
+  // male Uzbek model is added (see speech.js).
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang)
   }
 
   const handleTopic = (topic) => {
@@ -220,10 +296,13 @@ export default function App() {
     <div className="app">
       <AvatarMenuBar
         language={language}
-        onLanguageChange={setLanguage}
+        onLanguageChange={handleLanguageChange}
         voiceGender={voiceGender}
-        onVoiceGenderChange={setVoiceGender}
+        onVoiceGenderChange={handleVoiceGenderChange}
         user={user}
+        teacherName={teacherName}
+        savedName={user ? getSavedTeacherName(user) : localName}
+        onSaveName={handleSaveName}
         authOpen={authOpen}
         onToggleAuth={() => setAuthOpen((v) => !v)}
         onSignOut={async () => {
@@ -247,6 +326,7 @@ export default function App() {
             speaking={speaking}
             listening={listening}
             language={language}
+            name={teacherName}
           />
         </section>
 
@@ -259,14 +339,29 @@ export default function App() {
           listening={listening}
           loading={loading}
           language={language}
+          teacherName={teacherName}
         />
       </main>
+
+      {namePrompt && (
+        <NamePrompt
+          language={language}
+          currentName={teacherName}
+          suggestion={namePrompt.suggestion}
+          gender={namePrompt.gender}
+          onConfirm={async (name) => {
+            await handleSaveName(name)
+            setNamePrompt(null)
+          }}
+          onKeep={() => setNamePrompt(null)}
+        />
+      )}
 
       <footer className="app-footer">
         <p>
           {language === 'uz'
-            ? "Asilbek — O'zbekiston tarixi, madaniyati va an'analari bo'yicha AI qo'llanma. Ovoz imkoniyatlari til va brauzerga qarab farq qiladi."
-            : 'Asilbek is an AI guide to Uzbek history, culture, and traditions. Voice features vary by language and browser.'}
+            ? `${teacherName} — O'zbekiston tarixi, madaniyati va an'analari bo'yicha AI qo'llanma. Ovoz imkoniyatlari til va brauzerga qarab farq qiladi.`
+            : `${teacherName} is an AI guide to Uzbek history, culture, and traditions. Voice features vary by language and browser.`}
         </p>
       </footer>
     </div>

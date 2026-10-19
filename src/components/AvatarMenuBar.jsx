@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { TOPICS } from '../data/topics'
 import { checkAiStatus } from '../lib/ai'
 import { fetchContent } from '../lib/content'
-import { TEACHER_NAME } from '../lib/prompts'
 import AuthPanel from './AuthPanel'
 
 export default function AvatarMenuBar({
@@ -12,6 +11,9 @@ export default function AvatarMenuBar({
   voiceGender,
   onVoiceGenderChange,
   user,
+  teacherName,
+  savedName,
+  onSaveName,
   authOpen,
   onToggleAuth,
   onSignOut,
@@ -31,6 +33,27 @@ export default function AvatarMenuBar({
   const [serverOk, setServerOk] = useState(false)
   const [chunks, setChunks] = useState(0)
   const [topics, setTopics] = useState(TOPICS)
+  const [nameDraft, setNameDraft] = useState(savedName ?? '')
+  const [nameStatus, setNameStatus] = useState('')
+  const [savingName, setSavingName] = useState(false)
+
+  // Refill the field whenever the saved name changes (sign-in, sign-out, save).
+  useEffect(() => {
+    setNameDraft(savedName ?? '')
+  }, [savedName])
+
+  const saveName = async (value) => {
+    setSavingName(true)
+    setNameStatus('')
+    try {
+      await onSaveName(value)
+      setNameStatus(language === 'uz' ? 'Saqlandi' : 'Saved')
+    } catch (err) {
+      setNameStatus(err.message)
+    } finally {
+      setSavingName(false)
+    }
+  }
 
   useEffect(() => {
     checkAiStatus().then(({ ok, ai, chunks }) => {
@@ -51,7 +74,7 @@ export default function AvatarMenuBar({
   return (
     <nav className="avatar-menu-bar" aria-label="App menu">
       <div className="menu-brand">
-        <span className="menu-brand-name">{TEACHER_NAME}</span>
+        <span className="menu-brand-name">{teacherName}</span>
       </div>
 
       <div className="menu-items">
@@ -136,11 +159,7 @@ export default function AvatarMenuBar({
             className={`menu-btn ${openMenu === 'voice' ? 'active' : ''}`}
             onClick={() => toggle('voice')}
             aria-expanded={openMenu === 'voice'}
-            title={
-              language === 'uz'
-                ? "O'zbekcha ovoz faqat ayol"
-                : 'Voice gender (English only)'
-            }
+            title={language === 'uz' ? 'Ovoz' : 'Voice'}
           >
             {voiceGender === 'male'
               ? language === 'uz'
@@ -165,15 +184,12 @@ export default function AvatarMenuBar({
               <button
                 type="button"
                 className={`menu-dropdown-item ${voiceGender === 'male' ? 'selected' : ''}`}
-                disabled={language === 'uz'}
                 onClick={() => {
                   onVoiceGenderChange('male')
                   close()
                 }}
               >
-                {language === 'uz'
-                  ? 'Erkak (faqat inglizcha)'
-                  : 'Male'}
+                {language === 'uz' ? 'Erkak' : 'Male'}
               </button>
             </div>
           )}
@@ -285,6 +301,51 @@ export default function AvatarMenuBar({
           </button>
           {openMenu === 'settings' && (
             <div className="menu-dropdown menu-dropdown-settings">
+              <p className="menu-dropdown-label">
+                {language === 'uz' ? 'Avatar ismi' : 'Avatar name'}
+              </p>
+              <form
+                  className="name-form"
+                  onSubmit={(e) => {
+                    e.preventDefault()
+                    saveName(nameDraft)
+                  }}
+                >
+                  <input
+                    type="text"
+                    className="auth-input"
+                    value={nameDraft}
+                    maxLength={24}
+                    placeholder={teacherName}
+                    onChange={(e) => setNameDraft(e.target.value)}
+                    disabled={savingName}
+                    aria-label={language === 'uz' ? 'Avatar ismi' : 'Avatar name'}
+                  />
+                  <div className="name-form-actions">
+                    <button type="submit" className="auth-submit" disabled={savingName}>
+                      {language === 'uz' ? 'Saqlash' : 'Save'}
+                    </button>
+                    {savedName && (
+                      <button
+                        type="button"
+                        className="auth-switch"
+                        disabled={savingName}
+                        onClick={() => saveName('')}
+                      >
+                        {language === 'uz' ? 'Standartga qaytarish' : 'Reset to default'}
+                      </button>
+                    )}
+                  </div>
+                  {nameStatus && <p className="settings-status">{nameStatus}</p>}
+                  {!user && (
+                    <p className="settings-status">
+                      {language === 'uz'
+                        ? "Faqat shu brauzerda saqlanadi. Barcha qurilmalarda saqlash uchun hisobingizga kiring."
+                        : 'Saved in this browser only. Sign in to keep it on every device.'}
+                    </p>
+                  )}
+                </form>
+
               <p className="menu-dropdown-label">
                 {language === 'uz' ? 'Backend holati' : 'Backend status'}
               </p>

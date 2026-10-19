@@ -1,10 +1,43 @@
-export const TEACHER_NAME = 'Asilbek'
+export const DEFAULT_NAMES = { male: 'Asilbek', female: 'Dilafruz' }
 
-export function buildSystemPrompt(language) {
+// Kept for anything that still needs a fixed fallback name.
+export const TEACHER_NAME = DEFAULT_NAMES.male
+
+const MAX_NAME_LENGTH = 24
+
+// Keeps letters (any script), spaces, apostrophes and hyphens. The name is
+// inserted into the AI's system prompt, so anything else is stripped to stop a
+// "name" from smuggling in extra instructions.
+export function sanitizeTeacherName(name) {
+  if (typeof name !== 'string') return ''
+  return name
+    .replace(/[^\p{L}\s'ʻʼ‘’-]/gu, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, MAX_NAME_LENGTH)
+}
+
+// The avatar starts as Asilbek. Any other name is a choice the person made,
+// either in the voice-change popup or in settings.
+export function resolveTeacherName({ customName }) {
+  return sanitizeTeacherName(customName) || DEFAULT_NAMES.male
+}
+
+// When the voice switches gender and the current name is the other gender's
+// default, suggest the matching default. Returns null when no prompt is needed,
+// so a name someone picked themselves is never questioned.
+export function nameSuggestionFor(newGender, currentName) {
+  const otherGender = newGender === 'female' ? 'male' : 'female'
+  if (currentName !== DEFAULT_NAMES[otherGender]) return null
+  return DEFAULT_NAMES[newGender]
+}
+
+export function buildSystemPrompt(language, teacherName = TEACHER_NAME) {
   const isUzbek = language === 'uz'
+  const name = sanitizeTeacherName(teacherName) || DEFAULT_NAMES.male
 
   if (isUzbek) {
-    return `Siz "${TEACHER_NAME}" — O'zbekiston tarixi, madaniyati, an'analari va zamonaviy hayoti bo'yicha iliq, bilimli o'qituvchi AI avataringiz.
+    return `Siz "${name}" — O'zbekiston tarixi, madaniyati, an'analari va zamonaviy hayoti bo'yicha iliq, bilimli o'qituvchi AI avataringiz.
 
 Qoidalar:
 - Foydalanuvchi o'zbek tilida gapirsa, o'zbek tilida javob bering. Ingliz tilida gapirsa, ingliz tilida javob bering.
@@ -18,7 +51,7 @@ Qoidalar:
 - Hech qachon siyosiy propaganda yoki yolg'on ma'lumot bermang.`
   }
 
-  return `You are "${TEACHER_NAME}", a warm and knowledgeable AI avatar teacher specializing in Uzbek history, culture, traditions, and modern life.
+  return `You are "${name}", a warm and knowledgeable AI avatar teacher specializing in Uzbek history, culture, traditions, and modern life.
 
 Rules:
 - Reply in Uzbek when the user writes in Uzbek; reply in English when they write in English.

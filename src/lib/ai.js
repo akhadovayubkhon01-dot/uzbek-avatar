@@ -1,11 +1,11 @@
 import { buildSystemPrompt } from './prompts'
 import { getDemoResponse } from '../data/demoResponses'
 
-export async function chat(messages, language, topicId) {
+export async function chat(messages, language, topicId, teacherName) {
   const response = await fetch('/api/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ messages, language, topicId }),
+    body: JSON.stringify({ messages, language, topicId, teacherName }),
   })
 
   const data = await response.json().catch(() => ({}))

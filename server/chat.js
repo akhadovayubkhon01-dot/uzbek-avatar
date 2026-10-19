@@ -50,7 +50,7 @@ function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-export async function handleChat(messages, language = 'en', topicId = null) {
+export async function handleChat(messages, language = 'en', topicId = null, teacherName) {
   const apiKey = process.env.GEMINI_API_KEY
   const lastUser = [...messages].reverse().find((m) => m.role === 'user')
 
@@ -63,7 +63,7 @@ export async function handleChat(messages, language = 'en', topicId = null) {
   }
 
   const ragContext = await buildRagContext(lastUser?.content ?? '')
-  const system = buildSystemPrompt(language) + ragContext
+  const system = buildSystemPrompt(language, teacherName) + ragContext
   const contents = toGeminiContents(messages)
 
   const requestBody = JSON.stringify({

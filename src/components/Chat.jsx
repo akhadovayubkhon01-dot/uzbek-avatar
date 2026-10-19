@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react'
-import { TEACHER_NAME } from '../lib/prompts'
 
 export default function Chat({
   messages,
@@ -10,6 +9,7 @@ export default function Chat({
   listening,
   loading,
   language,
+  teacherName,
 }) {
   const bottomRef = useRef(null)
 
@@ -34,14 +34,14 @@ export default function Chat({
                 ? language === 'uz'
                   ? 'Siz'
                   : 'You'
-                : TEACHER_NAME}
+                : teacherName}
             </span>
             <p>{msg.content}</p>
           </div>
         ))}
         {loading && (
           <div className="message message-assistant">
-            <span className="message-role">{TEACHER_NAME}</span>
+            <span className="message-role">{teacherName}</span>
             <p className="typing">
               <span></span>
               <span></span>

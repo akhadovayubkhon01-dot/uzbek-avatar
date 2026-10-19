@@ -23,7 +23,7 @@ const MOUTH_INTERIOR = '#3d1a14'
 // Frames blend toward the target so the mouth eases instead of snapping.
 const SMOOTHING = 0.35
 
-export default function Avatar({ speaking, listening, language = 'en' }) {
+export default function Avatar({ speaking, listening, language = 'en', name = 'Asilbek' }) {
   const mouthRef = useRef(null)
   const innerRef = useRef(null)
 
@@ -90,7 +90,7 @@ export default function Avatar({ speaking, listening, language = 'en' }) {
     <div className="avatar-stage avatar-stage-center" aria-label="AI teacher avatar">
       <div className={`avatar-portrait portrait-${statusClass}`}>
         <div className="portrait-card portrait-card-photo">
-          <img src={asilbek} alt="Asilbek, your Uzbek history teacher" className="portrait-img" />
+          <img src={asilbek} alt={`${name}, your Uzbek history teacher`} className="portrait-img" />
 
           <svg
             className="mouth-overlay"
