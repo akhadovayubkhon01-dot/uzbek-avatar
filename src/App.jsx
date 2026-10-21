@@ -64,10 +64,8 @@ function writeLocalName(name) {
   }
 }
 
-function welcomeMessage(language, name) {
-  return language === 'uz'
-    ? `Assalomu alaykum! Men ${name}man — O'zbekiston tarixi, madaniyati va an'analari bo'yicha sizning AI o'qituvchingizman. Savol bering yoki quyidagi mavzulardan birini tanlang!`
-    : `Welcome! I'm ${name}, your AI guide to Uzbek history, culture, and traditions. Ask me anything or choose a topic below!`
+function welcomeMessage(language) {
+  return language === 'uz' ? 'UzAvatarga xush kelibsiz' : 'Welcome to UzAvatar'
 }
 
 export default function App() {
@@ -94,8 +92,8 @@ export default function App() {
   })
 
   const welcome = useCallback(
-    () => ({ role: 'assistant', content: welcomeMessage(language, teacherName), welcome: true }),
-    [language, teacherName],
+    () => ({ role: 'assistant', content: welcomeMessage(language), welcome: true }),
+    [language],
   )
 
   const stopSpeechRef = useRef(null)
@@ -378,13 +376,6 @@ export default function App() {
         />
       )}
 
-      <footer className="app-footer">
-        <p>
-          {language === 'uz'
-            ? `${teacherName} — O'zbekiston tarixi, madaniyati va an'analari bo'yicha AI qo'llanma. Ovoz imkoniyatlari til va brauzerga qarab farq qiladi.`
-            : `${teacherName} is an AI guide to Uzbek history, culture, and traditions. Voice features vary by language and browser.`}
-        </p>
-      </footer>
     </div>
   )
 

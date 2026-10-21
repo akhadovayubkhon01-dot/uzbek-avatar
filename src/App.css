@@ -715,20 +715,6 @@
   cursor: not-allowed;
 }
 
-.app-footer {
-  width: 100%;
-  padding: 0.75rem 1.5rem;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  flex-shrink: 0;
-}
-
-.app-footer p {
-  margin: 0;
-}
-
 @media (max-width: 768px) {
   #root {
     padding: 0.5rem;

@@ -2,6 +2,7 @@ import { buildSystemPrompt, sanitizeTeacherName, DEFAULT_NAMES } from '../src/li
 import { getDemoResponse } from '../src/data/demoResponses.js'
 import { embedText } from './lib/embeddings.js'
 import { retrieve } from './lib/knowledge.js'
+import { detectGreeting, greetingReply } from './lib/greetings.js'
 
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash'
 const FALLBACK_MODEL = process.env.GEMINI_FALLBACK_MODEL || 'gemini-3.5-flash-lite'
@@ -236,6 +237,12 @@ export async function generateChatAnswer(
 export async function handleChat(messages, language = 'en', topicId = null, teacherName) {
   const apiKey = process.env.GEMINI_API_KEY
   const lastUser = [...messages].reverse().find((m) => m.role === 'user')
+
+  // A bare greeting gets a short fixed reply without a Gemini call.
+  const greeting = detectGreeting(lastUser?.content ?? '', teacherName)
+  if (greeting) {
+    return { content: greetingReply(greeting), mode: 'greeting' }
+  }
 
   if (!apiKey) {
     await delay(600)
