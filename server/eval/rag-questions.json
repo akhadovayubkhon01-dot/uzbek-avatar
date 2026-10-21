@@ -1,0 +1,388 @@
+{
+  "version": 1,
+  "description": "Retrieval ground truth for the Asilbek knowledge base. A retrieved chunk is relevant when it comes from expectedFile and contains every string in expectedPassages (case-insensitive, apostrophe variants and whitespace normalised). alsoAcceptable lists other files that genuinely answer the same question. answerable:false cases are unrelated questions; their scores are recorded but never scored as hits.",
+  "cases": [
+    {
+      "id": "ulughbeg-observatory-en",
+      "query": "What did Ulugh Beg build in Samarkand?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "monuments"],
+      "expectedFile": "02_timurid_era.md",
+      "expectedPassages": ["Ulugh Beg founded a major observatory"],
+      "alsoAcceptable": [
+        { "file": "temuriylar.md", "passages": ["rasadxona qurdirgan"] }
+      ]
+    },
+    {
+      "id": "tamerlane-birth-en",
+      "query": "Where and when was Tamerlane born?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "dates", "alt-spelling"],
+      "expectedFile": "02_timurid_era.md",
+      "expectedPassages": ["born in 1336", "Kesh"],
+      "alsoAcceptable": [
+        { "file": "temuriylar.md", "passages": ["1336-yilda", "Shahrisabz"] }
+      ]
+    },
+    {
+      "id": "timur-burial-en",
+      "query": "Where is Timur buried?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "monuments"],
+      "expectedFile": "02_timurid_era.md",
+      "expectedPassages": ["Gur-e Amir mausoleum", "burial place"],
+      "alsoAcceptable": [
+        { "file": "temuriylar.md", "passages": ["Go'ri Amir maqbarasiga dafn"] }
+      ]
+    },
+    {
+      "id": "khwarizmi-algorithm-en",
+      "query": "Which scholar's name gave us the word algorithm?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["\"algorithm\" ultimately derives"]
+    },
+    {
+      "id": "avicenna-canon-en",
+      "query": "Who wrote the Canon of Medicine?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "alt-spelling"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["Canon of Medicine"]
+    },
+    {
+      "id": "bukhari-hadith-en",
+      "query": "Who compiled the hadith collection Sahih al-Bukhari?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["commonly known as Sahih al-Bukhari"]
+    },
+    {
+      "id": "babur-mughal-en",
+      "query": "Who founded the Mughal Empire, and where was he born?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "dates"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["born in Andijan", "Mughal Empire"],
+      "alsoAcceptable": [
+        { "file": "temuriylar.md", "passages": ["Boburiylar imperiyasiga asos solgan"] }
+      ]
+    },
+    {
+      "id": "qodiriy-novel-en",
+      "query": "What is Abdulla Qodiriy's best-known novel?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "literature"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["O'tkan kunlar"]
+    },
+    {
+      "id": "jadid-new-method-en",
+      "query": "What were the Jadid new-method schools?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["jadidism", "education"],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": ["\"new method\" school"]
+    },
+    {
+      "id": "padarkush-en",
+      "query": "Who wrote the play Padarkush?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "jadidism"],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": ["His play \"Padarkush\""]
+    },
+    {
+      "id": "fitrat-execution-en",
+      "query": "When was Abdurauf Fitrat executed?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["people", "dates", "jadidism"],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": ["Fitrat", "executed in 1938"]
+    },
+    {
+      "id": "registan-madrasas-en",
+      "query": "Which three madrasas stand on Registan Square?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["monuments", "cities"],
+      "expectedFile": "05_cities_and_heritage.md",
+      "expectedPassages": ["Sher-Dor Madrasa", "Tilla-Kari Madrasa"],
+      "alsoAcceptable": [
+        { "file": "temuriylar.md", "passages": ["Sherdor madrasasi", "Tillakori madrasasi"] }
+      ]
+    },
+    {
+      "id": "itchan-kala-en",
+      "query": "What is Itchan Kala?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["monuments", "cities"],
+      "expectedFile": "05_cities_and_heritage.md",
+      "expectedPassages": ["walled inner city of Khiva"]
+    },
+    {
+      "id": "mahalla-en",
+      "query": "What is a mahalla?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["culture"],
+      "expectedFile": "06_culture_and_social_life.md",
+      "expectedPassages": ["neighbourhood community and social institution"]
+    },
+    {
+      "id": "shashmaqom-en",
+      "query": "What does the name Shashmaqom mean?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["culture", "music"],
+      "expectedFile": "07_music_dance_oral_traditions.md",
+      "expectedPassages": ["\"six maqoms.\""],
+      "alsoAcceptable": [
+        { "file": "qiziqarli-faktlar.md", "passages": ["olti maqomdan iborat"] }
+      ]
+    },
+    {
+      "id": "uzbek-language-family-en",
+      "query": "Which language family and branch does Uzbek belong to?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["language"],
+      "expectedFile": "08_uzbek_language.md",
+      "expectedPassages": ["Karluk branch"]
+    },
+    {
+      "id": "atlas-margilan-en",
+      "query": "Which town is famous for atlas and adras ikat fabric?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["crafts", "cities"],
+      "expectedFile": "09_crafts_textiles_and_food.md",
+      "expectedPassages": ["Margilan became one of the most famous centres"]
+    },
+    {
+      "id": "aral-sea-en",
+      "query": "Why did the Aral Sea shrink?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["modern-history", "environment"],
+      "expectedFile": "10_modern_history_and_independence.md",
+      "expectedPassages": ["diverted water from the Amu Darya"],
+      "alsoAcceptable": [
+        { "file": "01_history_overview.md", "passages": ["environmental crisis of the Aral Sea"] },
+        { "file": "qiziqarli-faktlar.md", "passages": ["Orol dengizi"] }
+      ]
+    },
+    {
+      "id": "tashkent-capital-en",
+      "query": "When did Tashkent become the capital of the Uzbek SSR?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["modern-history", "dates", "cities"],
+      "expectedFile": "10_modern_history_and_independence.md",
+      "expectedPassages": ["moved to Tashkent in 1930"]
+    },
+    {
+      "id": "mongol-conquest-en",
+      "query": "In which year did the Mongols capture Bukhara and Samarkand?",
+      "language": "en",
+      "answerable": true,
+      "tags": ["history", "dates"],
+      "expectedFile": "01_history_overview.md",
+      "expectedPassages": ["In 1220, Mongol forces"]
+    },
+    {
+      "id": "ulugbek-rasadxona-uz",
+      "query": "Ulug'bek Samarqandda nima qurdirgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "monuments", "alt-spelling"],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": ["rasadxona qurdirgan"],
+      "alsoAcceptable": [
+        { "file": "02_timurid_era.md", "passages": ["Ulugh Beg founded a major observatory"] }
+      ]
+    },
+    {
+      "id": "temur-vafot-uz",
+      "query": "Amir Temur qachon vafot etgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "dates"],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": ["1405-yilda", "vafot etgan"],
+      "alsoAcceptable": [
+        { "file": "02_timurid_era.md", "passages": ["Timur died in 1405"] }
+      ]
+    },
+    {
+      "id": "anqara-jangi-uz",
+      "query": "Anqara jangida Amir Temur kimni yengdi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "history"],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": ["Anqara jangida", "Boyazid I"]
+    },
+    {
+      "id": "beruniy-tugilgan-uz",
+      "query": "Abu Rayhon Beruniy qachon tug'ilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "dates", "alt-spelling"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["born in 973"]
+    },
+    {
+      "id": "ibn-sino-asar-uz",
+      "query": "Ibn Sino qaysi tibbiy asari bilan mashhur?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "alt-spelling"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["Canon of Medicine"]
+    },
+    {
+      "id": "navoiy-tillar-uz",
+      "query": "Alisher Navoiy qaysi tillarda ijod qilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "language", "alt-spelling"],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": ["Chagatai Turkic and Persian"],
+      "alsoAcceptable": [
+        { "file": "08_uzbek_language.md", "passages": ["Alisher Navoi and Babur used Chagatai"] }
+      ]
+    },
+    {
+      "id": "behbudiy-jurnal-uz",
+      "query": "Behbudiy qaysi jurnalni nashr qilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["people", "jadidism", "alt-spelling"],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": ["journal Oyna"]
+    },
+    {
+      "id": "jadidchilik-uz",
+      "query": "Jadidchilik qanday harakat edi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["jadidism"],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": ["Jadidism was a reform movement"]
+    },
+    {
+      "id": "registon-madrasa-uz",
+      "query": "Registon maydonida nechta madrasa bor?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["monuments", "cities"],
+      "expectedFile": "05_cities_and_heritage.md",
+      "expectedPassages": ["three madrasas"],
+      "alsoAcceptable": [
+        { "file": "temuriylar.md", "passages": ["uchta madrasadan iborat"] }
+      ]
+    },
+    {
+      "id": "ichan-qala-yunesko-uz",
+      "query": "Xivadagi Ichan qal'a YUNESKO ro'yxatiga qachon kiritilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["monuments", "cities", "dates"],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": ["Ichan qal'a 1990-yilda"]
+    },
+    {
+      "id": "osh-qachon-uz",
+      "query": "Osh qanday marosimlarda tortiladi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["culture", "food", "alt-spelling"],
+      "expectedFile": "06_culture_and_social_life.md",
+      "expectedPassages": ["palov is served both as an everyday meal"]
+    },
+    {
+      "id": "askiya-uz",
+      "query": "Askiya qanday san'at turi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["culture", "oral-tradition"],
+      "expectedFile": "07_music_dance_oral_traditions.md",
+      "expectedPassages": ["witty dialogue and improvisation"]
+    },
+    {
+      "id": "lotin-alifbosi-harflar-uz",
+      "query": "Hozirgi o'zbek lotin alifbosida nechta harf bor?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["language", "dates"],
+      "expectedFile": "08_uzbek_language.md",
+      "expectedPassages": ["26 letters"]
+    },
+    {
+      "id": "toshkent-metro-uz",
+      "query": "Toshkent metrosi qachon ochilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": ["cities", "dates"],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": ["Toshkent metropoliteni 1977-yilda ochilgan"]
+    },
+    {
+      "id": "unrelated-australia-en",
+      "query": "What is the capital of Australia?",
+      "language": "en",
+      "answerable": false,
+      "tags": ["unrelated"]
+    },
+    {
+      "id": "unrelated-cake-en",
+      "query": "How do I bake a chocolate cake?",
+      "language": "en",
+      "answerable": false,
+      "tags": ["unrelated"]
+    },
+    {
+      "id": "unrelated-worldcup-en",
+      "query": "Who won the 2018 FIFA World Cup?",
+      "language": "en",
+      "answerable": false,
+      "tags": ["unrelated"]
+    },
+    {
+      "id": "unrelated-weather-uz",
+      "query": "Ertaga Toshkentda ob-havo qanday bo'ladi?",
+      "language": "uz",
+      "answerable": false,
+      "tags": ["unrelated"]
+    },
+    {
+      "id": "unrelated-python-uz",
+      "query": "Python tilida ro'yxatni qanday saralash mumkin?",
+      "language": "uz",
+      "answerable": false,
+      "tags": ["unrelated"]
+    },
+    {
+      "id": "unrelated-smartphone-uz",
+      "query": "Qaysi smartfonni sotib olgan ma'qul?",
+      "language": "uz",
+      "answerable": false,
+      "tags": ["unrelated"]
+    }
+  ]
+}

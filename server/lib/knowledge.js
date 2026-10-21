@@ -36,10 +36,14 @@ export async function retrieve(queryEmbedding, k = 4) {
   const { chunks } = await loadVectors()
   if (!chunks?.length) return []
 
+  // Supports both index formats: the heading-aware one ({ file, headingPath, ... })
+  // and the legacy one ({ source, text }). Callers keep receiving `source`.
   return chunks
     .map((chunk) => ({
+      id: chunk.id ?? null,
       text: chunk.text,
-      source: chunk.source,
+      source: chunk.file ?? chunk.source,
+      headingPath: chunk.headingPath ?? [],
       score: cosineSimilarity(queryEmbedding, chunk.embedding),
     }))
     .sort((a, b) => b.score - a.score)

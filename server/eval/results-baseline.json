@@ -1,0 +1,2894 @@
+{
+  "label": "baseline",
+  "evaluatedAt": "2026-10-20T18:05:05.692Z",
+  "questionsVersion": 1,
+  "questionsHash": "9f657e24a5ce28287449c0da8f9cc613ca1558614c9345e5f188a1d44434dfeb",
+  "index": {
+    "chunker": "legacy-paragraph",
+    "model": "gemini-embedding-001",
+    "createdAt": "2026-10-20T18:04:36.323Z",
+    "chunkCount": 23,
+    "chunkWords": {
+      "min": 6,
+      "mean": 139.8,
+      "max": 226
+    },
+    "chunks": [
+      {
+        "id": "legacy-0",
+        "file": "01_history_overview.md",
+        "headingPath": null,
+        "words": 216
+      },
+      {
+        "id": "legacy-1",
+        "file": "01_history_overview.md",
+        "headingPath": null,
+        "words": 142
+      },
+      {
+        "id": "legacy-2",
+        "file": "02_timurid_era.md",
+        "headingPath": null,
+        "words": 213
+      },
+      {
+        "id": "legacy-3",
+        "file": "02_timurid_era.md",
+        "headingPath": null,
+        "words": 6
+      },
+      {
+        "id": "legacy-4",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": null,
+        "words": 212
+      },
+      {
+        "id": "legacy-5",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": null,
+        "words": 220
+      },
+      {
+        "id": "legacy-6",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": null,
+        "words": 67
+      },
+      {
+        "id": "legacy-7",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": null,
+        "words": 203
+      },
+      {
+        "id": "legacy-8",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": null,
+        "words": 81
+      },
+      {
+        "id": "legacy-9",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": null,
+        "words": 215
+      },
+      {
+        "id": "legacy-10",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": null,
+        "words": 26
+      },
+      {
+        "id": "legacy-11",
+        "file": "06_culture_and_social_life.md",
+        "headingPath": null,
+        "words": 202
+      },
+      {
+        "id": "legacy-12",
+        "file": "06_culture_and_social_life.md",
+        "headingPath": null,
+        "words": 22
+      },
+      {
+        "id": "legacy-13",
+        "file": "07_music_dance_oral_traditions.md",
+        "headingPath": null,
+        "words": 195
+      },
+      {
+        "id": "legacy-14",
+        "file": "08_uzbek_language.md",
+        "headingPath": null,
+        "words": 209
+      },
+      {
+        "id": "legacy-15",
+        "file": "08_uzbek_language.md",
+        "headingPath": null,
+        "words": 68
+      },
+      {
+        "id": "legacy-16",
+        "file": "09_crafts_textiles_and_food.md",
+        "headingPath": null,
+        "words": 178
+      },
+      {
+        "id": "legacy-17",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": null,
+        "words": 208
+      },
+      {
+        "id": "legacy-18",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": null,
+        "words": 8
+      },
+      {
+        "id": "legacy-19",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": null,
+        "words": 224
+      },
+      {
+        "id": "legacy-20",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": null,
+        "words": 56
+      },
+      {
+        "id": "legacy-21",
+        "file": "temuriylar.md",
+        "headingPath": null,
+        "words": 226
+      },
+      {
+        "id": "legacy-22",
+        "file": "temuriylar.md",
+        "headingPath": null,
+        "words": 19
+      }
+    ]
+  },
+  "metrics": {
+    "all": {
+      "n": 34,
+      "hit@1": 0.882,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.936,
+      "avgFirstRelevantRank": 1.15,
+      "noRelevantChunk": 0,
+      "precision@4": 0.316,
+      "contextWords@4": 604,
+      "meanBestRelevantScore": 0.694,
+      "meanTopScore": 0.696
+    },
+    "en": {
+      "n": 20,
+      "hit@1": 0.9,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.942,
+      "avgFirstRelevantRank": 1.15,
+      "noRelevantChunk": 0,
+      "precision@4": 0.313,
+      "contextWords@4": 597,
+      "meanBestRelevantScore": 0.698,
+      "meanTopScore": 0.699
+    },
+    "uz": {
+      "n": 14,
+      "hit@1": 0.857,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.929,
+      "avgFirstRelevantRank": 1.14,
+      "noRelevantChunk": 0,
+      "precision@4": 0.321,
+      "contextWords@4": 614.1,
+      "meanBestRelevantScore": 0.687,
+      "meanTopScore": 0.691
+    }
+  },
+  "scores": {
+    "unrelatedTopScores": {
+      "unrelated-australia-en": 0.5513,
+      "unrelated-cake-en": 0.5528,
+      "unrelated-worldcup-en": 0.5234,
+      "unrelated-weather-uz": 0.6044,
+      "unrelated-python-uz": 0.5675,
+      "unrelated-smartphone-uz": 0.6078
+    },
+    "unrelatedTopScoreMax": 0.6078,
+    "unrelatedTopScoreMean": 0.5679,
+    "answerableBestRelevantScoreMin": 0.6008,
+    "answerableBestRelevantScoreMean": 0.6938
+  },
+  "cases": [
+    {
+      "id": "ulughbeg-observatory-en",
+      "query": "What did Ulugh Beg build in Samarkand?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "monuments"
+      ],
+      "expected": [
+        {
+          "file": "02_timurid_era.md",
+          "passages": [
+            "Ulugh Beg founded a major observatory"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "rasadxona qurdirgan"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7218,
+      "topScore": 0.7218,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 660,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7218,
+          "relevant": true,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6851,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6775,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6632,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6577,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        }
+      ]
+    },
+    {
+      "id": "tamerlane-birth-en",
+      "query": "Where and when was Tamerlane born?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "dates",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "02_timurid_era.md",
+          "passages": [
+            "born in 1336",
+            "Kesh"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "1336-yilda",
+            "Shahrisabz"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7221,
+      "topScore": 0.7221,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 867,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7221,
+          "relevant": true,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6712,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6513,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6249,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 5,
+          "score": 0.6242,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        }
+      ]
+    },
+    {
+      "id": "timur-burial-en",
+      "query": "Where is Timur buried?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "monuments"
+      ],
+      "expected": [
+        {
+          "file": "02_timurid_era.md",
+          "passages": [
+            "Gur-e Amir mausoleum",
+            "burial place"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Go'ri Amir maqbarasiga dafn"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7356,
+      "topScore": 0.7356,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 661,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7356,
+          "relevant": true,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 2,
+          "score": 0.685,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 3,
+          "score": 0.655,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6518,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 5,
+          "score": 0.632,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        }
+      ]
+    },
+    {
+      "id": "khwarizmi-algorithm-en",
+      "query": "Which scholar's name gave us the word algorithm?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "\"algorithm\" ultimately derives"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7185,
+      "topScore": 0.7185,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 715,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7185,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6366,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6278,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5937,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5926,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        }
+      ]
+    },
+    {
+      "id": "avicenna-canon-en",
+      "query": "Who wrote the Canon of Medicine?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "Canon of Medicine"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6647,
+      "topScore": 0.6647,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 702,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6647,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6115,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5915,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5741,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5583,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        }
+      ]
+    },
+    {
+      "id": "bukhari-hadith-en",
+      "query": "Who compiled the hadith collection Sahih al-Bukhari?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "commonly known as Sahih al-Bukhari"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7191,
+      "topScore": 0.7191,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 702,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7191,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6537,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 3,
+          "score": 0.6035,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5986,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5933,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        }
+      ]
+    },
+    {
+      "id": "babur-mughal-en",
+      "query": "Who founded the Mughal Empire, and where was he born?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "dates"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "born in Andijan",
+            "Mughal Empire"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Boburiylar imperiyasiga asos solgan"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6336,
+      "topScore": 0.6336,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 664,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6336,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-22",
+          "location": "Zahiriddin Muhammad Bobur Temuriylar avlodidan bo'lib, 1526-yilda Hind…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6303,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.6218,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5916,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 5,
+          "score": 0.5859,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        }
+      ]
+    },
+    {
+      "id": "qodiriy-novel-en",
+      "query": "What is Abdulla Qodiriy's best-known novel?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "literature"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "O'tkan kunlar"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6537,
+      "topScore": 0.6537,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 504,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6537,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6205,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6061,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "legacy-14",
+          "location": "# Uzbek language ## Language family Uzbek is a Turkic language. It bel…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6042,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6002,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        }
+      ]
+    },
+    {
+      "id": "jadid-new-method-en",
+      "query": "What were the Jadid new-method schools?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "jadidism",
+        "education"
+      ],
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "\"new method\" school"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7713,
+      "topScore": 0.7713,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 500,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7713,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 2,
+          "score": 0.7553,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-8",
+          "location": "## Jadid press Jadid newspapers and journals discussed education, soci…"
+        },
+        {
+          "rank": 3,
+          "score": 0.7365,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6426,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 5,
+          "score": 0.635,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        }
+      ]
+    },
+    {
+      "id": "padarkush-en",
+      "query": "Who wrote the play Padarkush?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "jadidism"
+      ],
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "His play \"Padarkush\""
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6008,
+      "topScore": 0.6008,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 571,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6008,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 2,
+          "score": 0.5879,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5723,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5621,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-8",
+          "location": "## Jadid press Jadid newspapers and journals discussed education, soci…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5594,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        }
+      ]
+    },
+    {
+      "id": "fitrat-execution-en",
+      "query": "When was Abdurauf Fitrat executed?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "people",
+        "dates",
+        "jadidism"
+      ],
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "Fitrat",
+            "executed in 1938"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7073,
+      "topScore": 0.7073,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 359,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7073,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6865,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6844,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-8",
+          "location": "## Jadid press Jadid newspapers and journals discussed education, soci…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6511,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6398,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        }
+      ]
+    },
+    {
+      "id": "registan-madrasas-en",
+      "query": "Which three madrasas stand on Registan Square?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "monuments",
+        "cities"
+      ],
+      "expected": [
+        {
+          "file": "05_cities_and_heritage.md",
+          "passages": [
+            "Sher-Dor Madrasa",
+            "Tilla-Kari Madrasa"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Sherdor madrasasi",
+            "Tillakori madrasasi"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.691,
+      "topScore": 0.691,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 460,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.691,
+          "relevant": true,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6441,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.6403,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6382,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6352,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        }
+      ]
+    },
+    {
+      "id": "itchan-kala-en",
+      "query": "What is Itchan Kala?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "monuments",
+        "cities"
+      ],
+      "expected": [
+        {
+          "file": "05_cities_and_heritage.md",
+          "passages": [
+            "walled inner city of Khiva"
+          ]
+        }
+      ],
+      "firstRelevantRank": 3,
+      "bestRelevantScore": 0.6755,
+      "topScore": 0.6794,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 614,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6794,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6767,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6755,
+          "relevant": true,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6641,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "legacy-13",
+          "location": "# Music, dance and oral traditions ## Shashmaqom Shashmaqom is a class…"
+        },
+        {
+          "rank": 5,
+          "score": 0.655,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-12",
+          "location": "## Aliases mahalla; makhalla; neighborhood; hospitality; mehmondo'stli…"
+        }
+      ]
+    },
+    {
+      "id": "mahalla-en",
+      "query": "What is a mahalla?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "culture"
+      ],
+      "expected": [
+        {
+          "file": "06_culture_and_social_life.md",
+          "passages": [
+            "neighbourhood community and social institution"
+          ]
+        }
+      ],
+      "firstRelevantRank": 2,
+      "bestRelevantScore": 0.7121,
+      "topScore": 0.7181,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 410,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7181,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-12",
+          "location": "## Aliases mahalla; makhalla; neighborhood; hospitality; mehmondo'stli…"
+        },
+        {
+          "rank": 2,
+          "score": 0.7121,
+          "relevant": true,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-11",
+          "location": "# Culture and social life ## Mahalla A mahalla is a neighbourhood comm…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6502,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6381,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 5,
+          "score": 0.638,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        }
+      ]
+    },
+    {
+      "id": "shashmaqom-en",
+      "query": "What does the name Shashmaqom mean?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "culture",
+        "music"
+      ],
+      "expected": [
+        {
+          "file": "07_music_dance_oral_traditions.md",
+          "passages": [
+            "\"six maqoms.\""
+          ]
+        },
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "olti maqomdan iborat"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6812,
+      "topScore": 0.6812,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 440,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6812,
+          "relevant": true,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "legacy-13",
+          "location": "# Music, dance and oral traditions ## Shashmaqom Shashmaqom is a class…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6432,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6323,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 4,
+          "score": 0.6272,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 5,
+          "score": 0.624,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-12",
+          "location": "## Aliases mahalla; makhalla; neighborhood; hospitality; mehmondo'stli…"
+        }
+      ]
+    },
+    {
+      "id": "uzbek-language-family-en",
+      "query": "Which language family and branch does Uzbek belong to?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "language"
+      ],
+      "expected": [
+        {
+          "file": "08_uzbek_language.md",
+          "passages": [
+            "Karluk branch"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7535,
+      "topScore": 0.7535,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 541,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7535,
+          "relevant": true,
+          "file": "08_uzbek_language.md",
+          "id": "legacy-14",
+          "location": "# Uzbek language ## Language family Uzbek is a Turkic language. It bel…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6697,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "legacy-15",
+          "location": "Cyrillic Uzbek remains widely readable and is still encountered in boo…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6582,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        },
+        {
+          "rank": 4,
+          "score": 0.6561,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6359,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        }
+      ]
+    },
+    {
+      "id": "atlas-margilan-en",
+      "query": "Which town is famous for atlas and adras ikat fabric?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "crafts",
+        "cities"
+      ],
+      "expected": [
+        {
+          "file": "09_crafts_textiles_and_food.md",
+          "passages": [
+            "Margilan became one of the most famous centres"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7199,
+      "topScore": 0.7199,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 425,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7199,
+          "relevant": true,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 2,
+          "score": 0.631,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6093,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6087,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5792,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        }
+      ]
+    },
+    {
+      "id": "aral-sea-en",
+      "query": "Why did the Aral Sea shrink?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "modern-history",
+        "environment"
+      ],
+      "expected": [
+        {
+          "file": "10_modern_history_and_independence.md",
+          "passages": [
+            "diverted water from the Amu Darya"
+          ]
+        },
+        {
+          "file": "01_history_overview.md",
+          "passages": [
+            "environmental crisis of the Aral Sea"
+          ]
+        },
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "Orol dengizi"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6458,
+      "topScore": 0.6458,
+      "relevantChunksInIndex": 3,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 769,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6458,
+          "relevant": true,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6308,
+          "relevant": true,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        },
+        {
+          "rank": 3,
+          "score": 0.583,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5802,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5767,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        }
+      ]
+    },
+    {
+      "id": "tashkent-capital-en",
+      "query": "When did Tashkent become the capital of the Uzbek SSR?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "modern-history",
+        "dates",
+        "cities"
+      ],
+      "expected": [
+        {
+          "file": "10_modern_history_and_independence.md",
+          "passages": [
+            "moved to Tashkent in 1930"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7326,
+      "topScore": 0.7326,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 779,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7326,
+          "relevant": true,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6908,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6578,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6497,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 5,
+          "score": 0.6296,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        }
+      ]
+    },
+    {
+      "id": "mongol-conquest-en",
+      "query": "In which year did the Mongols capture Bukhara and Samarkand?",
+      "language": "en",
+      "answerable": true,
+      "tags": [
+        "history",
+        "dates"
+      ],
+      "expected": [
+        {
+          "file": "01_history_overview.md",
+          "passages": [
+            "In 1220, Mongol forces"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7094,
+      "topScore": 0.7094,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 597,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7094,
+          "relevant": true,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6643,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.6398,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        },
+        {
+          "rank": 4,
+          "score": 0.635,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6318,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        }
+      ]
+    },
+    {
+      "id": "ulugbek-rasadxona-uz",
+      "query": "Ulug'bek Samarqandda nima qurdirgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "monuments",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "rasadxona qurdirgan"
+          ]
+        },
+        {
+          "file": "02_timurid_era.md",
+          "passages": [
+            "Ulugh Beg founded a major observatory"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7114,
+      "topScore": 0.7114,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 660,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7114,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6876,
+          "relevant": true,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.6505,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6499,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6398,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        }
+      ]
+    },
+    {
+      "id": "temur-vafot-uz",
+      "query": "Amir Temur qachon vafot etgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "dates"
+      ],
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "1405-yilda",
+            "vafot etgan"
+          ]
+        },
+        {
+          "file": "02_timurid_era.md",
+          "passages": [
+            "Timur died in 1405"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7438,
+      "topScore": 0.7438,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 674,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7438,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 2,
+          "score": 0.702,
+          "relevant": true,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.6198,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-22",
+          "location": "Zahiriddin Muhammad Bobur Temuriylar avlodidan bo'lib, 1526-yilda Hind…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6134,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6078,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        }
+      ]
+    },
+    {
+      "id": "anqara-jangi-uz",
+      "query": "Anqara jangida Amir Temur kimni yengdi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "history"
+      ],
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Anqara jangida",
+            "Boyazid I"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6959,
+      "topScore": 0.6959,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 674,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6959,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6326,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.5975,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 4,
+          "score": 0.573,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-22",
+          "location": "Zahiriddin Muhammad Bobur Temuriylar avlodidan bo'lib, 1526-yilda Hind…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5658,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        }
+      ]
+    },
+    {
+      "id": "beruniy-tugilgan-uz",
+      "query": "Abu Rayhon Beruniy qachon tug'ilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "dates",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "born in 973"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6837,
+      "topScore": 0.6837,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 725,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6837,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6465,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6443,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6337,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6178,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        }
+      ]
+    },
+    {
+      "id": "ibn-sino-asar-uz",
+      "query": "Ibn Sino qaysi tibbiy asari bilan mashhur?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "Canon of Medicine"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6431,
+      "topScore": 0.6431,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 725,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6431,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-4",
+          "location": "# Scholars, writers and historians connected to the region Important: …"
+        },
+        {
+          "rank": 2,
+          "score": 0.608,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5936,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5828,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5801,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-22",
+          "location": "Zahiriddin Muhammad Bobur Temuriylar avlodidan bo'lib, 1526-yilda Hind…"
+        }
+      ]
+    },
+    {
+      "id": "navoiy-tillar-uz",
+      "query": "Alisher Navoiy qaysi tillarda ijod qilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "language",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "Chagatai Turkic and Persian"
+          ]
+        },
+        {
+          "file": "08_uzbek_language.md",
+          "passages": [
+            "Alisher Navoi and Babur used Chagatai"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6566,
+      "topScore": 0.6566,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 722,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6566,
+          "relevant": true,
+          "file": "08_uzbek_language.md",
+          "id": "legacy-14",
+          "location": "# Uzbek language ## Language family Uzbek is a Turkic language. It bel…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6559,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6518,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6243,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6186,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        }
+      ]
+    },
+    {
+      "id": "behbudiy-jurnal-uz",
+      "query": "Behbudiy qaysi jurnalni nashr qilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "people",
+        "jadidism",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "journal Oyna"
+          ]
+        }
+      ],
+      "firstRelevantRank": 2,
+      "bestRelevantScore": 0.65,
+      "topScore": 0.6913,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 359,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6913,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-8",
+          "location": "## Jadid press Jadid newspapers and journals discussed education, soci…"
+        },
+        {
+          "rank": 2,
+          "score": 0.65,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6297,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-6",
+          "location": "He was executed during the Stalinist purges in 1938. ## Cho'lpon Abdul…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6293,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 5,
+          "score": 0.618,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        }
+      ]
+    },
+    {
+      "id": "jadidchilik-uz",
+      "query": "Jadidchilik qanday harakat edi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "jadidism"
+      ],
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "Jadidism was a reform movement"
+          ]
+        }
+      ],
+      "firstRelevantRank": 2,
+      "bestRelevantScore": 0.7539,
+      "topScore": 0.7676,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 512,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7676,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-8",
+          "location": "## Jadid press Jadid newspapers and journals discussed education, soci…"
+        },
+        {
+          "rank": 2,
+          "score": 0.7539,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "legacy-7",
+          "location": "# Jadidism and modern reformers ## What was Jadidism? Jadidism was a r…"
+        },
+        {
+          "rank": 3,
+          "score": 0.7423,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6183,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "legacy-5",
+          "location": "His collection commonly known as Sahih al-Bukhari is one of the most i…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6155,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        }
+      ]
+    },
+    {
+      "id": "registon-madrasa-uz",
+      "query": "Registon maydonida nechta madrasa bor?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "monuments",
+        "cities"
+      ],
+      "expected": [
+        {
+          "file": "05_cities_and_heritage.md",
+          "passages": [
+            "three madrasas"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "uchta madrasadan iborat"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6644,
+      "topScore": 0.6644,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "contextWordsAtChatK": 455,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6644,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6587,
+          "relevant": true,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6413,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6377,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6292,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        }
+      ]
+    },
+    {
+      "id": "ichan-qala-yunesko-uz",
+      "query": "Xivadagi Ichan qal'a YUNESKO ro'yxatiga qachon kiritilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "monuments",
+        "cities",
+        "dates"
+      ],
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "Ichan qal'a 1990-yilda"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6534,
+      "topScore": 0.6534,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 471,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6534,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6524,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6479,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 4,
+          "score": 0.6477,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5976,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        }
+      ]
+    },
+    {
+      "id": "osh-qachon-uz",
+      "query": "Osh qanday marosimlarda tortiladi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "culture",
+        "food",
+        "alt-spelling"
+      ],
+      "expected": [
+        {
+          "file": "06_culture_and_social_life.md",
+          "passages": [
+            "palov is served both as an everyday meal"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6522,
+      "topScore": 0.6522,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 626,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6522,
+          "relevant": true,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-11",
+          "location": "# Culture and social life ## Mahalla A mahalla is a neighbourhood comm…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6443,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-12",
+          "location": "## Aliases mahalla; makhalla; neighborhood; hospitality; mehmondo'stli…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6393,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 4,
+          "score": 0.6073,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6029,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        }
+      ]
+    },
+    {
+      "id": "askiya-uz",
+      "query": "Askiya qanday san'at turi?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "culture",
+        "oral-tradition"
+      ],
+      "expected": [
+        {
+          "file": "07_music_dance_oral_traditions.md",
+          "passages": [
+            "witty dialogue and improvisation"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6929,
+      "topScore": 0.6929,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 823,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6929,
+          "relevant": true,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "legacy-13",
+          "location": "# Music, dance and oral traditions ## Shashmaqom Shashmaqom is a class…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6285,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6159,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 4,
+          "score": 0.6104,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 5,
+          "score": 0.6028,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        }
+      ]
+    },
+    {
+      "id": "lotin-alifbosi-harflar-uz",
+      "query": "Hozirgi o'zbek lotin alifbosida nechta harf bor?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "language",
+        "dates"
+      ],
+      "expected": [
+        {
+          "file": "08_uzbek_language.md",
+          "passages": [
+            "26 letters"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6921,
+      "topScore": 0.6921,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 541,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6921,
+          "relevant": true,
+          "file": "08_uzbek_language.md",
+          "id": "legacy-14",
+          "location": "# Uzbek language ## Language family Uzbek is a Turkic language. It bel…"
+        },
+        {
+          "rank": 2,
+          "score": 0.6801,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "legacy-15",
+          "location": "Cyrillic Uzbek remains widely readable and is still encountered in boo…"
+        },
+        {
+          "rank": 3,
+          "score": 0.6571,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        },
+        {
+          "rank": 4,
+          "score": 0.6348,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 5,
+          "score": 0.627,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        }
+      ]
+    },
+    {
+      "id": "toshkent-metro-uz",
+      "query": "Toshkent metrosi qachon ochilgan?",
+      "language": "uz",
+      "answerable": true,
+      "tags": [
+        "cities",
+        "dates"
+      ],
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "Toshkent metropoliteni 1977-yilda ochilgan"
+          ]
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7254,
+      "topScore": 0.7254,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "contextWordsAtChatK": 630,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7254,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        },
+        {
+          "rank": 2,
+          "score": 0.604,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5951,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5902,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 5,
+          "score": 0.5868,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        }
+      ]
+    },
+    {
+      "id": "unrelated-australia-en",
+      "query": "What is the capital of Australia?",
+      "language": "en",
+      "answerable": false,
+      "tags": [
+        "unrelated"
+      ],
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "topScore": 0.5513,
+      "relevantChunksInIndex": 0,
+      "precisionAtChatK": null,
+      "contextWordsAtChatK": 815,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5513,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 2,
+          "score": 0.5416,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 3,
+          "score": 0.5352,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5285,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5262,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        }
+      ]
+    },
+    {
+      "id": "unrelated-cake-en",
+      "query": "How do I bake a chocolate cake?",
+      "language": "en",
+      "answerable": false,
+      "tags": [
+        "unrelated"
+      ],
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "topScore": 0.5528,
+      "relevantChunksInIndex": 0,
+      "precisionAtChatK": null,
+      "contextWordsAtChatK": 615,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5528,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-11",
+          "location": "# Culture and social life ## Mahalla A mahalla is a neighbourhood comm…"
+        },
+        {
+          "rank": 2,
+          "score": 0.5372,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "legacy-16",
+          "location": "# Crafts, textiles and material culture ## Atlas and adras Atlas and a…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5303,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "legacy-12",
+          "location": "## Aliases mahalla; makhalla; neighborhood; hospitality; mehmondo'stli…"
+        },
+        {
+          "rank": 4,
+          "score": 0.5198,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 5,
+          "score": 0.5192,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        }
+      ]
+    },
+    {
+      "id": "unrelated-worldcup-en",
+      "query": "Who won the 2018 FIFA World Cup?",
+      "language": "en",
+      "answerable": false,
+      "tags": [
+        "unrelated"
+      ],
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "topScore": 0.5234,
+      "relevantChunksInIndex": 0,
+      "precisionAtChatK": null,
+      "contextWordsAtChatK": 670,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5234,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-0",
+          "location": "# History of the territory of present-day Uzbekistan ## Ancient and ea…"
+        },
+        {
+          "rank": 2,
+          "score": 0.5225,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-9",
+          "location": "# Historic cities and architecture ## Samarkand Samarkand is one of Ce…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5207,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-2",
+          "location": "# Timurid era ## Amir Temur Amir Temur, known in many Western sources …"
+        },
+        {
+          "rank": 4,
+          "score": 0.5193,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "legacy-10",
+          "location": "## Aliases Samarkand; Samarqand; Afrasiab; Afrosiyob; Registan; Bukhar…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5179,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        }
+      ]
+    },
+    {
+      "id": "unrelated-weather-uz",
+      "query": "Ertaga Toshkentda ob-havo qanday bo'ladi?",
+      "language": "uz",
+      "answerable": false,
+      "tags": [
+        "unrelated"
+      ],
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "topScore": 0.6044,
+      "relevantChunksInIndex": 0,
+      "precisionAtChatK": null,
+      "contextWordsAtChatK": 714,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6044,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        },
+        {
+          "rank": 2,
+          "score": 0.5922,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-17",
+          "location": "# Modern history and independence ## Uzbek SSR The Uzbek Soviet Social…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5921,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 4,
+          "score": 0.5904,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5879,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "legacy-1",
+          "location": "## Later states From the early 16th century, Shaybanid rulers establis…"
+        }
+      ]
+    },
+    {
+      "id": "unrelated-python-uz",
+      "query": "Python tilida ro'yxatni qanday saralash mumkin?",
+      "language": "uz",
+      "answerable": false,
+      "tags": [
+        "unrelated"
+      ],
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "topScore": 0.5675,
+      "relevantChunksInIndex": 0,
+      "precisionAtChatK": null,
+      "contextWordsAtChatK": 294,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5675,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 2,
+          "score": 0.5564,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5535,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        },
+        {
+          "rank": 4,
+          "score": 0.5471,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5439,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        }
+      ]
+    },
+    {
+      "id": "unrelated-smartphone-uz",
+      "query": "Qaysi smartfonni sotib olgan ma'qul?",
+      "language": "uz",
+      "answerable": false,
+      "tags": [
+        "unrelated"
+      ],
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "topScore": 0.6078,
+      "relevantChunksInIndex": 0,
+      "precisionAtChatK": null,
+      "contextWordsAtChatK": 514,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6078,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-19",
+          "location": "# Qiziqarli faktlar O'zbekiston dunyodagi ikkita \"ikki karra dengizga …"
+        },
+        {
+          "rank": 2,
+          "score": 0.6002,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "legacy-21",
+          "location": "# Temuriylar davri Amir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja I…"
+        },
+        {
+          "rank": 3,
+          "score": 0.5925,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "legacy-20",
+          "location": "Toshkent metropoliteni 1977-yilda ochilgan bo'lib, Markaziy Osiyodagi …"
+        },
+        {
+          "rank": 4,
+          "score": 0.5799,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "legacy-18",
+          "location": "## Sources - https://2009-2017.state.gov/outofdate/bgn/uzbekistan/3124…"
+        },
+        {
+          "rank": 5,
+          "score": 0.5639,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "legacy-3",
+          "location": "## Sources - https://whc.unesco.org/en/list/603/ - https://whc.unesco.…"
+        }
+      ]
+    }
+  ]
+}

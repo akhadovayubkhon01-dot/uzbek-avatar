@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "description": "Deterministic helper checks for the grounding evaluation of rag-questions-hard.json (dev split). answerKeys: for answerable cases, every group must have at least one substring hit in the answer (case/apostrophe-normalised). detailKeys: for in-domain-unsupported cases, substrings that would indicate the missing detail is being stated. Both are coarse signals for manual review, not ground truth; null = no reliable string check, rely on the judge and manual review.",
+  "answerKeys": {
+    "para-ulugbek-death-en": [
+      [
+        "1449",
+        "conspir",
+        "plot",
+        "fitna",
+        "assassin",
+        "murder",
+        "killed",
+        "o'ldiril",
+        "execut",
+        "beheaded"
+      ]
+    ],
+    "para-uzbek-gender-en": null,
+    "para-word-order-uz": null,
+    "para-bakhshi-skills-en": [
+      [
+        "memory",
+        "xotira",
+        "improvis",
+        "badiha"
+      ]
+    ],
+    "para-soviet-control-en": [
+      [
+        "politic",
+        "siyos",
+        "religio",
+        "din",
+        "culture",
+        "madaniy",
+        "agricultur",
+        "qishloq",
+        "publish",
+        "nashr"
+      ]
+    ],
+    "xl-sextant-en": [
+      [
+        "sextant",
+        "sekstant"
+      ]
+    ],
+    "xl-liechtenstein-en": [
+      [
+        "liechtenstein",
+        "lixtenshteyn"
+      ]
+    ],
+    "xl-ottoman-sultan-en": [
+      [
+        "bayezid",
+        "bayazid",
+        "boyazid",
+        "beyazit",
+        "bajazet"
+      ]
+    ],
+    "sp-ulugbek-okina-uz": [
+      [
+        "1394"
+      ]
+    ],
+    "sp-ulugbek-curly-uz": [
+      [
+        "1409"
+      ]
+    ],
+    "sp-navoi-uz": [
+      [
+        "herat",
+        "hirot"
+      ]
+    ],
+    "sp-biruni-uz": [
+      [
+        "astronom",
+        "matemat",
+        "geograf",
+        "xronolog",
+        "mineralog",
+        "chronolog"
+      ]
+    ],
+    "sp-xorazmiy-uz": [
+      [
+        "bag'dod",
+        "bagdod",
+        "baghdad"
+      ]
+    ],
+    "sp-tamerlan-uz": [
+      [
+        "o'tror",
+        "otrar",
+        "utror"
+      ]
+    ],
+    "nd-cholpon-en": [
+      [
+        "cho'lpon",
+        "cholpon",
+        "chulpan"
+      ]
+    ],
+    "nd-fitrat-languages-en": [
+      [
+        "fitrat"
+      ]
+    ],
+    "nd-behbudi-kasb-uz": [
+      [
+        "pedagog",
+        "o'qituvchi",
+        "ma'rifatparvar",
+        "jurnalist",
+        "dramaturg",
+        "publitsist",
+        "muallim",
+        "educator",
+        "journalist",
+        "playwright",
+        "noshir"
+      ]
+    ],
+    "nd-bibikhanum-en": [
+      [
+        "bibi"
+      ]
+    ],
+    "nd-samanid-centre-en": [
+      [
+        "bukhara",
+        "buxoro"
+      ]
+    ],
+    "nd-timurid-astronomer-en": [
+      [
+        "ulugh",
+        "ulug'bek",
+        "ulugbek",
+        "ulug beg"
+      ]
+    ],
+    "ne-rishtan-en": [
+      [
+        "rishtan",
+        "rishton"
+      ]
+    ],
+    "ne-dowry-en": [
+      [
+        "suzani",
+        "so'zana",
+        "suzana"
+      ]
+    ],
+    "ne-gold-desert-en": [
+      [
+        "kyzylkum",
+        "qizilqum",
+        "kizilkum",
+        "kyzyl kum",
+        "qizil qum"
+      ]
+    ],
+    "ne-ships-uz": [
+      [
+        "mo'ynoq",
+        "muynak",
+        "moynaq",
+        "mo'ynaq"
+      ]
+    ],
+    "ne-samani-uz": [
+      [
+        "buxoro",
+        "bukhara"
+      ]
+    ],
+    "ex-bakhshi-year-en": [
+      [
+        "2021"
+      ]
+    ],
+    "ex-lazgi-year-uz": [
+      [
+        "2019"
+      ]
+    ],
+    "ex-teshiktash-age-uz": [
+      [
+        "70 ming",
+        "70 000",
+        "70,000",
+        "70000",
+        "70 000"
+      ]
+    ],
+    "ex-shahrisabz-unesco-uz": [
+      [
+        "2000"
+      ]
+    ],
+    "ex-sherdor-years-en": [
+      [
+        "1619"
+      ],
+      [
+        "1636"
+      ]
+    ]
+  },
+  "detailKeys": {
+    "neg-navoiy-death-uz": [
+      "1501"
+    ],
+    "neg-babur-death-en": [
+      "1530",
+      "agra"
+    ],
+    "neg-ibnsina-death-uz": [
+      "hamadan",
+      "hamadon",
+      "1037"
+    ],
+    "neg-first-president-en": [
+      "karimov"
+    ],
+    "neg-kalon-minaret-en": [
+      "metre",
+      "meter",
+      "metr"
+    ],
+    "neg-shaybanid-khan-en": [
+      "shaybani khan",
+      "muhammad shaybani",
+      "shaybanikhan",
+      "shayboniy",
+      "shaybani-khan"
+    ],
+    "neg-kokand-founder-uz": [
+      "shohruh",
+      "shahrukh",
+      "shoxrux",
+      "shohrux",
+      "shohruxbiy",
+      "shohrux biy"
+    ],
+    "neg-temur-children-uz": [
+      "jahongir",
+      "umarshayx",
+      "umar shayx",
+      "mironshoh",
+      "shohrux",
+      "shahrukh",
+      "miranshah"
+    ],
+    "neg-observatory-ruin-uz": [
+      "1908",
+      "vyatkin",
+      "vyatkin"
+    ],
+    "neg-fitrat-novel-uz": [
+      "qiyomat",
+      "abulfayz",
+      "hind ixtilol",
+      "shaytonning",
+      "munozara"
+    ],
+    "neg-bibixonim-person-uz": [
+      "xotin",
+      "rafiqa",
+      "malika",
+      "mulkxonim",
+      "wife",
+      "beka",
+      "turmush"
+    ],
+    "neg-kopkari-uz": [
+      "echki",
+      "uloq",
+      "chavandoz"
+    ],
+    "neg-shahizinda-date-en": null,
+    "neg-madrasa-architect-uz": null,
+    "neg-metro-architect-en": null,
+    "neg-palov-ratio-en": null
+  }
+}

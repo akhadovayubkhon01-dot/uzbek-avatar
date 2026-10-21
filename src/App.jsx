@@ -25,6 +25,25 @@ import {
 } from './lib/history'
 
 const LOCAL_NAME_KEY = 'teacherName'
+const LANGUAGE_KEY = 'language'
+
+// The language the visitor last chose, so a reload doesn't reset it.
+function readLanguage() {
+  try {
+    const saved = localStorage.getItem(LANGUAGE_KEY)
+    return saved === 'uz' || saved === 'en' ? saved : 'en'
+  } catch {
+    return 'en'
+  }
+}
+
+function writeLanguage(lang) {
+  try {
+    localStorage.setItem(LANGUAGE_KEY, lang)
+  } catch {
+    // Not persisted; the choice still applies for this visit.
+  }
+}
 
 // Visitors who aren't signed in keep their chosen name in this browser only.
 // Storage can be blocked (private windows), so failures fall back to the default.
@@ -52,7 +71,7 @@ function welcomeMessage(language, name) {
 }
 
 export default function App() {
-  const [language, setLanguage] = useState('en')
+  const [language, setLanguage] = useState(readLanguage)
   const [voiceGender, setVoiceGender] = useState('male')
   const [localName, setLocalName] = useState(readLocalName)
   const [namePrompt, setNamePrompt] = useState(null)
@@ -255,6 +274,7 @@ export default function App() {
   // male Uzbek model is added (see speech.js).
   const handleLanguageChange = (lang) => {
     setLanguage(lang)
+    writeLanguage(lang)
   }
 
   const handleTopic = (topic) => {

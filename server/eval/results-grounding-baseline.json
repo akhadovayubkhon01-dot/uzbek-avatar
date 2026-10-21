@@ -1,0 +1,2158 @@
+{
+  "label": "baseline",
+  "grounding": "baseline",
+  "evaluatedAt": "2026-10-20T19:06:23.578Z",
+  "questionsFile": "rag-questions-hard.json",
+  "questionsSplit": "dev",
+  "questionsHash": "d103719c61cb81aac8e1e2ca3cbc381c0f4ab653a11c5d3e8374663c2510e879",
+  "conversationLanguage": "same as the question language",
+  "teacherName": "Asilbek",
+  "chatModel": "gemini-3.5-flash",
+  "complete": false,
+  "systemPromptSample": {
+    "caseId": "para-ulugbek-death-en",
+    "language": "en",
+    "text": "You are \"Asilbek\", a warm and knowledgeable AI avatar teacher specializing in Uzbek history, culture, traditions, and modern life.\n\nRules:\n- Reply in Uzbek when the user writes in Uzbek; reply in English when they write in English.\n- Explain complex topics simply and engagingly, like a friendly museum guide.\n- Be accurate with historical facts; note uncertainty when sources disagree.\n- You know deeply about: the Silk Road, Samarkand, Bukhara, Khiva, the Timurid Renaissance, Amir Timur, Alisher Navoi, Ulug'bek's observatory, the 1920s alphabet reforms, Novruz, plov and non, suzani textiles, and independent Uzbekistan since 1991.\n- Adapt answer length to the question. For factual questions asking for a date, name, or number (e.g. \"When did X die?\"), the ENTIRE answer must be 1–2 sentences — no greeting, no extra paragraphs, no follow-up question at the end.\n- Example. Q: \"Alisher Navoiy qachon vafot etgan?\" → A: \"Alisher Navoiy 1501-yil 3-yanvarda Hirot shahrida vafot etgan.\" Nothing else is added.\n- For open-ended questions, keep the answer brief — one paragraph, at most 3–5 sentences. If the user asks for more detail, then continue.\n- Greetings like \"Assalomu alaykum\" may appear only in the very first message of a conversation — never in any later reply.\n- Never spread misinformation or political propaganda.\n\nQuyidagi manbalar savolga aloqador bo'lsa, ularga asoslanib javob ber. Agar manbalar savolni qamrab olmasa, umumiy bilimlaringdan foydalanib javob ber, lekin bu ma'lumot maxsus manbalardan emasligini qisqacha aytib o't.\n\n[1] Manba: 02_timurid_era.md\nTimurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan.\n\n[2] Manba: temuriylar.md\nTemuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi\n\nMirzo Ulug'bek 1449-yilda fitna natijasida o'ldirilgan. Uning ilmiy merosi jahon astronomiyasi tarixida muhim o'rin tutadi.\n\n[3] Manba: 02_timurid_era.md\nTimurid era > Amir Temur\n\nAmir Temur, known in many Western sources as Timur or Tamerlane, was born in 1336 near Kesh, the area of modern Shahrisabz. He rose to power in Transoxiana and established Samarkand as the main capital of his empire.\n\nTimur's empire stretched across large parts of Central Asia, Iran, Afghanistan, the Caucasus and neighbouring regions. His campaigns were often destructive, while his court also concentrated craftsmen, scholars and architects in Samarkand.\n\nTimur died in 1405. The Gur-e Amir mausoleum in Samarkand became his burial place and one of the best-known monuments associated with the dynasty.\n\n[4] Manba: 03_scholars_writers_historians.md\nScholars, writers and historians connected to the region > Cho'lpon\n\nAbdulhamid Cho'lpon was an Uzbek poet, writer, translator and intellectual active in the early Soviet period.\n\nHe was also killed during the Stalinist purges in 1938."
+  },
+  "cases": [
+    {
+      "id": "para-ulugbek-death-en",
+      "query": "How did the life of Timur's scholarly grandson come to an end?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.713,
+          "relevant": false,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        },
+        {
+          "rank": 2,
+          "id": "13b3442f2e27b38a",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Vafoti va ilmiy merosi"
+          ],
+          "score": 0.6862,
+          "relevant": true,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi\n\nMirzo Ulug'bek 1449-yilda fitna natijasida o'ldirilgan. Uning ilmiy merosi jahon astronomiyasi tarixida muhim o'rin tutadi."
+        },
+        {
+          "rank": 3,
+          "id": "37edb5d54b6f10b5",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Amir Temur"
+          ],
+          "score": 0.6817,
+          "relevant": false,
+          "text": "Timurid era > Amir Temur\n\nAmir Temur, known in many Western sources as Timur or Tamerlane, was born in 1336 near Kesh, the area of modern Shahrisabz. He rose to power in Transoxiana and established Samarkand as the main capital of his empire.\n\nTimur's empire stretched across large parts of Central Asia, Iran, Afghanistan, the Caucasus and neighbouring regions. His campaigns were often destructive, while his court also concentrated craftsmen, scholars and architects in Samarkand.\n\nTimur died in 1405. The Gur-e Amir mausoleum in Samarkand became his burial place and one of the best-known monuments associated with the dynasty."
+        },
+        {
+          "rank": 4,
+          "id": "d8a3819b452fa77c",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Cho'lpon"
+          ],
+          "score": 0.6754,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region > Cho'lpon\n\nAbdulhamid Cho'lpon was an Uzbek poet, writer, translator and intellectual active in the early Soviet period.\n\nHe was also killed during the Stalinist purges in 1938."
+        }
+      ],
+      "answer": "Timur's scholarly grandson, Mirzo Ulugh Beg, was killed in 1449 as a result of a political plot involving his own son.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1776,
+      "usage": {
+        "promptTokenCount": 884,
+        "candidatesTokenCount": 33,
+        "totalTokenCount": 917,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 884
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3141,
+      "rules": {
+        "words": 21,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "para-uzbek-gender-en",
+      "query": "Do Uzbek nouns change form for masculine and feminine?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "1538870dfd12737f",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Grammar"
+          ],
+          "score": 0.7293,
+          "relevant": true,
+          "text": "Uzbek language > Grammar\n\nUzbek is generally agglutinative: grammatical information is often added through sequences of suffixes.\n\nA common basic word order is subject-object-verb, although real Uzbek sentences can vary for emphasis and style.\n\nUzbek does not have grammatical gender comparable to languages such as Russian, French or German."
+        },
+        {
+          "rank": 2,
+          "id": "8f00afa53559b0fe",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Vocabulary"
+          ],
+          "score": 0.6799,
+          "relevant": false,
+          "text": "Uzbek language > Vocabulary\n\nUzbek has a Turkic grammatical core but contains many loanwords from Persian, Arabic, Russian and, more recently, international English-based vocabulary."
+        },
+        {
+          "rank": 3,
+          "id": "cf9e99d47036fa8a",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Language family"
+          ],
+          "score": 0.6489,
+          "relevant": false,
+          "text": "Uzbek language > Language family\n\nUzbek is a Turkic language. It belongs to the Karluk branch of the Turkic language family and is closely related historically and linguistically to Uyghur."
+        },
+        {
+          "rank": 4,
+          "id": "c39c0d25b381a0ff",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Modern Latin alphabet features"
+          ],
+          "score": 0.6477,
+          "relevant": false,
+          "text": "Uzbek language > Modern Latin alphabet features\n\nModern Uzbek Latin writing includes distinctive forms such as Oʻ/oʻ and Gʻ/gʻ, as well as the combinations Sh/sh, Ch/ch and Ng/ng."
+        }
+      ],
+      "answer": "No, Uzbek nouns do not change form for masculine and feminine because the language does not have grammatical gender.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1048,
+      "usage": {
+        "promptTokenCount": 701,
+        "candidatesTokenCount": 21,
+        "totalTokenCount": 722,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 701
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2578,
+      "rules": {
+        "words": 19,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": null,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "para-word-order-uz",
+      "query": "O'zbek gapida ega, to'ldiruvchi va kesim odatda qaysi tartibda keladi?",
+      "language": "uz",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "1538870dfd12737f",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Grammar"
+          ],
+          "score": 0.7006,
+          "relevant": true,
+          "text": "Uzbek language > Grammar\n\nUzbek is generally agglutinative: grammatical information is often added through sequences of suffixes.\n\nA common basic word order is subject-object-verb, although real Uzbek sentences can vary for emphasis and style.\n\nUzbek does not have grammatical gender comparable to languages such as Russian, French or German."
+        },
+        {
+          "rank": 2,
+          "id": "8f00afa53559b0fe",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Vocabulary"
+          ],
+          "score": 0.63,
+          "relevant": false,
+          "text": "Uzbek language > Vocabulary\n\nUzbek has a Turkic grammatical core but contains many loanwords from Persian, Arabic, Russian and, more recently, international English-based vocabulary."
+        },
+        {
+          "rank": 3,
+          "id": "d92bb85284c2c082",
+          "file": "qiziqarli-faktlar.md",
+          "headingPath": [
+            "Qiziqarli faktlar",
+            "O'zbek tili"
+          ],
+          "score": 0.6241,
+          "relevant": false,
+          "text": "Qiziqarli faktlar > O'zbek tili\n\nO'zbek tili turkiy tillar oilasiga mansub. O'zbekiston mustaqillikdan keyin lotin alifbosiga o'tish jarayonini boshlagan."
+        },
+        {
+          "rank": 4,
+          "id": "c39c0d25b381a0ff",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Modern Latin alphabet features"
+          ],
+          "score": 0.623,
+          "relevant": false,
+          "text": "Uzbek language > Modern Latin alphabet features\n\nModern Uzbek Latin writing includes distinctive forms such as Oʻ/oʻ and Gʻ/gʻ, as well as the combinations Sh/sh, Ch/ch and Ng/ng."
+        }
+      ],
+      "answer": "O'zbek tilida gap bo'laklarining odatiy tartibi ega – to'ldiruvchi – kesim (Subject-Object-Verb) ketma-ketligida bo'ladi. Biroq, uslub va ma'noni ta'kidlashga qarab gapdagi bu tartib o'zgarishi ham mumkin.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 2587,
+      "usage": {
+        "promptTokenCount": 941,
+        "candidatesTokenCount": 76,
+        "totalTokenCount": 1017,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 941
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2630,
+      "rules": {
+        "words": 26,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": null,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "para-bakhshi-skills-en",
+      "query": "What abilities does a Bakhshi storyteller rely on most?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "f509b22c37bfae86",
+          "file": "07_music_dance_oral_traditions.md",
+          "headingPath": [
+            "Music, dance and oral traditions",
+            "Bakhshi art"
+          ],
+          "score": 0.7667,
+          "relevant": true,
+          "text": "Music, dance and oral traditions > Bakhshi art\n\nBakhshi are epic singers and storytellers who perform narrative poetry, often with musical accompaniment. The art depends heavily on memory, improvisation, oral transmission and apprenticeship.\n\nBakhshi art from Uzbekistan was inscribed on UNESCO's Representative List in 2021."
+        },
+        {
+          "rank": 2,
+          "id": "1620154f64177ddb",
+          "file": "07_music_dance_oral_traditions.md",
+          "headingPath": [
+            "Music, dance and oral traditions",
+            "Askiya"
+          ],
+          "score": 0.6424,
+          "relevant": false,
+          "text": "Music, dance and oral traditions > Askiya\n\nAskiya is an Uzbek verbal art based on witty dialogue and improvisation. Two or more performers exchange humorous remarks around a theme.\n\nSuccessful performers need strong command of language, quick reasoning, observation and improvisation. UNESCO inscribed Askiya in 2014."
+        },
+        {
+          "rank": 3,
+          "id": "bcbdcb78b14fdd52",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Narshakhi"
+          ],
+          "score": 0.6146,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region > Narshakhi\n\nMuhammad ibn Jafar al-Narshakhi was a 10th-century historian from the Bukhara region. He wrote an early history of Bukhara in Arabic.\n\nThe original Arabic text has not survived, but the work became famous through a Persian translation and later revisions."
+        },
+        {
+          "rank": 4,
+          "id": "e9a491bb480d3638",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Imam al-Bukhari"
+          ],
+          "score": 0.608,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region > Imam al-Bukhari\n\nMuhammad ibn Ismail al-Bukhari was born in Bukhara in the 9th century. He became one of the most famous scholars of hadith in Sunni Islam.\n\nHis collection commonly known as Sahih al-Bukhari is one of the most influential hadith compilations in Sunni scholarship."
+        }
+      ],
+      "answer": "A Bakhshi relies primarily on a strong memory, vocal and musical talent (often playing the *dombra*), and the ability to improvise while sharing complex epic stories. According to historical traditions, they also depend heavily on long-standing apprenticeships and oral transmission to master their craft.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 2564,
+      "usage": {
+        "promptTokenCount": 815,
+        "candidatesTokenCount": 59,
+        "totalTokenCount": 874,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 815
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3043,
+      "rules": {
+        "words": 44,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "para-soviet-control-en",
+      "query": "Apart from schooling and factories, which areas of life did the Soviet state keep under tight control?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "a337e5f2e4540222",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Soviet modernization"
+          ],
+          "score": 0.7365,
+          "relevant": true,
+          "text": "Modern history and independence > Soviet modernization\n\nSoviet rule expanded mass education, industrialization, transportation and urban development. It also introduced strong state control over politics, religion, culture, agriculture and publishing."
+        },
+        {
+          "rank": 2,
+          "id": "faf858d0227731b3",
+          "file": "01_history_overview.md",
+          "headingPath": [
+            "History of the territory of present-day Uzbekistan",
+            "Soviet period"
+          ],
+          "score": 0.6278,
+          "relevant": false,
+          "text": "History of the territory of present-day Uzbekistan > Soviet period\n\nThe Uzbek Soviet Socialist Republic was created in 1924. Soviet rule transformed education, industry, agriculture, language policy and urban life. Cotton production expanded enormously, while large-scale irrigation contributed to the later environmental crisis of the Aral Sea."
+        },
+        {
+          "rank": 3,
+          "id": "6cb8b7447027780d",
+          "file": "04_jadids_and_reformers.md",
+          "headingPath": [
+            "Jadidism and modern reformers",
+            "Repression"
+          ],
+          "score": 0.6269,
+          "relevant": false,
+          "text": "Jadidism and modern reformers > Repression\n\nMany major Jadid intellectuals were later accused of nationalism or anti-Soviet activity. A large part of the generation was killed or silenced during the Stalinist purges of the 1930s."
+        },
+        {
+          "rank": 4,
+          "id": "d9204d5545db8e86",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Stalinist repression"
+          ],
+          "score": 0.6245,
+          "relevant": false,
+          "text": "Modern history and independence > Stalinist repression\n\nDuring the 1930s, many Uzbek and Central Asian intellectuals, including prominent writers and Jadids, were arrested, imprisoned or executed during Stalinist purges."
+        }
+      ],
+      "answer": "Apart from education and industry, the Soviet state maintained strict authority over politics, religion, culture, agriculture, and publishing. Additionally, the government tightly regulated language policy and directed large-scale agricultural projects, such as the massive expansion of cotton production.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 5929,
+      "usage": {
+        "promptTokenCount": 726,
+        "candidatesTokenCount": 49,
+        "totalTokenCount": 775,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 726
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2773,
+      "rules": {
+        "words": 38,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "xl-sextant-en",
+      "query": "What was the main instrument of the Samarkand observatory?",
+      "language": "en",
+      "category": "cross-language",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.7124,
+          "relevant": false,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        },
+        {
+          "rank": 2,
+          "id": "479a21971ace1cb8",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Samarkand under the Timurids"
+          ],
+          "score": 0.7123,
+          "relevant": false,
+          "text": "Timurid era > Samarkand under the Timurids\n\nUNESCO identifies the 14th and 15th centuries as Samarkand's most significant period of development. Major monuments include Bibi-Khanum Mosque, Shah-i-Zinda, Gur-e Amir, Ulugh Beg's madrasa and Ulugh Beg's observatory."
+        },
+        {
+          "rank": 3,
+          "id": "8d4553b97942e0f7",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Ulug'bek rasadxonasi"
+          ],
+          "score": 0.7004,
+          "relevant": true,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi\n\nMirzo Ulug'bek 1428-1429 yillarda Samarqandda mashhur rasadxona qurdirgan. Rasadxonaning asosiy asbobi ulkan sekstant bo'lgan. Ulug'bek rasadxonasida olib borilgan kuzatishlar asosida \"Ziji jadidi Ko'ragoniy\" asari yaratilgan bo'lib, unda 1018 yulduzning aniq jadvali keltirilgan."
+        },
+        {
+          "rank": 4,
+          "id": "cebcdb042f65c5b5",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Samarkand"
+          ],
+          "score": 0.6991,
+          "relevant": false,
+          "text": "Historic cities and architecture > Samarkand\n\nSamarkand is one of Central Asia's oldest major cities. UNESCO describes it as a crossroads and melting pot of world cultures.\n\nThe ancient settlement of Afrasiab forms an archaeological part of the city's history. Major monuments include Registan Square, Bibi-Khanum Mosque, Shah-i-Zinda, Gur-e Amir and Ulugh Beg's Observatory."
+        }
+      ],
+      "answer": "The main instrument of Mirzo Ulugh Beg's observatory in Samarkand was a giant meridian arc sextant. It was used to perform highly precise astronomical observations, which helped create his famous star catalogue, \"Zij-i Sultani\".",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 2192,
+      "usage": {
+        "promptTokenCount": 893,
+        "candidatesTokenCount": 50,
+        "totalTokenCount": 943,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 893
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3060,
+      "rules": {
+        "words": 34,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "xl-liechtenstein-en",
+      "query": "Which other country, like Uzbekistan, is doubly landlocked?",
+      "language": "en",
+      "category": "cross-language",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "233341dfaccc5996",
+          "file": "qiziqarli-faktlar.md",
+          "headingPath": [
+            "Qiziqarli faktlar",
+            "Ikki karra dengizga chiqish yo'li yo'q davlat"
+          ],
+          "score": 0.7161,
+          "relevant": true,
+          "text": "Qiziqarli faktlar > Ikki karra dengizga chiqish yo'li yo'q davlat\n\nO'zbekiston dunyodagi ikkita \"ikki karra dengizga chiqish yo'li yo'q\" (double-landlocked) davlatdan biri hisoblanadi. Bunday davlatga yetib borish uchun kamida ikkita davlat chegarasidan o'tish kerak. Ikkinchi bunday davlat — Lixtenshteyn."
+        },
+        {
+          "rank": 2,
+          "id": "08844206b0a2969c",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Cotton and the Aral Sea"
+          ],
+          "score": 0.612,
+          "relevant": false,
+          "text": "Modern history and independence > Cotton and the Aral Sea\n\nUzbekistan became one of the Soviet Union's major cotton-producing regions. Extensive irrigation projects diverted water from the Amu Darya and Syr Darya systems.\n\nThe reduction of water reaching the Aral Sea contributed to one of the world's major environmental disasters."
+        },
+        {
+          "rank": 3,
+          "id": "3e1ff4fbfe1f7421",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Uzbek SSR"
+          ],
+          "score": 0.6099,
+          "relevant": false,
+          "text": "Modern history and independence > Uzbek SSR\n\nThe Uzbek Soviet Socialist Republic was formed in 1924 during the Soviet national-territorial reorganization of Central Asia.\n\nSamarkand served as the republic's capital in the 1920s before the capital was moved to Tashkent in 1930."
+        },
+        {
+          "rank": 4,
+          "id": "faf858d0227731b3",
+          "file": "01_history_overview.md",
+          "headingPath": [
+            "History of the territory of present-day Uzbekistan",
+            "Soviet period"
+          ],
+          "score": 0.6095,
+          "relevant": false,
+          "text": "History of the territory of present-day Uzbekistan > Soviet period\n\nThe Uzbek Soviet Socialist Republic was created in 1924. Soviet rule transformed education, industry, agriculture, language policy and urban life. Cotton production expanded enormously, while large-scale irrigation contributed to the later environmental crisis of the Aral Sea."
+        }
+      ],
+      "answer": "Liechtenstein is the only other doubly landlocked country in the world alongside Uzbekistan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1906,
+      "usage": {
+        "promptTokenCount": 823,
+        "candidatesTokenCount": 16,
+        "totalTokenCount": 839,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 823
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2982,
+      "rules": {
+        "words": 13,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "xl-ottoman-sultan-en",
+      "query": "Which Ottoman sultan did Timur defeat in 1402?",
+      "language": "en",
+      "category": "cross-language",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-ulugbek-okina-uz",
+      "query": "Mirzo Ulugʻbek qaysi yili tugʻilgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "16c6f9285721e521",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Tug'ilishi va Samarqand hokimligi"
+          ],
+          "score": 0.748,
+          "relevant": true,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi\n\nMirzo Ulug'bek 1394-yilda tug'ilgan bo'lib, Amir Temurning nabirasi edi. U 1409-yildan Samarqand hokimi bo'lgan va olim hukmdor sifatida tarixda qolgan."
+        },
+        {
+          "rank": 2,
+          "id": "13b3442f2e27b38a",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Vafoti va ilmiy merosi"
+          ],
+          "score": 0.7059,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi\n\nMirzo Ulug'bek 1449-yilda fitna natijasida o'ldirilgan. Uning ilmiy merosi jahon astronomiyasi tarixida muhim o'rin tutadi."
+        },
+        {
+          "rank": 3,
+          "id": "8d4553b97942e0f7",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Ulug'bek rasadxonasi"
+          ],
+          "score": 0.7003,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi\n\nMirzo Ulug'bek 1428-1429 yillarda Samarqandda mashhur rasadxona qurdirgan. Rasadxonaning asosiy asbobi ulkan sekstant bo'lgan. Ulug'bek rasadxonasida olib borilgan kuzatishlar asosida \"Ziji jadidi Ko'ragoniy\" asari yaratilgan bo'lib, unda 1018 yulduzning aniq jadvali keltirilgan."
+        },
+        {
+          "rank": 4,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.6682,
+          "relevant": false,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        }
+      ],
+      "answer": "Mirzo Ulug'bek 1394-yilda tug'ilgan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 3797,
+      "usage": {
+        "promptTokenCount": 1076,
+        "candidatesTokenCount": 17,
+        "totalTokenCount": 1093,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1076
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2899,
+      "rules": {
+        "words": 4,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "sp-ulugbek-curly-uz",
+      "query": "Ulug‘bek qaysi yildan Samarqandni boshqargan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "16c6f9285721e521",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Tug'ilishi va Samarqand hokimligi"
+          ],
+          "score": 0.7325,
+          "relevant": true,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi\n\nMirzo Ulug'bek 1394-yilda tug'ilgan bo'lib, Amir Temurning nabirasi edi. U 1409-yildan Samarqand hokimi bo'lgan va olim hukmdor sifatida tarixda qolgan."
+        },
+        {
+          "rank": 2,
+          "id": "8d4553b97942e0f7",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Ulug'bek rasadxonasi"
+          ],
+          "score": 0.7015,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi\n\nMirzo Ulug'bek 1428-1429 yillarda Samarqandda mashhur rasadxona qurdirgan. Rasadxonaning asosiy asbobi ulkan sekstant bo'lgan. Ulug'bek rasadxonasida olib borilgan kuzatishlar asosida \"Ziji jadidi Ko'ragoniy\" asari yaratilgan bo'lib, unda 1018 yulduzning aniq jadvali keltirilgan."
+        },
+        {
+          "rank": 3,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.6995,
+          "relevant": false,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        },
+        {
+          "rank": 4,
+          "id": "aa482fed6c49a713",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Amir Temur",
+            "Tug'ilishi va saltanati"
+          ],
+          "score": 0.6752,
+          "relevant": false,
+          "text": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati\n\nAmir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja Ilg'or qishlog'ida tug'ilgan. U 1370-yilda Movarounnahr hukmdori bo'ldi va Samarqandni o'z saltanatining poytaxti qildi. Amir Temur buyuk saltanat asoschisi bo'lib, uning davlati Markaziy Osiyodan Yaqin Sharqgacha cho'zilgan."
+        }
+      ],
+      "answer": "Mirzo Ulug'bek 1409-yildan e'tiboran Samarqand hokimi sifatida Movarounnahrni boshqargan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1485,
+      "usage": {
+        "promptTokenCount": 1142,
+        "candidatesTokenCount": 36,
+        "totalTokenCount": 1178,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1142
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3048,
+      "rules": {
+        "words": 9,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "sp-navoi-uz",
+      "query": "Navoi qaysi shaharda tug'ilgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "bba6e5a63d5a4a03",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Alisher Navoi"
+          ],
+          "score": 0.7064,
+          "relevant": true,
+          "text": "Scholars, writers and historians connected to the region > Alisher Navoi\n\nAlisher Navoi was born in Herat in 1441 and became one of the most influential literary figures of the Timurid world. He wrote extensively in Chagatai Turkic and Persian.\n\nNavoi's prestige helped establish Chagatai as a major literary language. Modern Uzbek literary culture regards him as a foundational classical author."
+        },
+        {
+          "rank": 2,
+          "id": "aa482fed6c49a713",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Amir Temur",
+            "Tug'ilishi va saltanati"
+          ],
+          "score": 0.6597,
+          "relevant": false,
+          "text": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati\n\nAmir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja Ilg'or qishlog'ida tug'ilgan. U 1370-yilda Movarounnahr hukmdori bo'ldi va Samarqandni o'z saltanatining poytaxti qildi. Amir Temur buyuk saltanat asoschisi bo'lib, uning davlati Markaziy Osiyodan Yaqin Sharqgacha cho'zilgan."
+        },
+        {
+          "rank": 3,
+          "id": "16c6f9285721e521",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Tug'ilishi va Samarqand hokimligi"
+          ],
+          "score": 0.6419,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi\n\nMirzo Ulug'bek 1394-yilda tug'ilgan bo'lib, Amir Temurning nabirasi edi. U 1409-yildan Samarqand hokimi bo'lgan va olim hukmdor sifatida tarixda qolgan."
+        },
+        {
+          "rank": 4,
+          "id": "fba034aaad835074",
+          "file": "08_uzbek_language.md",
+          "headingPath": [
+            "Uzbek language",
+            "Historical literary background"
+          ],
+          "score": 0.6376,
+          "relevant": false,
+          "text": "Uzbek language > Historical literary background\n\nFor centuries, Chagatai Turkic served as a major written literary language of Central Asia. Writers such as Alisher Navoi and Babur used Chagatai.\n\nModern Uzbek literature developed partly from this Chagatai literary heritage."
+        }
+      ],
+      "answer": "Alisher Navoiy 1441-yilda Hirot shahrida tug'ilgan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1453,
+      "usage": {
+        "promptTokenCount": 1058,
+        "candidatesTokenCount": 21,
+        "totalTokenCount": 1079,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1058
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2998,
+      "rules": {
+        "words": 6,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "sp-biruni-uz",
+      "query": "Biruni qaysi fanlar haqida yozgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "184147850d4c36fd",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Abu Rayhan al-Biruni"
+          ],
+          "score": 0.6985,
+          "relevant": true,
+          "text": "Scholars, writers and historians connected to the region > Abu Rayhan al-Biruni\n\nAbu Rayhan al-Biruni was born in 973 in the Khwarazm region. He became one of the great polymaths of the medieval Islamic world.\n\nHe wrote on astronomy, mathematics, geography, chronology, mineralogy and the cultures of India."
+        },
+        {
+          "rank": 2,
+          "id": "4ec8f758daac056b",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region"
+          ],
+          "score": 0.6523,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region\n\nImportant: many people below lived centuries before modern Uzbek national identity developed. It is more accurate to describe them by their city, dynasty, language or region than to call all of them \"Uzbek.\""
+        },
+        {
+          "rank": 3,
+          "id": "ac60ba964460d47f",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Ibn Sina / Avicenna"
+          ],
+          "score": 0.6221,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region > Ibn Sina / Avicenna\n\nIbn Sina, known in Latin Europe as Avicenna, was born in 980 near Bukhara. He became a philosopher, physician and scholar.\n\nHis \"Canon of Medicine\" became one of the most influential medical texts of the medieval period."
+        },
+        {
+          "rank": 4,
+          "id": "8d4553b97942e0f7",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Ulug'bek rasadxonasi"
+          ],
+          "score": 0.6216,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi\n\nMirzo Ulug'bek 1428-1429 yillarda Samarqandda mashhur rasadxona qurdirgan. Rasadxonaning asosiy asbobi ulkan sekstant bo'lgan. Ulug'bek rasadxonasida olib borilgan kuzatishlar asosida \"Ziji jadidi Ko'ragoniy\" asari yaratilgan bo'lib, unda 1018 yulduzning aniq jadvali keltirilgan."
+        }
+      ],
+      "answer": "Abu Rayhon Beruniy astronomiya, matematika, geografiya, xronologiya, mineralogiya hamda Hindiston madaniyati kabi ko'plab fanlar va sohalar bo'yicha asarlar yozgan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1603,
+      "usage": {
+        "promptTokenCount": 1050,
+        "candidatesTokenCount": 50,
+        "totalTokenCount": 1100,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1050
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3015,
+      "rules": {
+        "words": 19,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "sp-xorazmiy-uz",
+      "query": "Xorazmiy qaysi shaharda ishlagan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "c2ec68473aef2c63",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Muhammad al-Khwarizmi"
+          ],
+          "score": 0.668,
+          "relevant": true,
+          "text": "Scholars, writers and historians connected to the region > Muhammad al-Khwarizmi\n\nMuhammad al-Khwarizmi was a 9th-century mathematician and astronomer associated by name with Khwarazm. He worked in Baghdad at the Abbasid court's scholarly centre.\n\nHis mathematical writings helped transmit methods for calculation and algebra. The word \"algorithm\" ultimately derives from the Latinized form of his name, while \"algebra\" comes from the title of one of his best-known works."
+        },
+        {
+          "rank": 2,
+          "id": "a68ed65194f1568a",
+          "file": "01_history_overview.md",
+          "headingPath": [
+            "History of the territory of present-day Uzbekistan",
+            "Ancient and early medieval background"
+          ],
+          "score": 0.6431,
+          "relevant": false,
+          "text": "History of the territory of present-day Uzbekistan > Ancient and early medieval background\n\nThe territory of present-day Uzbekistan has long connected settled oasis civilizations, steppe peoples, and long-distance trade routes. Samarkand, Bukhara, Khiva, Termez and other cities developed at different times as political, commercial, religious and intellectual centres.\n\nSamarkand grew from the ancient settlement known as Afrasiab. UNESCO describes the historic city as a major crossroads of cultures with more than two and a half millennia of history."
+        },
+        {
+          "rank": 3,
+          "id": "4ec8f758daac056b",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region"
+          ],
+          "score": 0.6425,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region\n\nImportant: many people below lived centuries before modern Uzbek national identity developed. It is more accurate to describe them by their city, dynasty, language or region than to call all of them \"Uzbek.\""
+        },
+        {
+          "rank": 4,
+          "id": "8d4553b97942e0f7",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Ulug'bek rasadxonasi"
+          ],
+          "score": 0.6363,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi\n\nMirzo Ulug'bek 1428-1429 yillarda Samarqandda mashhur rasadxona qurdirgan. Rasadxonaning asosiy asbobi ulkan sekstant bo'lgan. Ulug'bek rasadxonasida olib borilgan kuzatishlar asosida \"Ziji jadidi Ko'ragoniy\" asari yaratilgan bo'lib, unda 1018 yulduzning aniq jadvali keltirilgan."
+        }
+      ],
+      "answer": "Muhammad al-Xorazmiy Abbosiylar saroyining ilmiy markazida, ya'ni Bag'dod shaharda ishlagan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1763,
+      "usage": {
+        "promptTokenCount": 1106,
+        "candidatesTokenCount": 31,
+        "totalTokenCount": 1137,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1106
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3422,
+      "rules": {
+        "words": 10,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "sp-tamerlan-uz",
+      "query": "Tamerlan qaysi shaharda vafot etgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "fd81709b2edb537f",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Amir Temur",
+            "Vafoti va Go'ri Amir maqbarasi"
+          ],
+          "score": 0.7154,
+          "relevant": true,
+          "text": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi\n\nAmir Temur 1405-yilda Xitoyga yurish paytida O'tror shahrida vafot etgan. U Samarqanddagi Go'ri Amir maqbarasiga dafn etilgan. Go'ri Amir maqbarasi Temuriylar sulolasining muhim a'zolari dafn etilgan joy hisoblanadi."
+        },
+        {
+          "rank": 2,
+          "id": "37edb5d54b6f10b5",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Amir Temur"
+          ],
+          "score": 0.6987,
+          "relevant": false,
+          "text": "Timurid era > Amir Temur\n\nAmir Temur, known in many Western sources as Timur or Tamerlane, was born in 1336 near Kesh, the area of modern Shahrisabz. He rose to power in Transoxiana and established Samarkand as the main capital of his empire.\n\nTimur's empire stretched across large parts of Central Asia, Iran, Afghanistan, the Caucasus and neighbouring regions. His campaigns were often destructive, while his court also concentrated craftsmen, scholars and architects in Samarkand.\n\nTimur died in 1405. The Gur-e Amir mausoleum in Samarkand became his burial place and one of the best-known monuments associated with the dynasty."
+        },
+        {
+          "rank": 3,
+          "id": "aa482fed6c49a713",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Amir Temur",
+            "Tug'ilishi va saltanati"
+          ],
+          "score": 0.6639,
+          "relevant": false,
+          "text": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati\n\nAmir Temur 1336-yilda Shahrisabz yaqinidagi Xo'ja Ilg'or qishlog'ida tug'ilgan. U 1370-yilda Movarounnahr hukmdori bo'ldi va Samarqandni o'z saltanatining poytaxti qildi. Amir Temur buyuk saltanat asoschisi bo'lib, uning davlati Markaziy Osiyodan Yaqin Sharqgacha cho'zilgan."
+        },
+        {
+          "rank": 4,
+          "id": "13b3442f2e27b38a",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Mirzo Ulug'bek",
+            "Vafoti va ilmiy merosi"
+          ],
+          "score": 0.6574,
+          "relevant": false,
+          "text": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi\n\nMirzo Ulug'bek 1449-yilda fitna natijasida o'ldirilgan. Uning ilmiy merosi jahon astronomiyasi tarixida muhim o'rin tutadi."
+        }
+      ],
+      "answer": "Amir Temur (Tamerlan) 1405-yilda Xitoyga yurish paytida O'tror shahrida vafot etgan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1606,
+      "usage": {
+        "promptTokenCount": 1149,
+        "candidatesTokenCount": 37,
+        "totalTokenCount": 1186,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1149
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3175,
+      "rules": {
+        "words": 11,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "nd-cholpon-en",
+      "query": "Which writer killed in the 1938 purges was also a poet and translator?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractors: Qodiriy (03) and Fitrat (04) were also killed in 1938.",
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "d8a3819b452fa77c",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Cho'lpon"
+          ],
+          "score": 0.7028,
+          "relevant": true,
+          "text": "Scholars, writers and historians connected to the region > Cho'lpon\n\nAbdulhamid Cho'lpon was an Uzbek poet, writer, translator and intellectual active in the early Soviet period.\n\nHe was also killed during the Stalinist purges in 1938."
+        },
+        {
+          "rank": 2,
+          "id": "615ce6c422393050",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Abdulla Qodiriy"
+          ],
+          "score": 0.6541,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region > Abdulla Qodiriy\n\nAbdulla Qodiriy was a major figure in early modern Uzbek prose. His novel \"O'tkan kunlar\" is widely regarded as one of the foundational works of the modern Uzbek novel.\n\nHe was executed during the Stalinist purges in 1938."
+        },
+        {
+          "rank": 3,
+          "id": "4a1aecc906d3f049",
+          "file": "04_jadids_and_reformers.md",
+          "headingPath": [
+            "Jadidism and modern reformers",
+            "Abdurauf Fitrat"
+          ],
+          "score": 0.6486,
+          "relevant": false,
+          "text": "Jadidism and modern reformers > Abdurauf Fitrat\n\nAbdurauf Fitrat was born in Bukhara around 1886. He became one of the most influential intellectuals of the Bukharan Jadid movement.\n\nFitrat wrote in Persian/Tajik and Turkic/Uzbek and worked across literature, education, journalism, scholarship and politics.\n\nHe was arrested during the Stalinist purges and executed in 1938."
+        },
+        {
+          "rank": 4,
+          "id": "d9204d5545db8e86",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Stalinist repression"
+          ],
+          "score": 0.6284,
+          "relevant": false,
+          "text": "Modern history and independence > Stalinist repression\n\nDuring the 1930s, many Uzbek and Central Asian intellectuals, including prominent writers and Jadids, were arrested, imprisoned or executed during Stalinist purges."
+        }
+      ],
+      "answer": "Abdulhamid Cho'lpon was an Uzbek poet, writer, translator, and intellectual who was killed during the Stalinist purges in 1938.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 4213,
+      "usage": {
+        "promptTokenCount": 805,
+        "candidatesTokenCount": 34,
+        "totalTokenCount": 839,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 805
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2863,
+      "rules": {
+        "words": 19,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "nd-fitrat-languages-en",
+      "query": "Which Jadid reformer wrote in both Persian and Turkic?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractors: Navoi also wrote in Turkic and Persian (but was not a Jadid); Behbudi was a Jadid.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-behbudi-kasb-uz",
+      "query": "Behbudiy qanday sohalarda faoliyat yuritgan?",
+      "language": "uz",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Fitrat section lists similar fields (literature, education, journalism...).",
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "dcb240645fb99e75",
+          "file": "04_jadids_and_reformers.md",
+          "headingPath": [
+            "Jadidism and modern reformers",
+            "Mahmudkhoja Behbudi"
+          ],
+          "score": 0.7038,
+          "relevant": true,
+          "text": "Jadidism and modern reformers > Mahmudkhoja Behbudi\n\nMahmudkhoja Behbudi was one of the leading Jadid reformers in Turkestan. He worked as an educator, journalist, playwright and public intellectual.\n\nBehbudi promoted new-method schools and wrote educational materials. He also published the journal Oyna (\"Mirror\").\n\nHis play \"Padarkush\" became one of the foundational works of modern Central Asian theatre and used drama to argue for education and social reform."
+        },
+        {
+          "rank": 2,
+          "id": "4ec8f758daac056b",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region"
+          ],
+          "score": 0.6542,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region\n\nImportant: many people below lived centuries before modern Uzbek national identity developed. It is more accurate to describe them by their city, dynasty, language or region than to call all of them \"Uzbek.\""
+        },
+        {
+          "rank": 3,
+          "id": "184147850d4c36fd",
+          "file": "03_scholars_writers_historians.md",
+          "headingPath": [
+            "Scholars, writers and historians connected to the region",
+            "Abu Rayhan al-Biruni"
+          ],
+          "score": 0.6377,
+          "relevant": false,
+          "text": "Scholars, writers and historians connected to the region > Abu Rayhan al-Biruni\n\nAbu Rayhan al-Biruni was born in 973 in the Khwarazm region. He became one of the great polymaths of the medieval Islamic world.\n\nHe wrote on astronomy, mathematics, geography, chronology, mineralogy and the cultures of India."
+        },
+        {
+          "rank": 4,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.6254,
+          "relevant": false,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        }
+      ],
+      "answer": "Mahmudxo'ja Behbudiy Turkistonda ma'rifatparvar, jurnalist, dramaturq va jamoat arbobi sifatida faoliyat yuritgan. U yangi usul maktablarini targ'ib qilgan, ta'limiy qo'llanmalar yozgan, \"Oyna\" jurnalini nashr etgan hamda zamonaviy Markaziy Osiyo teatriga asos solgan \"Padarkush\" dramasini yaratgan.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 9643,
+      "usage": {
+        "promptTokenCount": 1051,
+        "candidatesTokenCount": 100,
+        "totalTokenCount": 1151,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1051
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3244,
+      "rules": {
+        "words": 35,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "nd-bibikhanum-en",
+      "query": "Which Samarkand mosque was built after Timur's campaign in India?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractors: Gur-e Amir, Registan, Oqsaroy sections.",
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "d02833800fdadff6",
+          "file": "temuriylar.md",
+          "headingPath": [
+            "Temuriylar davri",
+            "Bibixonim jome masjidi"
+          ],
+          "score": 0.7009,
+          "relevant": true,
+          "text": "Temuriylar davri > Bibixonim jome masjidi\n\nBibixonim jome masjidi Samarqandda 1399-1404 yillarda, Amir Temurning Hindiston yurishidan keyin qurilgan. U o'z davrida islom olamining eng katta masjidlaridan biri edi."
+        },
+        {
+          "rank": 2,
+          "id": "479a21971ace1cb8",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Samarkand under the Timurids"
+          ],
+          "score": 0.6994,
+          "relevant": false,
+          "text": "Timurid era > Samarkand under the Timurids\n\nUNESCO identifies the 14th and 15th centuries as Samarkand's most significant period of development. Major monuments include Bibi-Khanum Mosque, Shah-i-Zinda, Gur-e Amir, Ulugh Beg's madrasa and Ulugh Beg's observatory."
+        },
+        {
+          "rank": 3,
+          "id": "37edb5d54b6f10b5",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Amir Temur"
+          ],
+          "score": 0.6741,
+          "relevant": false,
+          "text": "Timurid era > Amir Temur\n\nAmir Temur, known in many Western sources as Timur or Tamerlane, was born in 1336 near Kesh, the area of modern Shahrisabz. He rose to power in Transoxiana and established Samarkand as the main capital of his empire.\n\nTimur's empire stretched across large parts of Central Asia, Iran, Afghanistan, the Caucasus and neighbouring regions. His campaigns were often destructive, while his court also concentrated craftsmen, scholars and architects in Samarkand.\n\nTimur died in 1405. The Gur-e Amir mausoleum in Samarkand became his burial place and one of the best-known monuments associated with the dynasty."
+        },
+        {
+          "rank": 4,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.6704,
+          "relevant": false,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        }
+      ],
+      "answer": "The Bibi-Khanum Mosque in Samarkand was built between 1399 and 1404, right after Amir Timur's campaign in India.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1907,
+      "usage": {
+        "promptTokenCount": 905,
+        "candidatesTokenCount": 35,
+        "totalTokenCount": 940,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 905
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3183,
+      "rules": {
+        "words": 18,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "nd-samanid-centre-en",
+      "query": "Which city was a major centre of the Samanid dynasty?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Samarkand sections.",
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "77689a12244a6ef8",
+          "file": "01_history_overview.md",
+          "headingPath": [
+            "History of the territory of present-day Uzbekistan",
+            "Samanid period"
+          ],
+          "score": 0.728,
+          "relevant": true,
+          "text": "History of the territory of present-day Uzbekistan > Samanid period\n\nThe Samanids ruled much of Central Asia in the 9th and 10th centuries. Bukhara was one of the dynasty's major political and cultural centres and became famous for scholarship, literature and religious learning."
+        },
+        {
+          "rank": 2,
+          "id": "154987e7af4f985d",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Bukhara"
+          ],
+          "score": 0.7133,
+          "relevant": false,
+          "text": "Historic cities and architecture > Bukhara\n\nBukhara has more than two thousand years of history and was a major centre on the Silk Roads.\n\nUNESCO describes its historic centre as one of the best-preserved examples of a medieval Central Asian Islamic city.\n\nThe Ismail Samani Mausoleum is one of Bukhara's most famous early monuments and an outstanding example of 10th-century architecture."
+        },
+        {
+          "rank": 3,
+          "id": "cebcdb042f65c5b5",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Samarkand"
+          ],
+          "score": 0.701,
+          "relevant": false,
+          "text": "Historic cities and architecture > Samarkand\n\nSamarkand is one of Central Asia's oldest major cities. UNESCO describes it as a crossroads and melting pot of world cultures.\n\nThe ancient settlement of Afrasiab forms an archaeological part of the city's history. Major monuments include Registan Square, Bibi-Khanum Mosque, Shah-i-Zinda, Gur-e Amir and Ulugh Beg's Observatory."
+        },
+        {
+          "rank": 4,
+          "id": "a68ed65194f1568a",
+          "file": "01_history_overview.md",
+          "headingPath": [
+            "History of the territory of present-day Uzbekistan",
+            "Ancient and early medieval background"
+          ],
+          "score": 0.6827,
+          "relevant": false,
+          "text": "History of the territory of present-day Uzbekistan > Ancient and early medieval background\n\nThe territory of present-day Uzbekistan has long connected settled oasis civilizations, steppe peoples, and long-distance trade routes. Samarkand, Bukhara, Khiva, Termez and other cities developed at different times as political, commercial, religious and intellectual centres.\n\nSamarkand grew from the ancient settlement known as Afrasiab. UNESCO describes the historic city as a major crossroads of cultures with more than two and a half millennia of history."
+        }
+      ],
+      "answer": "Bukhara was one of the major political, cultural, and scholarly centres of the Samanid dynasty during the 9th and 10th centuries.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1763,
+      "usage": {
+        "promptTokenCount": 850,
+        "candidatesTokenCount": 33,
+        "totalTokenCount": 883,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 850
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3296,
+      "rules": {
+        "words": 21,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "nd-timurid-astronomer-en",
+      "query": "Which Timurid ruler is remembered as an astronomer?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Amir Temur sections; the Timurid-period overview mentions astronomy without a name.",
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "e563867918326feb",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Ulugh Beg"
+          ],
+          "score": 0.7858,
+          "relevant": true,
+          "text": "Timurid era > Ulugh Beg\n\nUlugh Beg, a grandson of Timur, was a Timurid ruler and astronomer. He governed Samarkand and became famous for supporting mathematics and astronomy.\n\nUlugh Beg founded a major observatory in Samarkand in the 15th century. Astronomers working there produced highly accurate observations of stars and planetary motion for their time.\n\nUlugh Beg also built a madrasa on the Registan."
+        },
+        {
+          "rank": 2,
+          "id": "479a21971ace1cb8",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Samarkand under the Timurids"
+          ],
+          "score": 0.7199,
+          "relevant": false,
+          "text": "Timurid era > Samarkand under the Timurids\n\nUNESCO identifies the 14th and 15th centuries as Samarkand's most significant period of development. Major monuments include Bibi-Khanum Mosque, Shah-i-Zinda, Gur-e Amir, Ulugh Beg's madrasa and Ulugh Beg's observatory."
+        },
+        {
+          "rank": 3,
+          "id": "37edb5d54b6f10b5",
+          "file": "02_timurid_era.md",
+          "headingPath": [
+            "Timurid era",
+            "Amir Temur"
+          ],
+          "score": 0.7057,
+          "relevant": false,
+          "text": "Timurid era > Amir Temur\n\nAmir Temur, known in many Western sources as Timur or Tamerlane, was born in 1336 near Kesh, the area of modern Shahrisabz. He rose to power in Transoxiana and established Samarkand as the main capital of his empire.\n\nTimur's empire stretched across large parts of Central Asia, Iran, Afghanistan, the Caucasus and neighbouring regions. His campaigns were often destructive, while his court also concentrated craftsmen, scholars and architects in Samarkand.\n\nTimur died in 1405. The Gur-e Amir mausoleum in Samarkand became his burial place and one of the best-known monuments associated with the dynasty."
+        },
+        {
+          "rank": 4,
+          "id": "5f7b29a7d30e7f92",
+          "file": "01_history_overview.md",
+          "headingPath": [
+            "History of the territory of present-day Uzbekistan",
+            "Timurid period"
+          ],
+          "score": 0.7049,
+          "relevant": false,
+          "text": "History of the territory of present-day Uzbekistan > Timurid period\n\nIn the late 14th century, Timur made Samarkand the capital of a powerful empire. The Timurid period became especially important for architecture, manuscript culture, astronomy, mathematics and the arts."
+        }
+      ],
+      "answer": "The Timurid ruler remembered as a famous astronomer is Ulugh Beg, the grandson of Amir Timur. In the 15th century, he governed Samarkand, built a grand observatory, and produced remarkably accurate astronomical observations and star charts.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1552,
+      "usage": {
+        "promptTokenCount": 884,
+        "candidatesTokenCount": 49,
+        "totalTokenCount": 933,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 884
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3250,
+      "rules": {
+        "words": 36,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "ne-rishtan-en",
+      "query": "Which town is famous for blue-green glazed pottery?",
+      "language": "en",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Margilan (textiles).",
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "1fe46e7aec83102d",
+          "file": "09_crafts_textiles_and_food.md",
+          "headingPath": [
+            "Crafts, textiles and material culture",
+            "Ceramics"
+          ],
+          "score": 0.7059,
+          "relevant": true,
+          "text": "Crafts, textiles and material culture > Ceramics\n\nCeramic art is one of Uzbekistan's longstanding applied arts. Traditional pottery includes household vessels, jugs, storage containers, toys, architectural tiles and tandoor ovens.\n\nRishtan is especially famous for glazed ceramics and blue-green decorative traditions.\n\nUNESCO inscribed Ceramic Arts in Uzbekistan on the Representative List of the Intangible Cultural Heritage of Humanity in 2023."
+        },
+        {
+          "rank": 2,
+          "id": "2c3e9269b090f290",
+          "file": "09_crafts_textiles_and_food.md",
+          "headingPath": [
+            "Crafts, textiles and material culture",
+            "Atlas and adras"
+          ],
+          "score": 0.6075,
+          "relevant": false,
+          "text": "Crafts, textiles and material culture > Atlas and adras\n\nAtlas and adras are traditional ikat fabrics associated strongly with Central Asian textile culture. Margilan became one of the most famous centres of production in present-day Uzbekistan.\n\nIn 2017, UNESCO selected the Margilan Crafts Development Centre's work safeguarding atlas and adras techniques for its Register of Good Safeguarding Practices."
+        },
+        {
+          "rank": 3,
+          "id": "0979bb3d52ba9667",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Khiva and Itchan Kala"
+          ],
+          "score": 0.6039,
+          "relevant": false,
+          "text": "Historic cities and architecture > Khiva and Itchan Kala\n\nItchan Kala is the walled inner city of Khiva. UNESCO describes it as a fortified historic town with a history of more than two millennia.\n\nThe walled area contains madrasas, mosques, mausoleums, caravanserais, markets and traditional houses."
+        },
+        {
+          "rank": 4,
+          "id": "154987e7af4f985d",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Bukhara"
+          ],
+          "score": 0.599,
+          "relevant": false,
+          "text": "Historic cities and architecture > Bukhara\n\nBukhara has more than two thousand years of history and was a major centre on the Silk Roads.\n\nUNESCO describes its historic centre as one of the best-preserved examples of a medieval Central Asian Islamic city.\n\nThe Ismail Samani Mausoleum is one of Bukhara's most famous early monuments and an outstanding example of 10th-century architecture."
+        }
+      ],
+      "answer": "Rishtan is especially famous for its glazed ceramics and blue-green decorative pottery traditions.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1549,
+      "usage": {
+        "promptTokenCount": 838,
+        "candidatesTokenCount": 18,
+        "totalTokenCount": 856,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 838
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3258,
+      "rules": {
+        "words": 13,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "ne-dowry-en",
+      "query": "Which embroidered textile was often part of a bride's dowry?",
+      "language": "en",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "34dd7faadff9637e",
+          "file": "09_crafts_textiles_and_food.md",
+          "headingPath": [
+            "Crafts, textiles and material culture",
+            "Suzani"
+          ],
+          "score": 0.7606,
+          "relevant": true,
+          "text": "Crafts, textiles and material culture > Suzani\n\nSuzani is a traditional embroidered textile associated with settled communities in Central Asia, especially areas of present-day Uzbekistan and Tajikistan.\n\nHistorically, large suzanis were used to decorate interiors and were often part of a bride's dowry."
+        },
+        {
+          "rank": 2,
+          "id": "2c3e9269b090f290",
+          "file": "09_crafts_textiles_and_food.md",
+          "headingPath": [
+            "Crafts, textiles and material culture",
+            "Atlas and adras"
+          ],
+          "score": 0.6058,
+          "relevant": false,
+          "text": "Crafts, textiles and material culture > Atlas and adras\n\nAtlas and adras are traditional ikat fabrics associated strongly with Central Asian textile culture. Margilan became one of the most famous centres of production in present-day Uzbekistan.\n\nIn 2017, UNESCO selected the Margilan Crafts Development Centre's work safeguarding atlas and adras techniques for its Register of Good Safeguarding Practices."
+        },
+        {
+          "rank": 3,
+          "id": "08844206b0a2969c",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Cotton and the Aral Sea"
+          ],
+          "score": 0.5806,
+          "relevant": false,
+          "text": "Modern history and independence > Cotton and the Aral Sea\n\nUzbekistan became one of the Soviet Union's major cotton-producing regions. Extensive irrigation projects diverted water from the Amu Darya and Syr Darya systems.\n\nThe reduction of water reaching the Aral Sea contributed to one of the world's major environmental disasters."
+        },
+        {
+          "rank": 4,
+          "id": "76a8d1fba59587e1",
+          "file": "06_culture_and_social_life.md",
+          "headingPath": [
+            "Culture and social life",
+            "Palov"
+          ],
+          "score": 0.5734,
+          "relevant": false,
+          "text": "Culture and social life > Palov\n\nPalov is one of the best-known dishes of Uzbekistan. It is commonly prepared with rice, meat, vegetables, oil or fat, and spices, although recipes vary by region and family.\n\nUNESCO notes that palov is served both as an everyday meal and at important social occasions, including weddings, celebrations, acts of hospitality and commemorative gatherings."
+        }
+      ],
+      "answer": "Suzani is a traditional embroidered textile that was historically used to decorate interiors and was often included as part of a bride's dowry.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 2707,
+      "usage": {
+        "promptTokenCount": 817,
+        "candidatesTokenCount": 28,
+        "totalTokenCount": 845,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 817
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 3159,
+      "rules": {
+        "words": 23,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "ne-gold-desert-en",
+      "query": "In which desert is one of the world's biggest gold mines located?",
+      "language": "en",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "retrievedChunks": [
+        {
+          "rank": 1,
+          "id": "19b133dbfdaa3da1",
+          "file": "qiziqarli-faktlar.md",
+          "headingPath": [
+            "Qiziqarli faktlar",
+            "Muruntau oltin koni"
+          ],
+          "score": 0.6576,
+          "relevant": true,
+          "text": "Qiziqarli faktlar > Muruntau oltin koni\n\nMuruntau koni Navoiy viloyatidagi Qizilqum cho'lida joylashgan bo'lib, ishlab chiqarish hajmi bo'yicha dunyodagi eng yirik oltin konlaridan biri hisoblanadi."
+        },
+        {
+          "rank": 2,
+          "id": "cebcdb042f65c5b5",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Samarkand"
+          ],
+          "score": 0.5625,
+          "relevant": false,
+          "text": "Historic cities and architecture > Samarkand\n\nSamarkand is one of Central Asia's oldest major cities. UNESCO describes it as a crossroads and melting pot of world cultures.\n\nThe ancient settlement of Afrasiab forms an archaeological part of the city's history. Major monuments include Registan Square, Bibi-Khanum Mosque, Shah-i-Zinda, Gur-e Amir and Ulugh Beg's Observatory."
+        },
+        {
+          "rank": 3,
+          "id": "d024e38855407789",
+          "file": "05_cities_and_heritage.md",
+          "headingPath": [
+            "Historic cities and architecture",
+            "Registan"
+          ],
+          "score": 0.5593,
+          "relevant": false,
+          "text": "Historic cities and architecture > Registan\n\nRegistan is the monumental square at the heart of historic Samarkand. Its famous ensemble contains three madrasas built at different times: Ulugh Beg Madrasa, Sher-Dor Madrasa and Tilla-Kari Madrasa."
+        },
+        {
+          "rank": 4,
+          "id": "08844206b0a2969c",
+          "file": "10_modern_history_and_independence.md",
+          "headingPath": [
+            "Modern history and independence",
+            "Cotton and the Aral Sea"
+          ],
+          "score": 0.5504,
+          "relevant": false,
+          "text": "Modern history and independence > Cotton and the Aral Sea\n\nUzbekistan became one of the Soviet Union's major cotton-producing regions. Extensive irrigation projects diverted water from the Amu Darya and Syr Darya systems.\n\nThe reduction of water reaching the Aral Sea contributed to one of the world's major environmental disasters."
+        }
+      ],
+      "answer": "One of the world's largest gold mines, the Muruntau mine, is located in the Kyzylkum Desert in Uzbekistan's Navoiy Region.",
+      "model": "gemini-3.5-flash",
+      "finishReason": "STOP",
+      "latencyMs": 1523,
+      "usage": {
+        "promptTokenCount": 802,
+        "candidatesTokenCount": 34,
+        "totalTokenCount": 836,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 802
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "systemPromptChars": 2862,
+      "rules": {
+        "words": 20,
+        "citations": [],
+        "hasCitation": false,
+        "strictGeneralKnowledgeLabel": false,
+        "outsideSourcesLabel": false,
+        "saysSourcesLackIt": false,
+        "answerKeysHit": true,
+        "citesSupportingChunk": false,
+        "allCitedChunksSupport": false
+      }
+    },
+    {
+      "id": "ne-ships-uz",
+      "query": "Qaysi shaharda quruqlikda qolib ketgan kemalarni ko'rish mumkin?",
+      "language": "uz",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ne-samani-uz",
+      "query": "Qaysi shaharda 10-asr me'morchiligining mashhur maqbarasi bor?",
+      "language": "uz",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-bakhshi-year-en",
+      "query": "In what year did UNESCO inscribe Bakhshi art from Uzbekistan?",
+      "language": "en",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Near-duplicate dates: Shashmaqom 2008, Askiya 2014, Lazgi 2019.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-lazgi-year-uz",
+      "query": "Lazgi YUNESKO ro'yxatiga qaysi yili kiritilgan?",
+      "language": "uz",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-teshiktash-age-uz",
+      "query": "Teshiktosh g'oridan topilgan qoldiqlar taxminan necha yillik?",
+      "language": "uz",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-shahrisabz-unesco-uz",
+      "query": "Shahrisabz tarixiy markazi YUNESKO ro'yxatiga qachon kiritilgan?",
+      "language": "uz",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: 05 UNESCO heritage section names Shahrisabz but gives no year.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-sherdor-years-en",
+      "query": "During which years was the Sher-Dor madrasa built?",
+      "language": "en",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: 05 Registan section names Sher-Dor without dates.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-shahizinda-date-en",
+      "query": "When was the Shah-i-Zinda complex built?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Shah-i-Zinda appears only as a name in monument lists (02, 05); no date or description.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-bibixonim-person-uz",
+      "query": "Bibixonim kim bo'lgan va u Amir Temurga kim bo'lgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Corpus describes the Bibi-Khanum mosque only, never the person.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-kalon-minaret-en",
+      "query": "How tall is the Kalon Minaret in Bukhara?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "No minaret is described anywhere.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-first-president-en",
+      "query": "Who was the first president of independent Uzbekistan?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Independence (1991, 1 September) is covered; no president is named.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-navoiy-death-uz",
+      "query": "Alisher Navoiy qaysi yili vafot etgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Only Navoi's birth (Herat, 1441) is given.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-babur-death-en",
+      "query": "When and where did Babur die?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Only Babur's birth (1483, Andijan) and 1526 are given.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-madrasa-architect-uz",
+      "query": "Registondagi Ulug'bek madrasasini qaysi me'mor loyihalagan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Madrasa dates are given; no architect is named.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-shaybanid-khan-en",
+      "query": "Which Shaybanid khan captured Samarkand from the Timurids?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Shaybanids are mentioned only generally (early 16th century); no ruler is named.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-kokand-founder-uz",
+      "query": "Qo'qon xonligiga kim asos solgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Kokand appears only in the list of later states and its 1876 abolition.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-kopkari-uz",
+      "query": "Ko'pkari o'yini qanday o'tkaziladi?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "No traditional sports are described.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-observatory-ruin-uz",
+      "query": "Ulug'bek rasadxonasi qachon vayron bo'lgan va qachon qayta topilgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Observatory construction is covered; its destruction and rediscovery are not.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-metro-architect-en",
+      "query": "Who designed the stations of the Tashkent metro?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Metro opening (1977) and decorated stations are mentioned; no designers.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-temur-children-uz",
+      "query": "Amir Temurning nechta o'g'li bo'lgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "No information about Timur's children (only that Ulug'bek was his grandson).",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-palov-ratio-en",
+      "query": "What is the exact ratio of rice to meat in Samarkand-style palov?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Corpus lists ingredients and says recipes vary; no ratios or regional recipe.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-fitrat-novel-uz",
+      "query": "Fitrat qaysi romani bilan mashhur?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Fitrat's fields are listed, but none of his works is named. Distractor: Qodiriy's novel.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-ibnsina-death-uz",
+      "query": "Ibn Sino qayerda vafot etgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Only Ibn Sina's birth (980, near Bukhara) and the Canon are given.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-monalisa-en",
+      "query": "Who painted the Mona Lisa?",
+      "language": "en",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated to Uzbek history/culture.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-photosynthesis-en",
+      "query": "How does photosynthesis work in plants?",
+      "language": "en",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-bitcoin-uz",
+      "query": "Bugun bitkoin narxi qancha?",
+      "language": "uz",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-worldcup2022-uz",
+      "query": "2022-yilgi futbol bo'yicha jahon chempionatini kim yutgan?",
+      "language": "uz",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-pizza-uz",
+      "query": "Uyda pitsa qanday tayyorlanadi?",
+      "language": "uz",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated (food, but not Uzbek).",
+      "error": "Request contains an invalid argument."
+    }
+  ]
+}

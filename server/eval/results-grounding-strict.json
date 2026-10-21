@@ -1,0 +1,525 @@
+{
+  "label": "strict",
+  "grounding": "strict",
+  "evaluatedAt": "2026-10-20T19:14:29.467Z",
+  "questionsFile": "rag-questions-hard.json",
+  "questionsSplit": "dev",
+  "questionsHash": "d103719c61cb81aac8e1e2ca3cbc381c0f4ab653a11c5d3e8374663c2510e879",
+  "conversationLanguage": "same as the question language",
+  "teacherName": "Asilbek",
+  "chatModel": "gemini-3.5-flash",
+  "complete": false,
+  "systemPromptSample": null,
+  "cases": [
+    {
+      "id": "para-ulugbek-death-en",
+      "query": "How did the life of Timur's scholarly grandson come to an end?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "para-uzbek-gender-en",
+      "query": "Do Uzbek nouns change form for masculine and feminine?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "para-word-order-uz",
+      "query": "O'zbek gapida ega, to'ldiruvchi va kesim odatda qaysi tartibda keladi?",
+      "language": "uz",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "para-bakhshi-skills-en",
+      "query": "What abilities does a Bakhshi storyteller rely on most?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "para-soviet-control-en",
+      "query": "Apart from schooling and factories, which areas of life did the Soviet state keep under tight control?",
+      "language": "en",
+      "category": "paraphrase",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "xl-sextant-en",
+      "query": "What was the main instrument of the Samarkand observatory?",
+      "language": "en",
+      "category": "cross-language",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "xl-liechtenstein-en",
+      "query": "Which other country, like Uzbekistan, is doubly landlocked?",
+      "language": "en",
+      "category": "cross-language",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "xl-ottoman-sultan-en",
+      "query": "Which Ottoman sultan did Timur defeat in 1402?",
+      "language": "en",
+      "category": "cross-language",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-ulugbek-okina-uz",
+      "query": "Mirzo Ulugʻbek qaysi yili tugʻilgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-ulugbek-curly-uz",
+      "query": "Ulug‘bek qaysi yildan Samarqandni boshqargan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-navoi-uz",
+      "query": "Navoi qaysi shaharda tug'ilgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-biruni-uz",
+      "query": "Biruni qaysi fanlar haqida yozgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-xorazmiy-uz",
+      "query": "Xorazmiy qaysi shaharda ishlagan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "sp-tamerlan-uz",
+      "query": "Tamerlan qaysi shaharda vafot etgan?",
+      "language": "uz",
+      "category": "spelling-variant",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-cholpon-en",
+      "query": "Which writer killed in the 1938 purges was also a poet and translator?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractors: Qodiriy (03) and Fitrat (04) were also killed in 1938.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-fitrat-languages-en",
+      "query": "Which Jadid reformer wrote in both Persian and Turkic?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractors: Navoi also wrote in Turkic and Persian (but was not a Jadid); Behbudi was a Jadid.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-behbudi-kasb-uz",
+      "query": "Behbudiy qanday sohalarda faoliyat yuritgan?",
+      "language": "uz",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Fitrat section lists similar fields (literature, education, journalism...).",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-bibikhanum-en",
+      "query": "Which Samarkand mosque was built after Timur's campaign in India?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractors: Gur-e Amir, Registan, Oqsaroy sections.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-samanid-centre-en",
+      "query": "Which city was a major centre of the Samanid dynasty?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Samarkand sections.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "nd-timurid-astronomer-en",
+      "query": "Which Timurid ruler is remembered as an astronomer?",
+      "language": "en",
+      "category": "near-duplicate",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Amir Temur sections; the Timurid-period overview mentions astronomy without a name.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ne-rishtan-en",
+      "query": "Which town is famous for blue-green glazed pottery?",
+      "language": "en",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: Margilan (textiles).",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ne-dowry-en",
+      "query": "Which embroidered textile was often part of a bride's dowry?",
+      "language": "en",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ne-gold-desert-en",
+      "query": "In which desert is one of the world's biggest gold mines located?",
+      "language": "en",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ne-ships-uz",
+      "query": "Qaysi shaharda quruqlikda qolib ketgan kemalarni ko'rish mumkin?",
+      "language": "uz",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ne-samani-uz",
+      "query": "Qaysi shaharda 10-asr me'morchiligining mashhur maqbarasi bor?",
+      "language": "uz",
+      "category": "no-entity-name",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-bakhshi-year-en",
+      "query": "In what year did UNESCO inscribe Bakhshi art from Uzbekistan?",
+      "language": "en",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Near-duplicate dates: Shashmaqom 2008, Askiya 2014, Lazgi 2019.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-lazgi-year-uz",
+      "query": "Lazgi YUNESKO ro'yxatiga qaysi yili kiritilgan?",
+      "language": "uz",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-teshiktash-age-uz",
+      "query": "Teshiktosh g'oridan topilgan qoldiqlar taxminan necha yillik?",
+      "language": "uz",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": null,
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-shahrisabz-unesco-uz",
+      "query": "Shahrisabz tarixiy markazi YUNESKO ro'yxatiga qachon kiritilgan?",
+      "language": "uz",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: 05 UNESCO heritage section names Shahrisabz but gives no year.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ex-sherdor-years-en",
+      "query": "During which years was the Sher-Dor madrasa built?",
+      "language": "en",
+      "category": "exact-detail",
+      "answerable": true,
+      "negativeType": null,
+      "note": "Distractor: 05 Registan section names Sher-Dor without dates.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-shahizinda-date-en",
+      "query": "When was the Shah-i-Zinda complex built?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Shah-i-Zinda appears only as a name in monument lists (02, 05); no date or description.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-bibixonim-person-uz",
+      "query": "Bibixonim kim bo'lgan va u Amir Temurga kim bo'lgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Corpus describes the Bibi-Khanum mosque only, never the person.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-kalon-minaret-en",
+      "query": "How tall is the Kalon Minaret in Bukhara?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "No minaret is described anywhere.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-first-president-en",
+      "query": "Who was the first president of independent Uzbekistan?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Independence (1991, 1 September) is covered; no president is named.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-navoiy-death-uz",
+      "query": "Alisher Navoiy qaysi yili vafot etgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Only Navoi's birth (Herat, 1441) is given.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-babur-death-en",
+      "query": "When and where did Babur die?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Only Babur's birth (1483, Andijan) and 1526 are given.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-madrasa-architect-uz",
+      "query": "Registondagi Ulug'bek madrasasini qaysi me'mor loyihalagan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Madrasa dates are given; no architect is named.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-shaybanid-khan-en",
+      "query": "Which Shaybanid khan captured Samarkand from the Timurids?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Shaybanids are mentioned only generally (early 16th century); no ruler is named.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-kokand-founder-uz",
+      "query": "Qo'qon xonligiga kim asos solgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Kokand appears only in the list of later states and its 1876 abolition.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-kopkari-uz",
+      "query": "Ko'pkari o'yini qanday o'tkaziladi?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "No traditional sports are described.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-observatory-ruin-uz",
+      "query": "Ulug'bek rasadxonasi qachon vayron bo'lgan va qachon qayta topilgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Observatory construction is covered; its destruction and rediscovery are not.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-metro-architect-en",
+      "query": "Who designed the stations of the Tashkent metro?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Metro opening (1977) and decorated stations are mentioned; no designers.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-temur-children-uz",
+      "query": "Amir Temurning nechta o'g'li bo'lgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "No information about Timur's children (only that Ulug'bek was his grandson).",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-palov-ratio-en",
+      "query": "What is the exact ratio of rice to meat in Samarkand-style palov?",
+      "language": "en",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Corpus lists ingredients and says recipes vary; no ratios or regional recipe.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-fitrat-novel-uz",
+      "query": "Fitrat qaysi romani bilan mashhur?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Fitrat's fields are listed, but none of his works is named. Distractor: Qodiriy's novel.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "neg-ibnsina-death-uz",
+      "query": "Ibn Sino qayerda vafot etgan?",
+      "language": "uz",
+      "category": "in-domain-unsupported",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "note": "Only Ibn Sina's birth (980, near Bukhara) and the Canon are given.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-monalisa-en",
+      "query": "Who painted the Mona Lisa?",
+      "language": "en",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated to Uzbek history/culture.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-photosynthesis-en",
+      "query": "How does photosynthesis work in plants?",
+      "language": "en",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-bitcoin-uz",
+      "query": "Bugun bitkoin narxi qancha?",
+      "language": "uz",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-worldcup2022-uz",
+      "query": "2022-yilgi futbol bo'yicha jahon chempionatini kim yutgan?",
+      "language": "uz",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated.",
+      "error": "Request contains an invalid argument."
+    },
+    {
+      "id": "ood-pizza-uz",
+      "query": "Uyda pitsa qanday tayyorlanadi?",
+      "language": "uz",
+      "category": "out-of-domain",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "note": "Unrelated (food, but not Uzbek).",
+      "error": "Request contains an invalid argument."
+    }
+  ]
+}

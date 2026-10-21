@@ -1,0 +1,28 @@
+{
+  "label": "baseline",
+  "judgeModel": "gemini-3.5-flash",
+  "judgedAt": "2026-10-20T19:24:26.593Z",
+  "note": "LLM-assisted labels to support manual review; not ground truth.",
+  "fields": {
+    "gives_requested_detail": "The answer provides a concrete answer to exactly what was asked (the specific date, name, number, place, fact...), whether right or wrong, labeled or not.",
+    "detail_matches_sources": "Answerable cases only (otherwise false): the answer to the question agrees with what the supporting source passage says.",
+    "contradicts_sources": "The answer states something that contradicts the source passages.",
+    "says_sources_lack_it": "The answer explicitly says its curated sources / knowledge base do not contain the requested information, or do not cover the question (any language, any wording; e.g. 'not from special sources' counts).",
+    "general_knowledge_labeled": "The answer explicitly marks some content as coming from general knowledge or from outside its sources (e.g. 'From general knowledge:', 'Umumiy bilimlarimga ko'ra', 'maxsus manbalardan emas').",
+    "requested_detail_labeled_as_general_knowledge": "The requested detail itself is clearly placed inside the part the answer marks as general knowledge / not from the sources. False if no detail is given.",
+    "requested_detail_presented_as_sourced": "The requested detail is cited with a [n] marker or worded as if the sources state it. False if no detail is given.",
+    "refuses_or_no_answer": "The answer gives no substantive answer to the question (e.g. only says it does not know)."
+  },
+  "judgements": {},
+  "errors": {
+    "para-ulugbek-death-en": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h35m17.35821952s.",
+    "para-uzbek-gender-en": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h34m57.39187168s.",
+    "para-word-order-uz": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h34m37.853883072s.",
+    "para-bakhshi-skills-en": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h34m17.757725599s.",
+    "para-soviet-control-en": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h33m58.022242565s.",
+    "xl-sextant-en": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h33m38.563910706s.",
+    "xl-liechtenstein-en": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h33m18.788627279s.",
+    "sp-ulugbek-okina-uz": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h32m58.973726265s.",
+    "sp-ulugbek-curly-uz": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 11h32m39.285895977s."
+  }
+}

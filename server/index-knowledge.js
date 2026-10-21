@@ -4,49 +4,31 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { embedText, getEmbedModel } from './lib/embeddings.js'
 import { VECTORS_PATH } from './lib/knowledge.js'
+import { CHUNKER_ID, chunkMarkdownFile } from './lib/chunking.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const KNOWLEDGE_DIR = join(__dirname, '..', 'knowledge')
 
-function countWords(text) {
-  return text.split(/\s+/).filter(Boolean).length
-}
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
-// Split on blank lines to preserve paragraph boundaries, then greedily pack
-// paragraphs into chunks of roughly minWords..maxWords.
-function chunkByParagraphs(text, minWords = 200, maxWords = 500) {
-  const paragraphs = text
-    .split(/\n\s*\n/)
-    .map((p) => p.trim())
-    .filter(Boolean)
-
-  const chunks = []
-  let current = []
-  let currentWords = 0
-
-  const flush = () => {
-    if (current.length) {
-      chunks.push(current.join('\n\n'))
-      current = []
-      currentWords = 0
+// Free-tier embedding quotas can return 429 partway through a run. Retrying a
+// few times keeps one rate-limit blip from losing the whole index.
+async function embedWithRetry(text, attempts = 4) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await embedText(text, 'RETRIEVAL_DOCUMENT')
+    } catch (err) {
+      if (attempt >= attempts) throw err
+      const waitMs = 2000 * 2 ** (attempt - 1)
+      console.warn(`\n  embed failed (${err.message}); retrying in ${waitMs / 1000}s...`)
+      await delay(waitMs)
     }
   }
+}
 
-  for (const paragraph of paragraphs) {
-    const words = countWords(paragraph)
-
-    // Starting this paragraph would blow past the cap — close the current chunk first.
-    if (currentWords > 0 && currentWords + words > maxWords) flush()
-
-    current.push(paragraph)
-    currentWords += words
-
-    // Enough material for a standalone chunk.
-    if (currentWords >= minWords) flush()
-  }
-
-  flush()
-  return chunks
+function fileTitle(markdown, fallback) {
+  const match = markdown.replace(/\r\n?/g, '\n').match(/^#\s+(.+)$/m)
+  return match ? match[1].trim() : fallback
 }
 
 async function main() {
@@ -68,31 +50,46 @@ async function main() {
     process.exit(1)
   }
 
-  console.log(`Indexing with embedding model: ${getEmbedModel()}\n`)
+  console.log(`Indexing with embedding model: ${getEmbedModel()} (chunker: ${CHUNKER_ID})\n`)
 
+  const fileMeta = {}
   const records = []
+
   for (const file of files) {
     const raw = await readFile(join(KNOWLEDGE_DIR, file), 'utf-8')
-    const chunks = chunkByParagraphs(raw)
+    const chunks = chunkMarkdownFile(file, raw)
+
+    fileMeta[file] = {
+      title: fileTitle(raw, file),
+      aliases: chunks[0]?.aliases ?? [],
+      sources: chunks[0]?.sources ?? [],
+    }
+
     console.log(`${file}: ${chunks.length} chunk(s)`)
 
     for (let i = 0; i < chunks.length; i++) {
-      const text = chunks[i]
-      process.stdout.write(`  chunk ${i + 1}/${chunks.length} (${countWords(text)} words)... `)
-      const embedding = await embedText(text, 'RETRIEVAL_DOCUMENT')
+      // aliases/sources are stored once per file (in `files`), not on every chunk.
+      const chunk = { ...chunks[i] }
+      delete chunk.aliases
+      delete chunk.sources
+      process.stdout.write(
+        `  ${i + 1}/${chunks.length} ${chunk.headingPath.join(' > ') || '(untitled)'} (${chunk.words} words)... `,
+      )
+      const embedding = await embedWithRetry(chunk.text)
       console.log(`embedded (${embedding.length} dims)`)
-      records.push({ source: file, text, embedding })
+      records.push({ ...chunk, embedding })
     }
   }
 
-  const dataDir = dirname(VECTORS_PATH)
-  await mkdir(dataDir, { recursive: true })
+  await mkdir(dirname(VECTORS_PATH), { recursive: true })
   await writeFile(
     VECTORS_PATH,
     JSON.stringify(
       {
         model: getEmbedModel(),
+        chunker: CHUNKER_ID,
         createdAt: new Date().toISOString(),
+        files: fileMeta,
         chunks: records,
       },
       null,

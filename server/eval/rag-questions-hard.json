@@ -1,0 +1,784 @@
+{
+  "version": 1,
+  "name": "hard",
+  "split": "dev",
+  "resultsPrefix": "hard",
+  "createdAt": "2026-10-20",
+  "description": "ENGINEERING / DEVELOPMENT evaluation set (not a held-out test set). Used to diagnose retrieval weaknesses during development; results on it are optimistic once any decision has been informed by it. A separate held-out test set must be written later and never used for tuning. Relevance rules are the same as rag-questions.json: a chunk is relevant when it comes from expectedFile (or an alsoAcceptable file) and contains every expected passage after case/apostrophe/whitespace normalisation.",
+  "schema": {
+    "answerable single": "expectedFile + expectedPassages (+ alsoAcceptable). Scored with Hit@k / MRR.",
+    "multiPart": "evidence[]: each item has its own expectedFile/expectedPassages/alsoAcceptable. Scored separately: any evidence in top 4, and all evidence in top 4.",
+    "answerable:false": "negativeType is 'in-domain-unsupported' (on-topic, but the corpus does not contain the answer) or 'out-of-domain'. absentTerms, when present, must not occur in any content section of the corpus (checked by --check).",
+    "category": "paraphrase | cross-language | spelling-variant | near-duplicate | no-entity-name | exact-detail | multi-part | in-domain-unsupported | out-of-domain"
+  },
+  "cases": [
+    {
+      "id": "para-ulugbek-death-en",
+      "query": "How did the life of Timur's scholarly grandson come to an end?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [
+        "cross-language",
+        "no-entity-name"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "fitna natijasida o'ldirilgan"
+      ]
+    },
+    {
+      "id": "para-uzbek-gender-en",
+      "query": "Do Uzbek nouns change form for masculine and feminine?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [],
+      "expectedFile": "08_uzbek_language.md",
+      "expectedPassages": [
+        "does not have grammatical gender"
+      ]
+    },
+    {
+      "id": "para-word-order-uz",
+      "query": "O'zbek gapida ega, to'ldiruvchi va kesim odatda qaysi tartibda keladi?",
+      "language": "uz",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [
+        "cross-language"
+      ],
+      "expectedFile": "08_uzbek_language.md",
+      "expectedPassages": [
+        "subject-object-verb"
+      ]
+    },
+    {
+      "id": "para-bakhshi-skills-en",
+      "query": "What abilities does a Bakhshi storyteller rely on most?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [],
+      "expectedFile": "07_music_dance_oral_traditions.md",
+      "expectedPassages": [
+        "memory, improvisation, oral transmission"
+      ]
+    },
+    {
+      "id": "para-soviet-control-en",
+      "query": "Apart from schooling and factories, which areas of life did the Soviet state keep under tight control?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [],
+      "expectedFile": "10_modern_history_and_independence.md",
+      "expectedPassages": [
+        "strong state control over politics, religion"
+      ]
+    },
+    {
+      "id": "xl-sextant-en",
+      "query": "What was the main instrument of the Samarkand observatory?",
+      "language": "en",
+      "answerable": true,
+      "category": "cross-language",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "sekstant"
+      ]
+    },
+    {
+      "id": "xl-liechtenstein-en",
+      "query": "Which other country, like Uzbekistan, is doubly landlocked?",
+      "language": "en",
+      "answerable": true,
+      "category": "cross-language",
+      "tags": [
+        "en-question-uz-source",
+        "spelling-variant"
+      ],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": [
+        "Lixtenshteyn"
+      ]
+    },
+    {
+      "id": "xl-ottoman-sultan-en",
+      "query": "Which Ottoman sultan did Timur defeat in 1402?",
+      "language": "en",
+      "answerable": true,
+      "category": "cross-language",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "Boyazid I"
+      ]
+    },
+    {
+      "id": "sp-ulugbek-okina-uz",
+      "query": "Mirzo Ulugʻbek qaysi yili tugʻilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "apostrophe-variant:U+02BB"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "1394-yilda"
+      ]
+    },
+    {
+      "id": "sp-ulugbek-curly-uz",
+      "query": "Ulug‘bek qaysi yildan Samarqandni boshqargan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "apostrophe-variant:U+2018"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "1409-yildan"
+      ]
+    },
+    {
+      "id": "sp-navoi-uz",
+      "query": "Navoi qaysi shaharda tug'ilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "uz-question-en-source",
+        "Navoi-vs-Navoiy"
+      ],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": [
+        "born in Herat"
+      ]
+    },
+    {
+      "id": "sp-biruni-uz",
+      "query": "Biruni qaysi fanlar haqida yozgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "uz-question-en-source",
+        "Biruni-vs-Beruniy"
+      ],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": [
+        "wrote on astronomy, mathematics, geography"
+      ]
+    },
+    {
+      "id": "sp-xorazmiy-uz",
+      "query": "Xorazmiy qaysi shaharda ishlagan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "uz-question-en-source",
+        "Xorazmiy-vs-Khwarizmi"
+      ],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": [
+        "worked in Baghdad"
+      ]
+    },
+    {
+      "id": "sp-tamerlan-uz",
+      "query": "Tamerlan qaysi shaharda vafot etgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "Tamerlan-vs-Temur"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "O'tror shahrida vafot"
+      ]
+    },
+    {
+      "id": "nd-cholpon-en",
+      "query": "Which writer killed in the 1938 purges was also a poet and translator?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "expectedFile": "03_scholars_writers_historians.md",
+      "expectedPassages": [
+        "poet, writer, translator"
+      ],
+      "note": "Distractors: Qodiriy (03) and Fitrat (04) were also killed in 1938."
+    },
+    {
+      "id": "nd-fitrat-languages-en",
+      "query": "Which Jadid reformer wrote in both Persian and Turkic?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": [
+        "Persian/Tajik and Turkic/Uzbek"
+      ],
+      "note": "Distractors: Navoi also wrote in Turkic and Persian (but was not a Jadid); Behbudi was a Jadid."
+    },
+    {
+      "id": "nd-behbudi-kasb-uz",
+      "query": "Behbudiy qanday sohalarda faoliyat yuritgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "expectedFile": "04_jadids_and_reformers.md",
+      "expectedPassages": [
+        "educator, journalist, playwright"
+      ],
+      "note": "Distractor: Fitrat section lists similar fields (literature, education, journalism...)."
+    },
+    {
+      "id": "nd-bibikhanum-en",
+      "query": "Which Samarkand mosque was built after Timur's campaign in India?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "Hindiston yurishidan"
+      ],
+      "note": "Distractors: Gur-e Amir, Registan, Oqsaroy sections."
+    },
+    {
+      "id": "nd-samanid-centre-en",
+      "query": "Which city was a major centre of the Samanid dynasty?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "expectedFile": "01_history_overview.md",
+      "expectedPassages": [
+        "Bukhara was one of the dynasty"
+      ],
+      "note": "Distractor: Samarkand sections."
+    },
+    {
+      "id": "nd-timurid-astronomer-en",
+      "query": "Which Timurid ruler is remembered as an astronomer?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "expectedFile": "02_timurid_era.md",
+      "expectedPassages": [
+        "Timurid ruler and astronomer"
+      ],
+      "alsoAcceptable": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Mirzo Ulug'bek"
+          ]
+        }
+      ],
+      "note": "Distractor: Amir Temur sections; the Timurid-period overview mentions astronomy without a name."
+    },
+    {
+      "id": "ne-rishtan-en",
+      "query": "Which town is famous for blue-green glazed pottery?",
+      "language": "en",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [],
+      "expectedFile": "09_crafts_textiles_and_food.md",
+      "expectedPassages": [
+        "Rishtan"
+      ],
+      "note": "Distractor: Margilan (textiles)."
+    },
+    {
+      "id": "ne-dowry-en",
+      "query": "Which embroidered textile was often part of a bride's dowry?",
+      "language": "en",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [],
+      "expectedFile": "09_crafts_textiles_and_food.md",
+      "expectedPassages": [
+        "dowry"
+      ]
+    },
+    {
+      "id": "ne-gold-desert-en",
+      "query": "In which desert is one of the world's biggest gold mines located?",
+      "language": "en",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": [
+        "Qizilqum"
+      ]
+    },
+    {
+      "id": "ne-ships-uz",
+      "query": "Qaysi shaharda quruqlikda qolib ketgan kemalarni ko'rish mumkin?",
+      "language": "uz",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": [
+        "kemalar qabristoni"
+      ]
+    },
+    {
+      "id": "ne-samani-uz",
+      "query": "Qaysi shaharda 10-asr me'morchiligining mashhur maqbarasi bor?",
+      "language": "uz",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "expectedFile": "05_cities_and_heritage.md",
+      "expectedPassages": [
+        "Ismail Samani Mausoleum"
+      ]
+    },
+    {
+      "id": "ex-bakhshi-year-en",
+      "query": "In what year did UNESCO inscribe Bakhshi art from Uzbekistan?",
+      "language": "en",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [],
+      "expectedFile": "07_music_dance_oral_traditions.md",
+      "expectedPassages": [
+        "Bakhshi art from Uzbekistan was inscribed",
+        "2021"
+      ],
+      "note": "Near-duplicate dates: Shashmaqom 2008, Askiya 2014, Lazgi 2019."
+    },
+    {
+      "id": "ex-lazgi-year-uz",
+      "query": "Lazgi YUNESKO ro'yxatiga qaysi yili kiritilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "expectedFile": "07_music_dance_oral_traditions.md",
+      "expectedPassages": [
+        "2019"
+      ]
+    },
+    {
+      "id": "ex-teshiktash-age-uz",
+      "query": "Teshiktosh g'oridan topilgan qoldiqlar taxminan necha yillik?",
+      "language": "uz",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [
+        "spelling-variant"
+      ],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": [
+        "70 ming yil"
+      ]
+    },
+    {
+      "id": "ex-shahrisabz-unesco-uz",
+      "query": "Shahrisabz tarixiy markazi YUNESKO ro'yxatiga qachon kiritilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [],
+      "expectedFile": "qiziqarli-faktlar.md",
+      "expectedPassages": [
+        "Shahrisabz tarixiy markazi 2000-yilda"
+      ],
+      "note": "Distractor: 05 UNESCO heritage section names Shahrisabz but gives no year."
+    },
+    {
+      "id": "ex-sherdor-years-en",
+      "query": "During which years was the Sher-Dor madrasa built?",
+      "language": "en",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [
+        "en-question-uz-source",
+        "spelling-variant"
+      ],
+      "expectedFile": "temuriylar.md",
+      "expectedPassages": [
+        "Sherdor madrasasi 1619-1636"
+      ],
+      "note": "Distractor: 05 Registan section names Sher-Dor without dates."
+    },
+    {
+      "id": "mp-biruni-ibnsina-born-en",
+      "query": "In which years were al-Biruni and Ibn Sina born?",
+      "language": "en",
+      "answerable": true,
+      "category": "multi-part",
+      "multiPart": true,
+      "tags": [],
+      "evidence": [
+        {
+          "label": "al-Biruni birth",
+          "expectedFile": "03_scholars_writers_historians.md",
+          "expectedPassages": [
+            "born in 973"
+          ]
+        },
+        {
+          "label": "Ibn Sina birth",
+          "expectedFile": "03_scholars_writers_historians.md",
+          "expectedPassages": [
+            "born in 980"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mp-qodiriy-fitrat-uz",
+      "query": "Abdulla Qodiriy va Fitrat qaysi yili qatl etilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "multi-part",
+      "multiPart": true,
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "evidence": [
+        {
+          "label": "Qodiriy execution",
+          "expectedFile": "03_scholars_writers_historians.md",
+          "expectedPassages": [
+            "executed during the Stalinist purges in 1938"
+          ]
+        },
+        {
+          "label": "Fitrat execution",
+          "expectedFile": "04_jadids_and_reformers.md",
+          "expectedPassages": [
+            "executed in 1938"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mp-shashmaqom-lazgi-en",
+      "query": "When were Shashmaqom and Lazgi each inscribed by UNESCO?",
+      "language": "en",
+      "answerable": true,
+      "category": "multi-part",
+      "multiPart": true,
+      "tags": [],
+      "evidence": [
+        {
+          "label": "Shashmaqom year",
+          "expectedFile": "07_music_dance_oral_traditions.md",
+          "expectedPassages": [
+            "inscribed Shashmaqom",
+            "2008"
+          ]
+        },
+        {
+          "label": "Lazgi year",
+          "expectedFile": "07_music_dance_oral_traditions.md",
+          "expectedPassages": [
+            "2019"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mp-temur-ulugbek-born-uz",
+      "query": "Amir Temur va Mirzo Ulug'bek qaysi yillarda tug'ilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "multi-part",
+      "multiPart": true,
+      "tags": [],
+      "evidence": [
+        {
+          "label": "Temur birth",
+          "expectedFile": "temuriylar.md",
+          "expectedPassages": [
+            "1336-yilda"
+          ],
+          "alsoAcceptable": [
+            {
+              "file": "02_timurid_era.md",
+              "passages": [
+                "born in 1336"
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Ulug'bek birth",
+          "expectedFile": "temuriylar.md",
+          "expectedPassages": [
+            "1394-yilda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neg-shahizinda-date-en",
+      "query": "When was the Shah-i-Zinda complex built?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Shah-i-Zinda appears only as a name in monument lists (02, 05); no date or description."
+    },
+    {
+      "id": "neg-bibixonim-person-uz",
+      "query": "Bibixonim kim bo'lgan va u Amir Temurga kim bo'lgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Corpus describes the Bibi-Khanum mosque only, never the person."
+    },
+    {
+      "id": "neg-kalon-minaret-en",
+      "query": "How tall is the Kalon Minaret in Bukhara?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "No minaret is described anywhere.",
+      "absentTerms": [
+        "Kalon",
+        "Kalyan",
+        "minaret"
+      ]
+    },
+    {
+      "id": "neg-first-president-en",
+      "query": "Who was the first president of independent Uzbekistan?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Independence (1991, 1 September) is covered; no president is named.",
+      "absentTerms": [
+        "president",
+        "prezident",
+        "Karimov"
+      ]
+    },
+    {
+      "id": "neg-navoiy-death-uz",
+      "query": "Alisher Navoiy qaysi yili vafot etgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Only Navoi's birth (Herat, 1441) is given.",
+      "absentTerms": [
+        "1501"
+      ]
+    },
+    {
+      "id": "neg-babur-death-en",
+      "query": "When and where did Babur die?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Only Babur's birth (1483, Andijan) and 1526 are given.",
+      "absentTerms": [
+        "1530"
+      ]
+    },
+    {
+      "id": "neg-madrasa-architect-uz",
+      "query": "Registondagi Ulug'bek madrasasini qaysi me'mor loyihalagan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Madrasa dates are given; no architect is named."
+    },
+    {
+      "id": "neg-shaybanid-khan-en",
+      "query": "Which Shaybanid khan captured Samarkand from the Timurids?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Shaybanids are mentioned only generally (early 16th century); no ruler is named.",
+      "absentTerms": [
+        "Shaybani Khan",
+        "Muhammad Shaybani",
+        "Shayboniyxon"
+      ]
+    },
+    {
+      "id": "neg-kokand-founder-uz",
+      "query": "Qo'qon xonligiga kim asos solgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Kokand appears only in the list of later states and its 1876 abolition.",
+      "absentTerms": [
+        "Shohruh",
+        "Shahrukh"
+      ]
+    },
+    {
+      "id": "neg-kopkari-uz",
+      "query": "Ko'pkari o'yini qanday o'tkaziladi?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "No traditional sports are described.",
+      "absentTerms": [
+        "ko'pkari",
+        "kopkari",
+        "kupkari",
+        "buzkashi"
+      ]
+    },
+    {
+      "id": "neg-observatory-ruin-uz",
+      "query": "Ulug'bek rasadxonasi qachon vayron bo'lgan va qachon qayta topilgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Observatory construction is covered; its destruction and rediscovery are not.",
+      "absentTerms": [
+        "vayron",
+        "rediscover",
+        "excavat"
+      ]
+    },
+    {
+      "id": "neg-metro-architect-en",
+      "query": "Who designed the stations of the Tashkent metro?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Metro opening (1977) and decorated stations are mentioned; no designers."
+    },
+    {
+      "id": "neg-temur-children-uz",
+      "query": "Amir Temurning nechta o'g'li bo'lgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "No information about Timur's children (only that Ulug'bek was his grandson).",
+      "absentTerms": [
+        "farzand",
+        "Shohrux",
+        "Shahrukh",
+        "Miranshah",
+        "Miran Shah"
+      ]
+    },
+    {
+      "id": "neg-palov-ratio-en",
+      "query": "What is the exact ratio of rice to meat in Samarkand-style palov?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Corpus lists ingredients and says recipes vary; no ratios or regional recipe."
+    },
+    {
+      "id": "neg-fitrat-novel-uz",
+      "query": "Fitrat qaysi romani bilan mashhur?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Fitrat's fields are listed, but none of his works is named. Distractor: Qodiriy's novel."
+    },
+    {
+      "id": "neg-ibnsina-death-uz",
+      "query": "Ibn Sino qayerda vafot etgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "in-domain-unsupported",
+      "category": "in-domain-unsupported",
+      "note": "Only Ibn Sina's birth (980, near Bukhara) and the Canon are given.",
+      "absentTerms": [
+        "Hamadan",
+        "Hamadon"
+      ]
+    },
+    {
+      "id": "ood-monalisa-en",
+      "query": "Who painted the Mona Lisa?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "category": "out-of-domain",
+      "note": "Unrelated to Uzbek history/culture."
+    },
+    {
+      "id": "ood-photosynthesis-en",
+      "query": "How does photosynthesis work in plants?",
+      "language": "en",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "category": "out-of-domain",
+      "note": "Unrelated."
+    },
+    {
+      "id": "ood-bitcoin-uz",
+      "query": "Bugun bitkoin narxi qancha?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "category": "out-of-domain",
+      "note": "Unrelated."
+    },
+    {
+      "id": "ood-worldcup2022-uz",
+      "query": "2022-yilgi futbol bo'yicha jahon chempionatini kim yutgan?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "category": "out-of-domain",
+      "note": "Unrelated."
+    },
+    {
+      "id": "ood-pizza-uz",
+      "query": "Uyda pitsa qanday tayyorlanadi?",
+      "language": "uz",
+      "answerable": false,
+      "negativeType": "out-of-domain",
+      "category": "out-of-domain",
+      "note": "Unrelated (food, but not Uzbek)."
+    }
+  ]
+}

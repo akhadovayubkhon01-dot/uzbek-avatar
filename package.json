@@ -10,9 +10,18 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "index": "node server/index-knowledge.js",
+    "index": "node --use-system-ca server/index-knowledge.js",
+    "index:legacy": "node --use-system-ca server/index-knowledge-legacy.js",
     "models": "node server/list-models.js",
-    "start": "node --use-system-ca server/index.js"
+    "start": "node --use-system-ca server/index.js",
+    "eval:rag": "node --use-system-ca server/eval/evaluate-rag.js",
+    "eval:rag:check": "node server/eval/evaluate-rag.js --check",
+    "eval:rag:hard": "node --use-system-ca server/eval/evaluate-rag.js --questions rag-questions-hard.json",
+    "eval:rag:check:hard": "node server/eval/evaluate-rag.js --check --questions rag-questions-hard.json",
+    "eval:rag:compare": "node server/eval/compare-rag.js",
+    "eval:grounding": "node --use-system-ca server/eval/evaluate-grounding.js",
+    "eval:grounding:judge": "node --use-system-ca server/eval/judge-grounding.js",
+    "eval:grounding:compare": "node server/eval/compare-grounding.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.4",

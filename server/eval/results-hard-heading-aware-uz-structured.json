@@ -1,0 +1,5269 @@
+{
+  "label": "heading-aware-uz-structured",
+  "evaluatedAt": "2026-10-20T18:32:59.706Z",
+  "questionsFile": "rag-questions-hard.json",
+  "questionsSplit": "dev",
+  "questionsVersion": 1,
+  "questionsHash": "d103719c61cb81aac8e1e2ca3cbc381c0f4ab653a11c5d3e8374663c2510e879",
+  "index": {
+    "chunker": "heading-aware-v1",
+    "model": "gemini-embedding-001",
+    "createdAt": "2026-10-20T18:30:48.799Z",
+    "chunkCount": 78,
+    "chunkWords": {
+      "min": 19,
+      "mean": 42.8,
+      "max": 99
+    },
+    "chunks": [
+      {
+        "id": "a68ed65194f1568a",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Ancient and early medieval background"
+        ],
+        "words": 78
+      },
+      {
+        "id": "06d46070c1df8700",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Arab conquest and Islamic period"
+        ],
+        "words": 47
+      },
+      {
+        "id": "77689a12244a6ef8",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Samanid period"
+        ],
+        "words": 43
+      },
+      {
+        "id": "b92795cc05450e30",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Mongol conquest"
+        ],
+        "words": 36
+      },
+      {
+        "id": "5f7b29a7d30e7f92",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Timurid period"
+        ],
+        "words": 39
+      },
+      {
+        "id": "049625a740042b18",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Later states"
+        ],
+        "words": 42
+      },
+      {
+        "id": "b23d827861a44fa5",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Russian conquest"
+        ],
+        "words": 38
+      },
+      {
+        "id": "faf858d0227731b3",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Soviet period"
+        ],
+        "words": 47
+      },
+      {
+        "id": "3a02914632d9eea2",
+        "file": "01_history_overview.md",
+        "headingPath": [
+          "History of the territory of present-day Uzbekistan",
+          "Independence"
+        ],
+        "words": 21
+      },
+      {
+        "id": "37edb5d54b6f10b5",
+        "file": "02_timurid_era.md",
+        "headingPath": [
+          "Timurid era",
+          "Amir Temur"
+        ],
+        "words": 99
+      },
+      {
+        "id": "479a21971ace1cb8",
+        "file": "02_timurid_era.md",
+        "headingPath": [
+          "Timurid era",
+          "Samarkand under the Timurids"
+        ],
+        "words": 36
+      },
+      {
+        "id": "e563867918326feb",
+        "file": "02_timurid_era.md",
+        "headingPath": [
+          "Timurid era",
+          "Ulugh Beg"
+        ],
+        "words": 64
+      },
+      {
+        "id": "4ec8f758daac056b",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region"
+        ],
+        "words": 41
+      },
+      {
+        "id": "c2ec68473aef2c63",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Muhammad al-Khwarizmi"
+        ],
+        "words": 68
+      },
+      {
+        "id": "184147850d4c36fd",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Abu Rayhan al-Biruni"
+        ],
+        "words": 48
+      },
+      {
+        "id": "ac60ba964460d47f",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Ibn Sina / Avicenna"
+        ],
+        "words": 50
+      },
+      {
+        "id": "e9a491bb480d3638",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Imam al-Bukhari"
+        ],
+        "words": 54
+      },
+      {
+        "id": "527043442bdfbe41",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Al-Tirmidhi"
+        ],
+        "words": 37
+      },
+      {
+        "id": "bcbdcb78b14fdd52",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Narshakhi"
+        ],
+        "words": 50
+      },
+      {
+        "id": "bba6e5a63d5a4a03",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Alisher Navoi"
+        ],
+        "words": 61
+      },
+      {
+        "id": "981ba88c137e1236",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Zahiriddin Muhammad Babur"
+        ],
+        "words": 54
+      },
+      {
+        "id": "615ce6c422393050",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Abdulla Qodiriy"
+        ],
+        "words": 49
+      },
+      {
+        "id": "d8a3819b452fa77c",
+        "file": "03_scholars_writers_historians.md",
+        "headingPath": [
+          "Scholars, writers and historians connected to the region",
+          "Cho'lpon"
+        ],
+        "words": 36
+      },
+      {
+        "id": "4569268f57bd15cf",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": [
+          "Jadidism and modern reformers",
+          "What was Jadidism?"
+        ],
+        "words": 89
+      },
+      {
+        "id": "dcb240645fb99e75",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": [
+          "Jadidism and modern reformers",
+          "Mahmudkhoja Behbudi"
+        ],
+        "words": 67
+      },
+      {
+        "id": "4a1aecc906d3f049",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": [
+          "Jadidism and modern reformers",
+          "Abdurauf Fitrat"
+        ],
+        "words": 54
+      },
+      {
+        "id": "83dea3083684cba1",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": [
+          "Jadidism and modern reformers",
+          "Jadid press"
+        ],
+        "words": 33
+      },
+      {
+        "id": "6cb8b7447027780d",
+        "file": "04_jadids_and_reformers.md",
+        "headingPath": [
+          "Jadidism and modern reformers",
+          "Repression"
+        ],
+        "words": 35
+      },
+      {
+        "id": "cebcdb042f65c5b5",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": [
+          "Historic cities and architecture",
+          "Samarkand"
+        ],
+        "words": 54
+      },
+      {
+        "id": "d024e38855407789",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": [
+          "Historic cities and architecture",
+          "Registan"
+        ],
+        "words": 35
+      },
+      {
+        "id": "154987e7af4f985d",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": [
+          "Historic cities and architecture",
+          "Bukhara"
+        ],
+        "words": 61
+      },
+      {
+        "id": "0979bb3d52ba9667",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": [
+          "Historic cities and architecture",
+          "Khiva and Itchan Kala"
+        ],
+        "words": 46
+      },
+      {
+        "id": "ad62465ec3b58c0b",
+        "file": "05_cities_and_heritage.md",
+        "headingPath": [
+          "Historic cities and architecture",
+          "UNESCO heritage"
+        ],
+        "words": 34
+      },
+      {
+        "id": "b5be9a30bf63d55b",
+        "file": "06_culture_and_social_life.md",
+        "headingPath": [
+          "Culture and social life",
+          "Mahalla"
+        ],
+        "words": 59
+      },
+      {
+        "id": "0e3fc59cb9aba05c",
+        "file": "06_culture_and_social_life.md",
+        "headingPath": [
+          "Culture and social life",
+          "Hospitality"
+        ],
+        "words": 55
+      },
+      {
+        "id": "d2ea81829553a22a",
+        "file": "06_culture_and_social_life.md",
+        "headingPath": [
+          "Culture and social life",
+          "Navruz"
+        ],
+        "words": 39
+      },
+      {
+        "id": "76a8d1fba59587e1",
+        "file": "06_culture_and_social_life.md",
+        "headingPath": [
+          "Culture and social life",
+          "Palov"
+        ],
+        "words": 60
+      },
+      {
+        "id": "e18fc8b13b56ce81",
+        "file": "07_music_dance_oral_traditions.md",
+        "headingPath": [
+          "Music, dance and oral traditions",
+          "Shashmaqom"
+        ],
+        "words": 57
+      },
+      {
+        "id": "1620154f64177ddb",
+        "file": "07_music_dance_oral_traditions.md",
+        "headingPath": [
+          "Music, dance and oral traditions",
+          "Askiya"
+        ],
+        "words": 46
+      },
+      {
+        "id": "bdcaf471dc06b7f6",
+        "file": "07_music_dance_oral_traditions.md",
+        "headingPath": [
+          "Music, dance and oral traditions",
+          "Lazgi"
+        ],
+        "words": 38
+      },
+      {
+        "id": "f509b22c37bfae86",
+        "file": "07_music_dance_oral_traditions.md",
+        "headingPath": [
+          "Music, dance and oral traditions",
+          "Bakhshi art"
+        ],
+        "words": 45
+      },
+      {
+        "id": "cf9e99d47036fa8a",
+        "file": "08_uzbek_language.md",
+        "headingPath": [
+          "Uzbek language",
+          "Language family"
+        ],
+        "words": 30
+      },
+      {
+        "id": "fba034aaad835074",
+        "file": "08_uzbek_language.md",
+        "headingPath": [
+          "Uzbek language",
+          "Historical literary background"
+        ],
+        "words": 39
+      },
+      {
+        "id": "1538870dfd12737f",
+        "file": "08_uzbek_language.md",
+        "headingPath": [
+          "Uzbek language",
+          "Grammar"
+        ],
+        "words": 49
+      },
+      {
+        "id": "8f00afa53559b0fe",
+        "file": "08_uzbek_language.md",
+        "headingPath": [
+          "Uzbek language",
+          "Vocabulary"
+        ],
+        "words": 24
+      },
+      {
+        "id": "41070e681625ef77",
+        "file": "08_uzbek_language.md",
+        "headingPath": [
+          "Uzbek language",
+          "Writing systems"
+        ],
+        "words": 90
+      },
+      {
+        "id": "c39c0d25b381a0ff",
+        "file": "08_uzbek_language.md",
+        "headingPath": [
+          "Uzbek language",
+          "Modern Latin alphabet features"
+        ],
+        "words": 28
+      },
+      {
+        "id": "2c3e9269b090f290",
+        "file": "09_crafts_textiles_and_food.md",
+        "headingPath": [
+          "Crafts, textiles and material culture",
+          "Atlas and adras"
+        ],
+        "words": 58
+      },
+      {
+        "id": "34dd7faadff9637e",
+        "file": "09_crafts_textiles_and_food.md",
+        "headingPath": [
+          "Crafts, textiles and material culture",
+          "Suzani"
+        ],
+        "words": 43
+      },
+      {
+        "id": "1fe46e7aec83102d",
+        "file": "09_crafts_textiles_and_food.md",
+        "headingPath": [
+          "Crafts, textiles and material culture",
+          "Ceramics"
+        ],
+        "words": 60
+      },
+      {
+        "id": "3e1ff4fbfe1f7421",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": [
+          "Modern history and independence",
+          "Uzbek SSR"
+        ],
+        "words": 42
+      },
+      {
+        "id": "a337e5f2e4540222",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": [
+          "Modern history and independence",
+          "Soviet modernization"
+        ],
+        "words": 30
+      },
+      {
+        "id": "08844206b0a2969c",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": [
+          "Modern history and independence",
+          "Cotton and the Aral Sea"
+        ],
+        "words": 50
+      },
+      {
+        "id": "d9204d5545db8e86",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": [
+          "Modern history and independence",
+          "Stalinist repression"
+        ],
+        "words": 29
+      },
+      {
+        "id": "fdef8fb9577153b2",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": [
+          "Modern history and independence",
+          "Independence"
+        ],
+        "words": 27
+      },
+      {
+        "id": "51174bd577744640",
+        "file": "10_modern_history_and_independence.md",
+        "headingPath": [
+          "Modern history and independence",
+          "Language after independence"
+        ],
+        "words": 31
+      },
+      {
+        "id": "233341dfaccc5996",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Ikki karra dengizga chiqish yo'li yo'q davlat"
+        ],
+        "words": 39
+      },
+      {
+        "id": "19b133dbfdaa3da1",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Muruntau oltin koni"
+        ],
+        "words": 25
+      },
+      {
+        "id": "bbc859e86d7fede4",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Usmon Qur'oni"
+        ],
+        "words": 28
+      },
+      {
+        "id": "d6f5e6b6bd986836",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "YUNESKO Jahon merosi ro'yxatidagi shaharlar"
+        ],
+        "words": 36
+      },
+      {
+        "id": "6375711ea32c1580",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Teshiktash g'ori topilmasi"
+        ],
+        "words": 29
+      },
+      {
+        "id": "8f2b33264e7d4cd6",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Orol dengizining qurishi"
+        ],
+        "words": 37
+      },
+      {
+        "id": "f7ce89457f3027ca",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Shashmaqom"
+        ],
+        "words": 22
+      },
+      {
+        "id": "2dabfc2652e1cb64",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Palov (osh)"
+        ],
+        "words": 26
+      },
+      {
+        "id": "928768348d4a7a20",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Navro'z bayrami"
+        ],
+        "words": 34
+      },
+      {
+        "id": "0eec2b613f936524",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Toshkent metropoliteni"
+        ],
+        "words": 23
+      },
+      {
+        "id": "998193862b6a17b3",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "Samarqandning qadimiyligi"
+        ],
+        "words": 29
+      },
+      {
+        "id": "d92bb85284c2c082",
+        "file": "qiziqarli-faktlar.md",
+        "headingPath": [
+          "Qiziqarli faktlar",
+          "O'zbek tili"
+        ],
+        "words": 19
+      },
+      {
+        "id": "aa482fed6c49a713",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Amir Temur",
+          "Tug'ilishi va saltanati"
+        ],
+        "words": 42
+      },
+      {
+        "id": "2052b4ee9872f5ac",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Amir Temur",
+          "Anqara jangi"
+        ],
+        "words": 30
+      },
+      {
+        "id": "fd81709b2edb537f",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Amir Temur",
+          "Vafoti va Go'ri Amir maqbarasi"
+        ],
+        "words": 39
+      },
+      {
+        "id": "d02833800fdadff6",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Bibixonim jome masjidi"
+        ],
+        "words": 28
+      },
+      {
+        "id": "0489ed884614a508",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Oqsaroy saroyi"
+        ],
+        "words": 23
+      },
+      {
+        "id": "16c6f9285721e521",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Mirzo Ulug'bek",
+          "Tug'ilishi va Samarqand hokimligi"
+        ],
+        "words": 30
+      },
+      {
+        "id": "8d4553b97942e0f7",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Mirzo Ulug'bek",
+          "Ulug'bek rasadxonasi"
+        ],
+        "words": 40
+      },
+      {
+        "id": "13b3442f2e27b38a",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Mirzo Ulug'bek",
+          "Vafoti va ilmiy merosi"
+        ],
+        "words": 25
+      },
+      {
+        "id": "f1bd4dccb316d494",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Registon maydoni"
+        ],
+        "words": 38
+      },
+      {
+        "id": "0f184fb9b6cc61d0",
+        "file": "temuriylar.md",
+        "headingPath": [
+          "Temuriylar davri",
+          "Zahiriddin Muhammad Bobur"
+        ],
+        "words": 25
+      }
+    ]
+  },
+  "metrics": {
+    "all": {
+      "n": 30,
+      "hit@1": 0.933,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.961,
+      "avgFirstRelevantRank": 1.1,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 186.6,
+      "meanBestRelevantScore": 0.72,
+      "meanTopScore": 0.721,
+      "meanTopIncorrectScore": 0.663,
+      "meanMargin": 0.057,
+      "closeCalls": 7,
+      "negativeMargins": 2
+    },
+    "en": {
+      "n": 17,
+      "hit@1": 0.882,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.931,
+      "avgFirstRelevantRank": 1.18,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 195.4,
+      "meanBestRelevantScore": 0.719,
+      "meanTopScore": 0.722,
+      "meanTopIncorrectScore": 0.663,
+      "meanMargin": 0.056,
+      "closeCalls": 5,
+      "negativeMargins": 2
+    },
+    "uz": {
+      "n": 13,
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 1,
+      "avgFirstRelevantRank": 1,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 175.2,
+      "meanBestRelevantScore": 0.72,
+      "meanTopScore": 0.72,
+      "meanTopIncorrectScore": 0.663,
+      "meanMargin": 0.057,
+      "closeCalls": 2,
+      "negativeMargins": 0
+    }
+  },
+  "metricsByCategory": {
+    "paraphrase": {
+      "n": 5,
+      "hit@1": 0.8,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.9,
+      "avgFirstRelevantRank": 1.2,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 162.2,
+      "meanBestRelevantScore": 0.724,
+      "meanTopScore": 0.729,
+      "meanTopIncorrectScore": 0.659,
+      "meanMargin": 0.065,
+      "closeCalls": 0,
+      "negativeMargins": 1
+    },
+    "cross-language": {
+      "n": 3,
+      "hit@1": 0.667,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 0.778,
+      "avgFirstRelevantRank": 1.67,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 194,
+      "meanBestRelevantScore": 0.702,
+      "meanTopScore": 0.706,
+      "meanTopIncorrectScore": 0.666,
+      "meanMargin": 0.035,
+      "closeCalls": 1,
+      "negativeMargins": 1
+    },
+    "spelling-variant": {
+      "n": 6,
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 1,
+      "avgFirstRelevantRank": 1,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 186.3,
+      "meanBestRelevantScore": 0.711,
+      "meanTopScore": 0.711,
+      "meanTopIncorrectScore": 0.677,
+      "meanMargin": 0.035,
+      "closeCalls": 1,
+      "negativeMargins": 0
+    },
+    "near-duplicate": {
+      "n": 6,
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 1,
+      "avgFirstRelevantRank": 1,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 222,
+      "meanBestRelevantScore": 0.721,
+      "meanTopScore": 0.721,
+      "meanTopIncorrectScore": 0.69,
+      "meanMargin": 0.031,
+      "closeCalls": 3,
+      "negativeMargins": 0
+    },
+    "no-entity-name": {
+      "n": 5,
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 1,
+      "avgFirstRelevantRank": 1,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 189.4,
+      "meanBestRelevantScore": 0.703,
+      "meanTopScore": 0.703,
+      "meanTopIncorrectScore": 0.613,
+      "meanMargin": 0.09,
+      "closeCalls": 1,
+      "negativeMargins": 0
+    },
+    "exact-detail": {
+      "n": 5,
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@4": 1,
+      "hit@5": 1,
+      "mrr": 1,
+      "avgFirstRelevantRank": 1,
+      "noRelevantChunk": 0,
+      "precision@4": 0.25,
+      "contextWords@4": 161.6,
+      "meanBestRelevantScore": 0.753,
+      "meanTopScore": 0.753,
+      "meanTopIncorrectScore": 0.667,
+      "meanMargin": 0.086,
+      "closeCalls": 1,
+      "negativeMargins": 0
+    }
+  },
+  "multiPart": {
+    "all": {
+      "n": 4,
+      "anyEvidence@1": 1,
+      "anyEvidence@4": 1,
+      "allEvidence@4": 1,
+      "allEvidence@5": 1,
+      "meanEvidenceItemsInTop4": 2
+    },
+    "en": {
+      "n": 2,
+      "anyEvidence@1": 1,
+      "anyEvidence@4": 1,
+      "allEvidence@4": 1,
+      "allEvidence@5": 1,
+      "meanEvidenceItemsInTop4": 2
+    },
+    "uz": {
+      "n": 2,
+      "anyEvidence@1": 1,
+      "anyEvidence@4": 1,
+      "allEvidence@4": 1,
+      "allEvidence@5": 1,
+      "meanEvidenceItemsInTop4": 2
+    }
+  },
+  "scores": {
+    "unrelatedTopScores": {
+      "neg-shahizinda-date-en": 0.6741,
+      "neg-bibixonim-person-uz": 0.7111,
+      "neg-kalon-minaret-en": 0.6212,
+      "neg-first-president-en": 0.6818,
+      "neg-navoiy-death-uz": 0.6894,
+      "neg-babur-death-en": 0.6838,
+      "neg-madrasa-architect-uz": 0.7237,
+      "neg-shaybanid-khan-en": 0.6841,
+      "neg-kokand-founder-uz": 0.656,
+      "neg-kopkari-uz": 0.6002,
+      "neg-observatory-ruin-uz": 0.6932,
+      "neg-metro-architect-en": 0.6616,
+      "neg-temur-children-uz": 0.6978,
+      "neg-palov-ratio-en": 0.7105,
+      "neg-fitrat-novel-uz": 0.7071,
+      "neg-ibnsina-death-uz": 0.677,
+      "ood-monalisa-en": 0.547,
+      "ood-photosynthesis-en": 0.5189,
+      "ood-bitcoin-uz": 0.5962,
+      "ood-worldcup2022-uz": 0.5558,
+      "ood-pizza-uz": 0.5944
+    },
+    "unrelatedTopScoreMax": 0.7237,
+    "unrelatedTopScoreMean": 0.6517,
+    "answerableBestRelevantScoreMin": 0.6576,
+    "answerableBestRelevantScoreMean": 0.7199
+  },
+  "distributions": {
+    "answerable: best relevant score": {
+      "n": 30,
+      "min": 0.6576,
+      "p25": 0.699,
+      "median": 0.7062,
+      "p75": 0.7451,
+      "max": 0.7939,
+      "mean": 0.7199
+    },
+    "answerable: top-1 score": {
+      "n": 30,
+      "min": 0.6576,
+      "p25": 0.7007,
+      "median": 0.7127,
+      "p75": 0.7451,
+      "max": 0.7939,
+      "mean": 0.7212
+    },
+    "answerable: top incorrect score": {
+      "n": 30,
+      "min": 0.5625,
+      "p25": 0.6331,
+      "median": 0.6612,
+      "p75": 0.6985,
+      "max": 0.7199,
+      "mean": 0.6631
+    },
+    "in-domain-unsupported: top-1 score": {
+      "n": 16,
+      "min": 0.6002,
+      "p25": 0.671,
+      "median": 0.684,
+      "p75": 0.7001,
+      "max": 0.7237,
+      "mean": 0.6795
+    },
+    "out-of-domain: top-1 score": {
+      "n": 5,
+      "min": 0.5189,
+      "p25": 0.547,
+      "median": 0.5558,
+      "p75": 0.5944,
+      "max": 0.5962,
+      "mean": 0.5625
+    }
+  },
+  "overlaps": {
+    "answerable best-relevant vs in-domain-unsupported top-1": {
+      "nA": 30,
+      "nB": 16,
+      "aMin": 0.6576,
+      "bMax": 0.7237,
+      "overlaps": true,
+      "overlapRange": [
+        0.6576,
+        0.7237
+      ],
+      "gap": -0.0661,
+      "aAtOrBelowBMax": 18,
+      "bAtOrAboveAMin": 13,
+      "auc": 0.7937
+    },
+    "answerable top-1 vs in-domain-unsupported top-1": {
+      "nA": 30,
+      "nB": 16,
+      "aMin": 0.6576,
+      "bMax": 0.7237,
+      "overlaps": true,
+      "overlapRange": [
+        0.6576,
+        0.7237
+      ],
+      "gap": -0.0661,
+      "aAtOrBelowBMax": 18,
+      "bAtOrAboveAMin": 13,
+      "auc": 0.8125
+    },
+    "answerable best-relevant vs out-of-domain top-1": {
+      "nA": 30,
+      "nB": 5,
+      "aMin": 0.6576,
+      "bMax": 0.5962,
+      "overlaps": false,
+      "overlapRange": null,
+      "gap": 0.0614,
+      "aAtOrBelowBMax": 0,
+      "bAtOrAboveAMin": 0,
+      "auc": 1
+    },
+    "answerable top-1 vs out-of-domain top-1": {
+      "nA": 30,
+      "nB": 5,
+      "aMin": 0.6576,
+      "bMax": 0.5962,
+      "overlaps": false,
+      "overlapRange": null,
+      "gap": 0.0614,
+      "aAtOrBelowBMax": 0,
+      "bAtOrAboveAMin": 0,
+      "auc": 1
+    }
+  },
+  "negatives": [
+    {
+      "id": "neg-shahizinda-date-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "When was the Shah-i-Zinda complex built?",
+      "topScore": 0.6741,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Samarkand under the Timurids"
+      ]
+    },
+    {
+      "id": "neg-bibixonim-person-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Bibixonim kim bo'lgan va u Amir Temurga kim bo'lgan?",
+      "topScore": 0.7111,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Bibixonim jome masjidi"
+      ]
+    },
+    {
+      "id": "neg-kalon-minaret-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "How tall is the Kalon Minaret in Bukhara?",
+      "topScore": 0.6212,
+      "topFile": "05_cities_and_heritage.md",
+      "topHeadingPath": [
+        "Historic cities and architecture",
+        "Bukhara"
+      ]
+    },
+    {
+      "id": "neg-first-president-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Who was the first president of independent Uzbekistan?",
+      "topScore": 0.6818,
+      "topFile": "10_modern_history_and_independence.md",
+      "topHeadingPath": [
+        "Modern history and independence",
+        "Independence"
+      ]
+    },
+    {
+      "id": "neg-navoiy-death-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Alisher Navoiy qaysi yili vafot etgan?",
+      "topScore": 0.6894,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Alisher Navoi"
+      ]
+    },
+    {
+      "id": "neg-babur-death-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "When and where did Babur die?",
+      "topScore": 0.6838,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Zahiriddin Muhammad Babur"
+      ]
+    },
+    {
+      "id": "neg-madrasa-architect-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Registondagi Ulug'bek madrasasini qaysi me'mor loyihalagan?",
+      "topScore": 0.7237,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Registon maydoni"
+      ]
+    },
+    {
+      "id": "neg-shaybanid-khan-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Which Shaybanid khan captured Samarkand from the Timurids?",
+      "topScore": 0.6841,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Samarkand under the Timurids"
+      ]
+    },
+    {
+      "id": "neg-kokand-founder-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Qo'qon xonligiga kim asos solgan?",
+      "topScore": 0.656,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Zahiriddin Muhammad Bobur"
+      ]
+    },
+    {
+      "id": "neg-kopkari-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Ko'pkari o'yini qanday o'tkaziladi?",
+      "topScore": 0.6002,
+      "topFile": "07_music_dance_oral_traditions.md",
+      "topHeadingPath": [
+        "Music, dance and oral traditions",
+        "Askiya"
+      ]
+    },
+    {
+      "id": "neg-observatory-ruin-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Ulug'bek rasadxonasi qachon vayron bo'lgan va qachon qayta topilgan?",
+      "topScore": 0.6932,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Mirzo Ulug'bek",
+        "Ulug'bek rasadxonasi"
+      ]
+    },
+    {
+      "id": "neg-metro-architect-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Who designed the stations of the Tashkent metro?",
+      "topScore": 0.6616,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Toshkent metropoliteni"
+      ]
+    },
+    {
+      "id": "neg-temur-children-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Amir Temurning nechta o'g'li bo'lgan?",
+      "topScore": 0.6978,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Amir Temur",
+        "Tug'ilishi va saltanati"
+      ]
+    },
+    {
+      "id": "neg-palov-ratio-en",
+      "language": "en",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "What is the exact ratio of rice to meat in Samarkand-style palov?",
+      "topScore": 0.7105,
+      "topFile": "06_culture_and_social_life.md",
+      "topHeadingPath": [
+        "Culture and social life",
+        "Palov"
+      ]
+    },
+    {
+      "id": "neg-fitrat-novel-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Fitrat qaysi romani bilan mashhur?",
+      "topScore": 0.7071,
+      "topFile": "04_jadids_and_reformers.md",
+      "topHeadingPath": [
+        "Jadidism and modern reformers",
+        "Abdurauf Fitrat"
+      ]
+    },
+    {
+      "id": "neg-ibnsina-death-uz",
+      "language": "uz",
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "query": "Ibn Sino qayerda vafot etgan?",
+      "topScore": 0.677,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Ibn Sina / Avicenna"
+      ]
+    },
+    {
+      "id": "ood-monalisa-en",
+      "language": "en",
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "query": "Who painted the Mona Lisa?",
+      "topScore": 0.547,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Amir Temur"
+      ]
+    },
+    {
+      "id": "ood-photosynthesis-en",
+      "language": "en",
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "query": "How does photosynthesis work in plants?",
+      "topScore": 0.5189,
+      "topFile": "06_culture_and_social_life.md",
+      "topHeadingPath": [
+        "Culture and social life",
+        "Palov"
+      ]
+    },
+    {
+      "id": "ood-bitcoin-uz",
+      "language": "uz",
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "query": "Bugun bitkoin narxi qancha?",
+      "topScore": 0.5962,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Usmon Qur'oni"
+      ]
+    },
+    {
+      "id": "ood-worldcup2022-uz",
+      "language": "uz",
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "query": "2022-yilgi futbol bo'yicha jahon chempionatini kim yutgan?",
+      "topScore": 0.5558,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Amir Temur",
+        "Anqara jangi"
+      ]
+    },
+    {
+      "id": "ood-pizza-uz",
+      "language": "uz",
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "query": "Uyda pitsa qanday tayyorlanadi?",
+      "topScore": 0.5944,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Palov (osh)"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "para-ulugbek-death-en",
+      "query": "How did the life of Timur's scholarly grandson come to an end?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [
+        "cross-language",
+        "no-entity-name"
+      ],
+      "topScore": 0.713,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Ulugh Beg"
+      ],
+      "contextWordsAtChatK": 224,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.713,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 2,
+          "score": 0.6862,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6817,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.6754,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "d8a3819b452fa77c",
+          "location": "Scholars, writers and historians connected to the region > Cho'lpon"
+        },
+        {
+          "rank": 5,
+          "score": 0.6716,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "981ba88c137e1236",
+          "location": "Scholars, writers and historians connected to the region > Zahiriddin Muhammad Babur"
+        }
+      ],
+      "firstRelevantRank": 2,
+      "bestRelevantScore": 0.6862,
+      "topIncorrectScore": 0.713,
+      "margin": -0.0268,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "fitna natijasida o'ldirilgan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "para-uzbek-gender-en",
+      "query": "Do Uzbek nouns change form for masculine and feminine?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [],
+      "topScore": 0.7293,
+      "topFile": "08_uzbek_language.md",
+      "topHeadingPath": [
+        "Uzbek language",
+        "Grammar"
+      ],
+      "contextWordsAtChatK": 131,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7293,
+          "relevant": true,
+          "file": "08_uzbek_language.md",
+          "id": "1538870dfd12737f",
+          "location": "Uzbek language > Grammar"
+        },
+        {
+          "rank": 2,
+          "score": 0.6799,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "8f00afa53559b0fe",
+          "location": "Uzbek language > Vocabulary"
+        },
+        {
+          "rank": 3,
+          "score": 0.6489,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "cf9e99d47036fa8a",
+          "location": "Uzbek language > Language family"
+        },
+        {
+          "rank": 4,
+          "score": 0.6477,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "c39c0d25b381a0ff",
+          "location": "Uzbek language > Modern Latin alphabet features"
+        },
+        {
+          "rank": 5,
+          "score": 0.6466,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "41070e681625ef77",
+          "location": "Uzbek language > Writing systems"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7293,
+      "topIncorrectScore": 0.6799,
+      "margin": 0.0493,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "08_uzbek_language.md",
+          "passages": [
+            "does not have grammatical gender"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "para-word-order-uz",
+      "query": "O'zbek gapida ega, to'ldiruvchi va kesim odatda qaysi tartibda keladi?",
+      "language": "uz",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [
+        "cross-language"
+      ],
+      "topScore": 0.7006,
+      "topFile": "08_uzbek_language.md",
+      "topHeadingPath": [
+        "Uzbek language",
+        "Grammar"
+      ],
+      "contextWordsAtChatK": 120,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7006,
+          "relevant": true,
+          "file": "08_uzbek_language.md",
+          "id": "1538870dfd12737f",
+          "location": "Uzbek language > Grammar"
+        },
+        {
+          "rank": 2,
+          "score": 0.63,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "8f00afa53559b0fe",
+          "location": "Uzbek language > Vocabulary"
+        },
+        {
+          "rank": 3,
+          "score": 0.6241,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "d92bb85284c2c082",
+          "location": "Qiziqarli faktlar > O'zbek tili"
+        },
+        {
+          "rank": 4,
+          "score": 0.623,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "c39c0d25b381a0ff",
+          "location": "Uzbek language > Modern Latin alphabet features"
+        },
+        {
+          "rank": 5,
+          "score": 0.6184,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "41070e681625ef77",
+          "location": "Uzbek language > Writing systems"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7006,
+      "topIncorrectScore": 0.63,
+      "margin": 0.0706,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "08_uzbek_language.md",
+          "passages": [
+            "subject-object-verb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "para-bakhshi-skills-en",
+      "query": "What abilities does a Bakhshi storyteller rely on most?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [],
+      "topScore": 0.7667,
+      "topFile": "07_music_dance_oral_traditions.md",
+      "topHeadingPath": [
+        "Music, dance and oral traditions",
+        "Bakhshi art"
+      ],
+      "contextWordsAtChatK": 195,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7667,
+          "relevant": true,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "f509b22c37bfae86",
+          "location": "Music, dance and oral traditions > Bakhshi art"
+        },
+        {
+          "rank": 2,
+          "score": 0.6424,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "1620154f64177ddb",
+          "location": "Music, dance and oral traditions > Askiya"
+        },
+        {
+          "rank": 3,
+          "score": 0.6146,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bcbdcb78b14fdd52",
+          "location": "Scholars, writers and historians connected to the region > Narshakhi"
+        },
+        {
+          "rank": 4,
+          "score": 0.608,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "e9a491bb480d3638",
+          "location": "Scholars, writers and historians connected to the region > Imam al-Bukhari"
+        },
+        {
+          "rank": 5,
+          "score": 0.6025,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "981ba88c137e1236",
+          "location": "Scholars, writers and historians connected to the region > Zahiriddin Muhammad Babur"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7667,
+      "topIncorrectScore": 0.6424,
+      "margin": 0.1243,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "07_music_dance_oral_traditions.md",
+          "passages": [
+            "memory, improvisation, oral transmission"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "para-soviet-control-en",
+      "query": "Apart from schooling and factories, which areas of life did the Soviet state keep under tight control?",
+      "language": "en",
+      "answerable": true,
+      "category": "paraphrase",
+      "tags": [],
+      "topScore": 0.7365,
+      "topFile": "10_modern_history_and_independence.md",
+      "topHeadingPath": [
+        "Modern history and independence",
+        "Soviet modernization"
+      ],
+      "contextWordsAtChatK": 141,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7365,
+          "relevant": true,
+          "file": "10_modern_history_and_independence.md",
+          "id": "a337e5f2e4540222",
+          "location": "Modern history and independence > Soviet modernization"
+        },
+        {
+          "rank": 2,
+          "score": 0.6278,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "faf858d0227731b3",
+          "location": "History of the territory of present-day Uzbekistan > Soviet period"
+        },
+        {
+          "rank": 3,
+          "score": 0.6269,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "6cb8b7447027780d",
+          "location": "Jadidism and modern reformers > Repression"
+        },
+        {
+          "rank": 4,
+          "score": 0.6245,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "d9204d5545db8e86",
+          "location": "Modern history and independence > Stalinist repression"
+        },
+        {
+          "rank": 5,
+          "score": 0.6074,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "b5be9a30bf63d55b",
+          "location": "Culture and social life > Mahalla"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7365,
+      "topIncorrectScore": 0.6278,
+      "margin": 0.1087,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "10_modern_history_and_independence.md",
+          "passages": [
+            "strong state control over politics, religion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xl-sextant-en",
+      "query": "What was the main instrument of the Samarkand observatory?",
+      "language": "en",
+      "answerable": true,
+      "category": "cross-language",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "topScore": 0.7124,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Ulugh Beg"
+      ],
+      "contextWordsAtChatK": 194,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7124,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 2,
+          "score": 0.7123,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 3,
+          "score": 0.7004,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 4,
+          "score": 0.6991,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 5,
+          "score": 0.6575,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        }
+      ],
+      "firstRelevantRank": 3,
+      "bestRelevantScore": 0.7004,
+      "topIncorrectScore": 0.7124,
+      "margin": -0.012,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "sekstant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xl-liechtenstein-en",
+      "query": "Which other country, like Uzbekistan, is doubly landlocked?",
+      "language": "en",
+      "answerable": true,
+      "category": "cross-language",
+      "tags": [
+        "en-question-uz-source",
+        "spelling-variant"
+      ],
+      "topScore": 0.7161,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Ikki karra dengizga chiqish yo'li yo'q davlat"
+      ],
+      "contextWordsAtChatK": 178,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7161,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "233341dfaccc5996",
+          "location": "Qiziqarli faktlar > Ikki karra dengizga chiqish yo'li yo'q davlat"
+        },
+        {
+          "rank": 2,
+          "score": 0.612,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "08844206b0a2969c",
+          "location": "Modern history and independence > Cotton and the Aral Sea"
+        },
+        {
+          "rank": 3,
+          "score": 0.6099,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "3e1ff4fbfe1f7421",
+          "location": "Modern history and independence > Uzbek SSR"
+        },
+        {
+          "rank": 4,
+          "score": 0.6095,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "faf858d0227731b3",
+          "location": "History of the territory of present-day Uzbekistan > Soviet period"
+        },
+        {
+          "rank": 5,
+          "score": 0.6033,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "ad62465ec3b58c0b",
+          "location": "Historic cities and architecture > UNESCO heritage"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7161,
+      "topIncorrectScore": 0.612,
+      "margin": 0.1041,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "Lixtenshteyn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xl-ottoman-sultan-en",
+      "query": "Which Ottoman sultan did Timur defeat in 1402?",
+      "language": "en",
+      "answerable": true,
+      "category": "cross-language",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "topScore": 0.6882,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Amir Temur",
+        "Anqara jangi"
+      ],
+      "contextWordsAtChatK": 210,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6882,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "2052b4ee9872f5ac",
+          "location": "Temuriylar davri > Amir Temur > Anqara jangi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6751,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 3,
+          "score": 0.6328,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "5f7b29a7d30e7f92",
+          "location": "History of the territory of present-day Uzbekistan > Timurid period"
+        },
+        {
+          "rank": 4,
+          "score": 0.6249,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 5,
+          "score": 0.6223,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6882,
+      "topIncorrectScore": 0.6751,
+      "margin": 0.0132,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Boyazid I"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp-ulugbek-okina-uz",
+      "query": "Mirzo Ulugʻbek qaysi yili tugʻilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "apostrophe-variant:U+02BB"
+      ],
+      "topScore": 0.748,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Mirzo Ulug'bek",
+        "Tug'ilishi va Samarqand hokimligi"
+      ],
+      "contextWordsAtChatK": 159,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.748,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "16c6f9285721e521",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi"
+        },
+        {
+          "rank": 2,
+          "score": 0.7059,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        },
+        {
+          "rank": 3,
+          "score": 0.7003,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 4,
+          "score": 0.6682,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 5,
+          "score": 0.6618,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.748,
+      "topIncorrectScore": 0.7059,
+      "margin": 0.0421,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "1394-yilda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp-ulugbek-curly-uz",
+      "query": "Ulug‘bek qaysi yildan Samarqandni boshqargan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "apostrophe-variant:U+2018"
+      ],
+      "topScore": 0.7325,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Mirzo Ulug'bek",
+        "Tug'ilishi va Samarqand hokimligi"
+      ],
+      "contextWordsAtChatK": 176,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7325,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "16c6f9285721e521",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi"
+        },
+        {
+          "rank": 2,
+          "score": 0.7015,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6995,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 4,
+          "score": 0.6752,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 5,
+          "score": 0.6746,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "5f7b29a7d30e7f92",
+          "location": "History of the territory of present-day Uzbekistan > Timurid period"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7325,
+      "topIncorrectScore": 0.7015,
+      "margin": 0.031,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "1409-yildan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp-navoi-uz",
+      "query": "Navoi qaysi shaharda tug'ilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "uz-question-en-source",
+        "Navoi-vs-Navoiy"
+      ],
+      "topScore": 0.7064,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Alisher Navoi"
+      ],
+      "contextWordsAtChatK": 172,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7064,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bba6e5a63d5a4a03",
+          "location": "Scholars, writers and historians connected to the region > Alisher Navoi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6597,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 3,
+          "score": 0.6419,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "16c6f9285721e521",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi"
+        },
+        {
+          "rank": 4,
+          "score": 0.6376,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "fba034aaad835074",
+          "location": "Uzbek language > Historical literary background"
+        },
+        {
+          "rank": 5,
+          "score": 0.6314,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7064,
+      "topIncorrectScore": 0.6597,
+      "margin": 0.0467,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "born in Herat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp-biruni-uz",
+      "query": "Biruni qaysi fanlar haqida yozgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "uz-question-en-source",
+        "Biruni-vs-Beruniy"
+      ],
+      "topScore": 0.6985,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Abu Rayhan al-Biruni"
+      ],
+      "contextWordsAtChatK": 179,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6985,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "184147850d4c36fd",
+          "location": "Scholars, writers and historians connected to the region > Abu Rayhan al-Biruni"
+        },
+        {
+          "rank": 2,
+          "score": 0.6523,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        },
+        {
+          "rank": 3,
+          "score": 0.6221,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "ac60ba964460d47f",
+          "location": "Scholars, writers and historians connected to the region > Ibn Sina / Avicenna"
+        },
+        {
+          "rank": 4,
+          "score": 0.6216,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 5,
+          "score": 0.62,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "fba034aaad835074",
+          "location": "Uzbek language > Historical literary background"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6985,
+      "topIncorrectScore": 0.6523,
+      "margin": 0.0462,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "wrote on astronomy, mathematics, geography"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp-xorazmiy-uz",
+      "query": "Xorazmiy qaysi shaharda ishlagan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "uz-question-en-source",
+        "Xorazmiy-vs-Khwarizmi"
+      ],
+      "topScore": 0.668,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Muhammad al-Khwarizmi"
+      ],
+      "contextWordsAtChatK": 227,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.668,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "c2ec68473aef2c63",
+          "location": "Scholars, writers and historians connected to the region > Muhammad al-Khwarizmi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6431,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "a68ed65194f1568a",
+          "location": "History of the territory of present-day Uzbekistan > Ancient and early medieval background"
+        },
+        {
+          "rank": 3,
+          "score": 0.6425,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        },
+        {
+          "rank": 4,
+          "score": 0.6363,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 5,
+          "score": 0.6302,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.668,
+      "topIncorrectScore": 0.6431,
+      "margin": 0.0249,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "worked in Baghdad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp-tamerlan-uz",
+      "query": "Tamerlan qaysi shaharda vafot etgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "spelling-variant",
+      "tags": [
+        "Tamerlan-vs-Temur"
+      ],
+      "topScore": 0.7154,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Amir Temur",
+        "Vafoti va Go'ri Amir maqbarasi"
+      ],
+      "contextWordsAtChatK": 205,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7154,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6987,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 3,
+          "score": 0.6639,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 4,
+          "score": 0.6574,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        },
+        {
+          "rank": 5,
+          "score": 0.6299,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "5f7b29a7d30e7f92",
+          "location": "History of the territory of present-day Uzbekistan > Timurid period"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7154,
+      "topIncorrectScore": 0.6987,
+      "margin": 0.0167,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "O'tror shahrida vafot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nd-cholpon-en",
+      "query": "Which writer killed in the 1938 purges was also a poet and translator?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "topScore": 0.7028,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Cho'lpon"
+      ],
+      "contextWordsAtChatK": 168,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7028,
+          "relevant": true,
+          "file": "03_scholars_writers_historians.md",
+          "id": "d8a3819b452fa77c",
+          "location": "Scholars, writers and historians connected to the region > Cho'lpon"
+        },
+        {
+          "rank": 2,
+          "score": 0.6541,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "615ce6c422393050",
+          "location": "Scholars, writers and historians connected to the region > Abdulla Qodiriy"
+        },
+        {
+          "rank": 3,
+          "score": 0.6486,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "4a1aecc906d3f049",
+          "location": "Jadidism and modern reformers > Abdurauf Fitrat"
+        },
+        {
+          "rank": 4,
+          "score": 0.6284,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "d9204d5545db8e86",
+          "location": "Modern history and independence > Stalinist repression"
+        },
+        {
+          "rank": 5,
+          "score": 0.6216,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "6cb8b7447027780d",
+          "location": "Jadidism and modern reformers > Repression"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7028,
+      "topIncorrectScore": 0.6541,
+      "margin": 0.0487,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "03_scholars_writers_historians.md",
+          "passages": [
+            "poet, writer, translator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nd-fitrat-languages-en",
+      "query": "Which Jadid reformer wrote in both Persian and Turkic?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "topScore": 0.7046,
+      "topFile": "04_jadids_and_reformers.md",
+      "topHeadingPath": [
+        "Jadidism and modern reformers",
+        "Abdurauf Fitrat"
+      ],
+      "contextWordsAtChatK": 243,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7046,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "4a1aecc906d3f049",
+          "location": "Jadidism and modern reformers > Abdurauf Fitrat"
+        },
+        {
+          "rank": 2,
+          "score": 0.6978,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "4569268f57bd15cf",
+          "location": "Jadidism and modern reformers > What was Jadidism?"
+        },
+        {
+          "rank": 3,
+          "score": 0.6943,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "83dea3083684cba1",
+          "location": "Jadidism and modern reformers > Jadid press"
+        },
+        {
+          "rank": 4,
+          "score": 0.6913,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "dcb240645fb99e75",
+          "location": "Jadidism and modern reformers > Mahmudkhoja Behbudi"
+        },
+        {
+          "rank": 5,
+          "score": 0.6661,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "6cb8b7447027780d",
+          "location": "Jadidism and modern reformers > Repression"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7046,
+      "topIncorrectScore": 0.6978,
+      "margin": 0.0067,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "Persian/Tajik and Turkic/Uzbek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nd-behbudi-kasb-uz",
+      "query": "Behbudiy qanday sohalarda faoliyat yuritgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "topScore": 0.7038,
+      "topFile": "04_jadids_and_reformers.md",
+      "topHeadingPath": [
+        "Jadidism and modern reformers",
+        "Mahmudkhoja Behbudi"
+      ],
+      "contextWordsAtChatK": 220,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7038,
+          "relevant": true,
+          "file": "04_jadids_and_reformers.md",
+          "id": "dcb240645fb99e75",
+          "location": "Jadidism and modern reformers > Mahmudkhoja Behbudi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6542,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        },
+        {
+          "rank": 3,
+          "score": 0.6377,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "184147850d4c36fd",
+          "location": "Scholars, writers and historians connected to the region > Abu Rayhan al-Biruni"
+        },
+        {
+          "rank": 4,
+          "score": 0.6254,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 5,
+          "score": 0.6246,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bcbdcb78b14fdd52",
+          "location": "Scholars, writers and historians connected to the region > Narshakhi"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7038,
+      "topIncorrectScore": 0.6542,
+      "margin": 0.0496,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "04_jadids_and_reformers.md",
+          "passages": [
+            "educator, journalist, playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nd-bibikhanum-en",
+      "query": "Which Samarkand mosque was built after Timur's campaign in India?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "topScore": 0.7009,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Bibixonim jome masjidi"
+      ],
+      "contextWordsAtChatK": 227,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7009,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "d02833800fdadff6",
+          "location": "Temuriylar davri > Bibixonim jome masjidi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6994,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 3,
+          "score": 0.6741,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.6704,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 5,
+          "score": 0.649,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7009,
+      "topIncorrectScore": 0.6994,
+      "margin": 0.0015,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Hindiston yurishidan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nd-samanid-centre-en",
+      "query": "Which city was a major centre of the Samanid dynasty?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "topScore": 0.728,
+      "topFile": "01_history_overview.md",
+      "topHeadingPath": [
+        "History of the territory of present-day Uzbekistan",
+        "Samanid period"
+      ],
+      "contextWordsAtChatK": 236,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.728,
+          "relevant": true,
+          "file": "01_history_overview.md",
+          "id": "77689a12244a6ef8",
+          "location": "History of the territory of present-day Uzbekistan > Samanid period"
+        },
+        {
+          "rank": 2,
+          "score": 0.7133,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "154987e7af4f985d",
+          "location": "Historic cities and architecture > Bukhara"
+        },
+        {
+          "rank": 3,
+          "score": 0.701,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 4,
+          "score": 0.6827,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "a68ed65194f1568a",
+          "location": "History of the territory of present-day Uzbekistan > Ancient and early medieval background"
+        },
+        {
+          "rank": 5,
+          "score": 0.6824,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.728,
+      "topIncorrectScore": 0.7133,
+      "margin": 0.0147,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "01_history_overview.md",
+          "passages": [
+            "Bukhara was one of the dynasty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nd-timurid-astronomer-en",
+      "query": "Which Timurid ruler is remembered as an astronomer?",
+      "language": "en",
+      "answerable": true,
+      "category": "near-duplicate",
+      "tags": [],
+      "topScore": 0.7858,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Ulugh Beg"
+      ],
+      "contextWordsAtChatK": 238,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7858,
+          "relevant": true,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 2,
+          "score": 0.7199,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 3,
+          "score": 0.7057,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.7049,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "5f7b29a7d30e7f92",
+          "location": "History of the territory of present-day Uzbekistan > Timurid period"
+        },
+        {
+          "rank": 5,
+          "score": 0.7023,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7858,
+      "topIncorrectScore": 0.7199,
+      "margin": 0.0659,
+      "relevantChunksInIndex": 4,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "02_timurid_era.md",
+          "passages": [
+            "Timurid ruler and astronomer"
+          ]
+        },
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Mirzo Ulug'bek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne-rishtan-en",
+      "query": "Which town is famous for blue-green glazed pottery?",
+      "language": "en",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [],
+      "topScore": 0.7059,
+      "topFile": "09_crafts_textiles_and_food.md",
+      "topHeadingPath": [
+        "Crafts, textiles and material culture",
+        "Ceramics"
+      ],
+      "contextWordsAtChatK": 225,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7059,
+          "relevant": true,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "1fe46e7aec83102d",
+          "location": "Crafts, textiles and material culture > Ceramics"
+        },
+        {
+          "rank": 2,
+          "score": 0.6075,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "2c3e9269b090f290",
+          "location": "Crafts, textiles and material culture > Atlas and adras"
+        },
+        {
+          "rank": 3,
+          "score": 0.6039,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "0979bb3d52ba9667",
+          "location": "Historic cities and architecture > Khiva and Itchan Kala"
+        },
+        {
+          "rank": 4,
+          "score": 0.599,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "154987e7af4f985d",
+          "location": "Historic cities and architecture > Bukhara"
+        },
+        {
+          "rank": 5,
+          "score": 0.5944,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7059,
+      "topIncorrectScore": 0.6075,
+      "margin": 0.0984,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "09_crafts_textiles_and_food.md",
+          "passages": [
+            "Rishtan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne-dowry-en",
+      "query": "Which embroidered textile was often part of a bride's dowry?",
+      "language": "en",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [],
+      "topScore": 0.7606,
+      "topFile": "09_crafts_textiles_and_food.md",
+      "topHeadingPath": [
+        "Crafts, textiles and material culture",
+        "Suzani"
+      ],
+      "contextWordsAtChatK": 211,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7606,
+          "relevant": true,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "34dd7faadff9637e",
+          "location": "Crafts, textiles and material culture > Suzani"
+        },
+        {
+          "rank": 2,
+          "score": 0.6058,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "2c3e9269b090f290",
+          "location": "Crafts, textiles and material culture > Atlas and adras"
+        },
+        {
+          "rank": 3,
+          "score": 0.5806,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "08844206b0a2969c",
+          "location": "Modern history and independence > Cotton and the Aral Sea"
+        },
+        {
+          "rank": 4,
+          "score": 0.5734,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "76a8d1fba59587e1",
+          "location": "Culture and social life > Palov"
+        },
+        {
+          "rank": 5,
+          "score": 0.5712,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "b5be9a30bf63d55b",
+          "location": "Culture and social life > Mahalla"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7606,
+      "topIncorrectScore": 0.6058,
+      "margin": 0.1548,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "09_crafts_textiles_and_food.md",
+          "passages": [
+            "dowry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne-gold-desert-en",
+      "query": "In which desert is one of the world's biggest gold mines located?",
+      "language": "en",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [
+        "en-question-uz-source"
+      ],
+      "topScore": 0.6576,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Muruntau oltin koni"
+      ],
+      "contextWordsAtChatK": 164,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6576,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "19b133dbfdaa3da1",
+          "location": "Qiziqarli faktlar > Muruntau oltin koni"
+        },
+        {
+          "rank": 2,
+          "score": 0.5625,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 3,
+          "score": 0.5593,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        },
+        {
+          "rank": 4,
+          "score": 0.5504,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "08844206b0a2969c",
+          "location": "Modern history and independence > Cotton and the Aral Sea"
+        },
+        {
+          "rank": 5,
+          "score": 0.5501,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "184147850d4c36fd",
+          "location": "Scholars, writers and historians connected to the region > Abu Rayhan al-Biruni"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6576,
+      "topIncorrectScore": 0.5625,
+      "margin": 0.0952,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "Qizilqum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne-ships-uz",
+      "query": "Qaysi shaharda quruqlikda qolib ketgan kemalarni ko'rish mumkin?",
+      "language": "uz",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [],
+      "topScore": 0.6984,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Orol dengizining qurishi"
+      ],
+      "contextWordsAtChatK": 158,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6984,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "8f2b33264e7d4cd6",
+          "location": "Qiziqarli faktlar > Orol dengizining qurishi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6174,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "233341dfaccc5996",
+          "location": "Qiziqarli faktlar > Ikki karra dengizga chiqish yo'li yo'q davlat"
+        },
+        {
+          "rank": 3,
+          "score": 0.6168,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "d6f5e6b6bd986836",
+          "location": "Qiziqarli faktlar > YUNESKO Jahon merosi ro'yxatidagi shaharlar"
+        },
+        {
+          "rank": 4,
+          "score": 0.6056,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "0979bb3d52ba9667",
+          "location": "Historic cities and architecture > Khiva and Itchan Kala"
+        },
+        {
+          "rank": 5,
+          "score": 0.6003,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "998193862b6a17b3",
+          "location": "Qiziqarli faktlar > Samarqandning qadimiyligi"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6984,
+      "topIncorrectScore": 0.6174,
+      "margin": 0.081,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "kemalar qabristoni"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne-samani-uz",
+      "query": "Qaysi shaharda 10-asr me'morchiligining mashhur maqbarasi bor?",
+      "language": "uz",
+      "answerable": true,
+      "category": "no-entity-name",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "topScore": 0.6931,
+      "topFile": "05_cities_and_heritage.md",
+      "topHeadingPath": [
+        "Historic cities and architecture",
+        "Bukhara"
+      ],
+      "contextWordsAtChatK": 189,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6931,
+          "relevant": true,
+          "file": "05_cities_and_heritage.md",
+          "id": "154987e7af4f985d",
+          "location": "Historic cities and architecture > Bukhara"
+        },
+        {
+          "rank": 2,
+          "score": 0.6738,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6666,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 4,
+          "score": 0.6648,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        },
+        {
+          "rank": 5,
+          "score": 0.6477,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bcbdcb78b14fdd52",
+          "location": "Scholars, writers and historians connected to the region > Narshakhi"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6931,
+      "topIncorrectScore": 0.6738,
+      "margin": 0.0194,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "05_cities_and_heritage.md",
+          "passages": [
+            "Ismail Samani Mausoleum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-bakhshi-year-en",
+      "query": "In what year did UNESCO inscribe Bakhshi art from Uzbekistan?",
+      "language": "en",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [],
+      "topScore": 0.7939,
+      "topFile": "07_music_dance_oral_traditions.md",
+      "topHeadingPath": [
+        "Music, dance and oral traditions",
+        "Bakhshi art"
+      ],
+      "contextWordsAtChatK": 163,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7939,
+          "relevant": true,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "f509b22c37bfae86",
+          "location": "Music, dance and oral traditions > Bakhshi art"
+        },
+        {
+          "rank": 2,
+          "score": 0.6885,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "1620154f64177ddb",
+          "location": "Music, dance and oral traditions > Askiya"
+        },
+        {
+          "rank": 3,
+          "score": 0.6772,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "bdcaf471dc06b7f6",
+          "location": "Music, dance and oral traditions > Lazgi"
+        },
+        {
+          "rank": 4,
+          "score": 0.6684,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "ad62465ec3b58c0b",
+          "location": "Historic cities and architecture > UNESCO heritage"
+        },
+        {
+          "rank": 5,
+          "score": 0.6668,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "1fe46e7aec83102d",
+          "location": "Crafts, textiles and material culture > Ceramics"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7939,
+      "topIncorrectScore": 0.6885,
+      "margin": 0.1055,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "07_music_dance_oral_traditions.md",
+          "passages": [
+            "Bakhshi art from Uzbekistan was inscribed",
+            "2021"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-lazgi-year-uz",
+      "query": "Lazgi YUNESKO ro'yxatiga qaysi yili kiritilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "topScore": 0.7794,
+      "topFile": "07_music_dance_oral_traditions.md",
+      "topHeadingPath": [
+        "Music, dance and oral traditions",
+        "Lazgi"
+      ],
+      "contextWordsAtChatK": 165,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7794,
+          "relevant": true,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "bdcaf471dc06b7f6",
+          "location": "Music, dance and oral traditions > Lazgi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6622,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "d6f5e6b6bd986836",
+          "location": "Qiziqarli faktlar > YUNESKO Jahon merosi ro'yxatidagi shaharlar"
+        },
+        {
+          "rank": 3,
+          "score": 0.6547,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "f509b22c37bfae86",
+          "location": "Music, dance and oral traditions > Bakhshi art"
+        },
+        {
+          "rank": 4,
+          "score": 0.6544,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "1620154f64177ddb",
+          "location": "Music, dance and oral traditions > Askiya"
+        },
+        {
+          "rank": 5,
+          "score": 0.6367,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "ad62465ec3b58c0b",
+          "location": "Historic cities and architecture > UNESCO heritage"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7794,
+      "topIncorrectScore": 0.6622,
+      "margin": 0.1172,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "07_music_dance_oral_traditions.md",
+          "passages": [
+            "2019"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-teshiktash-age-uz",
+      "query": "Teshiktosh g'oridan topilgan qoldiqlar taxminan necha yillik?",
+      "language": "uz",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [
+        "spelling-variant"
+      ],
+      "topScore": 0.7732,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Teshiktash g'ori topilmasi"
+      ],
+      "contextWordsAtChatK": 122,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7732,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "6375711ea32c1580",
+          "location": "Qiziqarli faktlar > Teshiktash g'ori topilmasi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6296,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "bbc859e86d7fede4",
+          "location": "Qiziqarli faktlar > Usmon Qur'oni"
+        },
+        {
+          "rank": 3,
+          "score": 0.6125,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "998193862b6a17b3",
+          "location": "Qiziqarli faktlar > Samarqandning qadimiyligi"
+        },
+        {
+          "rank": 4,
+          "score": 0.5926,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 5,
+          "score": 0.5904,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "0eec2b613f936524",
+          "location": "Qiziqarli faktlar > Toshkent metropoliteni"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7732,
+      "topIncorrectScore": 0.6296,
+      "margin": 0.1436,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "70 ming yil"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-shahrisabz-unesco-uz",
+      "query": "Shahrisabz tarixiy markazi YUNESKO ro'yxatiga qachon kiritilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [],
+      "topScore": 0.749,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "YUNESKO Jahon merosi ro'yxatidagi shaharlar"
+      ],
+      "contextWordsAtChatK": 185,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.749,
+          "relevant": true,
+          "file": "qiziqarli-faktlar.md",
+          "id": "d6f5e6b6bd986836",
+          "location": "Qiziqarli faktlar > YUNESKO Jahon merosi ro'yxatidagi shaharlar"
+        },
+        {
+          "rank": 2,
+          "score": 0.6928,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "ad62465ec3b58c0b",
+          "location": "Historic cities and architecture > UNESCO heritage"
+        },
+        {
+          "rank": 3,
+          "score": 0.6338,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "154987e7af4f985d",
+          "location": "Historic cities and architecture > Bukhara"
+        },
+        {
+          "rank": 4,
+          "score": 0.6323,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 5,
+          "score": 0.6318,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "f7ce89457f3027ca",
+          "location": "Qiziqarli faktlar > Shashmaqom"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.749,
+      "topIncorrectScore": 0.6928,
+      "margin": 0.0562,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "qiziqarli-faktlar.md",
+          "passages": [
+            "Shahrisabz tarixiy markazi 2000-yilda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-sherdor-years-en",
+      "query": "During which years was the Sher-Dor madrasa built?",
+      "language": "en",
+      "answerable": true,
+      "category": "exact-detail",
+      "tags": [
+        "en-question-uz-source",
+        "spelling-variant"
+      ],
+      "topScore": 0.6679,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Registon maydoni"
+      ],
+      "contextWordsAtChatK": 173,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6679,
+          "relevant": true,
+          "file": "temuriylar.md",
+          "id": "f1bd4dccb316d494",
+          "location": "Temuriylar davri > Registon maydoni"
+        },
+        {
+          "rank": 2,
+          "score": 0.6601,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        },
+        {
+          "rank": 3,
+          "score": 0.6558,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 4,
+          "score": 0.6491,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 5,
+          "score": 0.6202,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "5f7b29a7d30e7f92",
+          "location": "History of the territory of present-day Uzbekistan > Timurid period"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.6679,
+      "topIncorrectScore": 0.6601,
+      "margin": 0.0078,
+      "relevantChunksInIndex": 1,
+      "precisionAtChatK": 0.25,
+      "expected": [
+        {
+          "file": "temuriylar.md",
+          "passages": [
+            "Sherdor madrasasi 1619-1636"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mp-biruni-ibnsina-born-en",
+      "query": "In which years were al-Biruni and Ibn Sina born?",
+      "language": "en",
+      "answerable": true,
+      "category": "multi-part",
+      "tags": [],
+      "topScore": 0.7017,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Ibn Sina / Avicenna"
+      ],
+      "contextWordsAtChatK": 193,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7017,
+          "relevant": true,
+          "evidence": [
+            1
+          ],
+          "file": "03_scholars_writers_historians.md",
+          "id": "ac60ba964460d47f",
+          "location": "Scholars, writers and historians connected to the region > Ibn Sina / Avicenna"
+        },
+        {
+          "rank": 2,
+          "score": 0.6956,
+          "relevant": true,
+          "evidence": [
+            0
+          ],
+          "file": "03_scholars_writers_historians.md",
+          "id": "184147850d4c36fd",
+          "location": "Scholars, writers and historians connected to the region > Abu Rayhan al-Biruni"
+        },
+        {
+          "rank": 3,
+          "score": 0.625,
+          "relevant": false,
+          "evidence": [],
+          "file": "03_scholars_writers_historians.md",
+          "id": "e9a491bb480d3638",
+          "location": "Scholars, writers and historians connected to the region > Imam al-Bukhari"
+        },
+        {
+          "rank": 4,
+          "score": 0.6095,
+          "relevant": false,
+          "evidence": [],
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        },
+        {
+          "rank": 5,
+          "score": 0.5971,
+          "relevant": false,
+          "evidence": [],
+          "file": "03_scholars_writers_historians.md",
+          "id": "bba6e5a63d5a4a03",
+          "location": "Scholars, writers and historians connected to the region > Alisher Navoi"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7017,
+      "topIncorrectScore": 0.625,
+      "margin": 0.0767,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "multiPart": true,
+      "evidence": [
+        {
+          "label": "al-Biruni birth",
+          "expected": [
+            {
+              "file": "03_scholars_writers_historians.md",
+              "passages": [
+                "born in 973"
+              ]
+            }
+          ],
+          "firstRank": 2,
+          "score": 0.6956
+        },
+        {
+          "label": "Ibn Sina birth",
+          "expected": [
+            {
+              "file": "03_scholars_writers_historians.md",
+              "passages": [
+                "born in 980"
+              ]
+            }
+          ],
+          "firstRank": 1,
+          "score": 0.7017
+        }
+      ],
+      "anyEvidenceRank": 1,
+      "allEvidenceRank": 2,
+      "evidenceItemsInChatK": 2
+    },
+    {
+      "id": "mp-qodiriy-fitrat-uz",
+      "query": "Abdulla Qodiriy va Fitrat qaysi yili qatl etilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "multi-part",
+      "tags": [
+        "uz-question-en-source"
+      ],
+      "topScore": 0.7211,
+      "topFile": "04_jadids_and_reformers.md",
+      "topHeadingPath": [
+        "Jadidism and modern reformers",
+        "Abdurauf Fitrat"
+      ],
+      "contextWordsAtChatK": 167,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7211,
+          "relevant": true,
+          "evidence": [
+            1
+          ],
+          "file": "04_jadids_and_reformers.md",
+          "id": "4a1aecc906d3f049",
+          "location": "Jadidism and modern reformers > Abdurauf Fitrat"
+        },
+        {
+          "rank": 2,
+          "score": 0.7147,
+          "relevant": true,
+          "evidence": [
+            0
+          ],
+          "file": "03_scholars_writers_historians.md",
+          "id": "615ce6c422393050",
+          "location": "Scholars, writers and historians connected to the region > Abdulla Qodiriy"
+        },
+        {
+          "rank": 3,
+          "score": 0.6655,
+          "relevant": false,
+          "evidence": [],
+          "file": "10_modern_history_and_independence.md",
+          "id": "d9204d5545db8e86",
+          "location": "Modern history and independence > Stalinist repression"
+        },
+        {
+          "rank": 4,
+          "score": 0.6561,
+          "relevant": false,
+          "evidence": [],
+          "file": "04_jadids_and_reformers.md",
+          "id": "6cb8b7447027780d",
+          "location": "Jadidism and modern reformers > Repression"
+        },
+        {
+          "rank": 5,
+          "score": 0.6433,
+          "relevant": false,
+          "evidence": [],
+          "file": "03_scholars_writers_historians.md",
+          "id": "d8a3819b452fa77c",
+          "location": "Scholars, writers and historians connected to the region > Cho'lpon"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7211,
+      "topIncorrectScore": 0.6655,
+      "margin": 0.0556,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "multiPart": true,
+      "evidence": [
+        {
+          "label": "Qodiriy execution",
+          "expected": [
+            {
+              "file": "03_scholars_writers_historians.md",
+              "passages": [
+                "executed during the Stalinist purges in 1938"
+              ]
+            }
+          ],
+          "firstRank": 2,
+          "score": 0.7147
+        },
+        {
+          "label": "Fitrat execution",
+          "expected": [
+            {
+              "file": "04_jadids_and_reformers.md",
+              "passages": [
+                "executed in 1938"
+              ]
+            }
+          ],
+          "firstRank": 1,
+          "score": 0.7211
+        }
+      ],
+      "anyEvidenceRank": 1,
+      "allEvidenceRank": 2,
+      "evidenceItemsInChatK": 2
+    },
+    {
+      "id": "mp-shashmaqom-lazgi-en",
+      "query": "When were Shashmaqom and Lazgi each inscribed by UNESCO?",
+      "language": "en",
+      "answerable": true,
+      "category": "multi-part",
+      "tags": [],
+      "topScore": 0.7187,
+      "topFile": "07_music_dance_oral_traditions.md",
+      "topHeadingPath": [
+        "Music, dance and oral traditions",
+        "Lazgi"
+      ],
+      "contextWordsAtChatK": 163,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7187,
+          "relevant": true,
+          "evidence": [
+            1
+          ],
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "bdcaf471dc06b7f6",
+          "location": "Music, dance and oral traditions > Lazgi"
+        },
+        {
+          "rank": 2,
+          "score": 0.7071,
+          "relevant": true,
+          "evidence": [
+            0
+          ],
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "e18fc8b13b56ce81",
+          "location": "Music, dance and oral traditions > Shashmaqom"
+        },
+        {
+          "rank": 3,
+          "score": 0.675,
+          "relevant": false,
+          "evidence": [],
+          "file": "qiziqarli-faktlar.md",
+          "id": "f7ce89457f3027ca",
+          "location": "Qiziqarli faktlar > Shashmaqom"
+        },
+        {
+          "rank": 4,
+          "score": 0.6262,
+          "relevant": false,
+          "evidence": [],
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "1620154f64177ddb",
+          "location": "Music, dance and oral traditions > Askiya"
+        },
+        {
+          "rank": 5,
+          "score": 0.6261,
+          "relevant": false,
+          "evidence": [],
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "f509b22c37bfae86",
+          "location": "Music, dance and oral traditions > Bakhshi art"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7187,
+      "topIncorrectScore": 0.675,
+      "margin": 0.0437,
+      "relevantChunksInIndex": 2,
+      "precisionAtChatK": 0.5,
+      "multiPart": true,
+      "evidence": [
+        {
+          "label": "Shashmaqom year",
+          "expected": [
+            {
+              "file": "07_music_dance_oral_traditions.md",
+              "passages": [
+                "inscribed Shashmaqom",
+                "2008"
+              ]
+            }
+          ],
+          "firstRank": 2,
+          "score": 0.7071
+        },
+        {
+          "label": "Lazgi year",
+          "expected": [
+            {
+              "file": "07_music_dance_oral_traditions.md",
+              "passages": [
+                "2019"
+              ]
+            }
+          ],
+          "firstRank": 1,
+          "score": 0.7187
+        }
+      ],
+      "anyEvidenceRank": 1,
+      "allEvidenceRank": 2,
+      "evidenceItemsInChatK": 2
+    },
+    {
+      "id": "mp-temur-ulugbek-born-uz",
+      "query": "Amir Temur va Mirzo Ulug'bek qaysi yillarda tug'ilgan?",
+      "language": "uz",
+      "answerable": true,
+      "category": "multi-part",
+      "tags": [],
+      "topScore": 0.7427,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Mirzo Ulug'bek",
+        "Tug'ilishi va Samarqand hokimligi"
+      ],
+      "contextWordsAtChatK": 211,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7427,
+          "relevant": true,
+          "evidence": [
+            1
+          ],
+          "file": "temuriylar.md",
+          "id": "16c6f9285721e521",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi"
+        },
+        {
+          "rank": 2,
+          "score": 0.7119,
+          "relevant": true,
+          "evidence": [
+            0
+          ],
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 3,
+          "score": 0.6922,
+          "relevant": false,
+          "evidence": [],
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 4,
+          "score": 0.6913,
+          "relevant": true,
+          "evidence": [
+            0
+          ],
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 5,
+          "score": 0.6889,
+          "relevant": false,
+          "evidence": [],
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        }
+      ],
+      "firstRelevantRank": 1,
+      "bestRelevantScore": 0.7427,
+      "topIncorrectScore": 0.6922,
+      "margin": 0.0505,
+      "relevantChunksInIndex": 3,
+      "precisionAtChatK": 0.75,
+      "multiPart": true,
+      "evidence": [
+        {
+          "label": "Temur birth",
+          "expected": [
+            {
+              "file": "temuriylar.md",
+              "passages": [
+                "1336-yilda"
+              ]
+            },
+            {
+              "file": "02_timurid_era.md",
+              "passages": [
+                "born in 1336"
+              ]
+            }
+          ],
+          "firstRank": 2,
+          "score": 0.7119
+        },
+        {
+          "label": "Ulug'bek birth",
+          "expected": [
+            {
+              "file": "temuriylar.md",
+              "passages": [
+                "1394-yilda"
+              ]
+            }
+          ],
+          "firstRank": 1,
+          "score": 0.7427
+        }
+      ],
+      "anyEvidenceRank": 1,
+      "allEvidenceRank": 2,
+      "evidenceItemsInChatK": 2
+    },
+    {
+      "id": "neg-shahizinda-date-en",
+      "query": "When was the Shah-i-Zinda complex built?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6741,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Samarkand under the Timurids"
+      ],
+      "contextWordsAtChatK": 250,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6741,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 2,
+          "score": 0.6355,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 3,
+          "score": 0.6326,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 4,
+          "score": 0.627,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "154987e7af4f985d",
+          "location": "Historic cities and architecture > Bukhara"
+        },
+        {
+          "rank": 5,
+          "score": 0.6081,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-bibixonim-person-uz",
+      "query": "Bibixonim kim bo'lgan va u Amir Temurga kim bo'lgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.7111,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Bibixonim jome masjidi"
+      ],
+      "contextWordsAtChatK": 205,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7111,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "d02833800fdadff6",
+          "location": "Temuriylar davri > Bibixonim jome masjidi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6616,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 3,
+          "score": 0.6564,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 4,
+          "score": 0.646,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 5,
+          "score": 0.6387,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-kalon-minaret-en",
+      "query": "How tall is the Kalon Minaret in Bukhara?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6212,
+      "topFile": "05_cities_and_heritage.md",
+      "topHeadingPath": [
+        "Historic cities and architecture",
+        "Bukhara"
+      ],
+      "contextWordsAtChatK": 178,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6212,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "154987e7af4f985d",
+          "location": "Historic cities and architecture > Bukhara"
+        },
+        {
+          "rank": 2,
+          "score": 0.5973,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "0979bb3d52ba9667",
+          "location": "Historic cities and architecture > Khiva and Itchan Kala"
+        },
+        {
+          "rank": 3,
+          "score": 0.5802,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 4,
+          "score": 0.5788,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        },
+        {
+          "rank": 5,
+          "score": 0.5751,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "ad62465ec3b58c0b",
+          "location": "Historic cities and architecture > UNESCO heritage"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-first-president-en",
+      "query": "Who was the first president of independent Uzbekistan?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6818,
+      "topFile": "10_modern_history_and_independence.md",
+      "topHeadingPath": [
+        "Modern history and independence",
+        "Independence"
+      ],
+      "contextWordsAtChatK": 121,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6818,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "fdef8fb9577153b2",
+          "location": "Modern history and independence > Independence"
+        },
+        {
+          "rank": 2,
+          "score": 0.6737,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "3a02914632d9eea2",
+          "location": "History of the territory of present-day Uzbekistan > Independence"
+        },
+        {
+          "rank": 3,
+          "score": 0.6495,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "3e1ff4fbfe1f7421",
+          "location": "Modern history and independence > Uzbek SSR"
+        },
+        {
+          "rank": 4,
+          "score": 0.6385,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "51174bd577744640",
+          "location": "Modern history and independence > Language after independence"
+        },
+        {
+          "rank": 5,
+          "score": 0.6324,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "faf858d0227731b3",
+          "location": "History of the territory of present-day Uzbekistan > Soviet period"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-navoiy-death-uz",
+      "query": "Alisher Navoiy qaysi yili vafot etgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6894,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Alisher Navoi"
+      ],
+      "contextWordsAtChatK": 164,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6894,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bba6e5a63d5a4a03",
+          "location": "Scholars, writers and historians connected to the region > Alisher Navoi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6517,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6386,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        },
+        {
+          "rank": 4,
+          "score": 0.6236,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "fba034aaad835074",
+          "location": "Uzbek language > Historical literary background"
+        },
+        {
+          "rank": 5,
+          "score": 0.614,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "16c6f9285721e521",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-babur-death-en",
+      "query": "When and where did Babur die?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6838,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Zahiriddin Muhammad Babur"
+      ],
+      "contextWordsAtChatK": 217,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6838,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "981ba88c137e1236",
+          "location": "Scholars, writers and historians connected to the region > Zahiriddin Muhammad Babur"
+        },
+        {
+          "rank": 2,
+          "score": 0.636,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6332,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.621,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "0f184fb9b6cc61d0",
+          "location": "Temuriylar davri > Zahiriddin Muhammad Bobur"
+        },
+        {
+          "rank": 5,
+          "score": 0.5889,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "fba034aaad835074",
+          "location": "Uzbek language > Historical literary background"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-madrasa-architect-uz",
+      "query": "Registondagi Ulug'bek madrasasini qaysi me'mor loyihalagan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.7237,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Registon maydoni"
+      ],
+      "contextWordsAtChatK": 177,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7237,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "f1bd4dccb316d494",
+          "location": "Temuriylar davri > Registon maydoni"
+        },
+        {
+          "rank": 2,
+          "score": 0.6709,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6698,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 4,
+          "score": 0.6581,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        },
+        {
+          "rank": 5,
+          "score": 0.6346,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-shaybanid-khan-en",
+      "query": "Which Shaybanid khan captured Samarkand from the Timurids?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6841,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Samarkand under the Timurids"
+      ],
+      "contextWordsAtChatK": 216,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6841,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 2,
+          "score": 0.6789,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "5f7b29a7d30e7f92",
+          "location": "History of the territory of present-day Uzbekistan > Timurid period"
+        },
+        {
+          "rank": 3,
+          "score": 0.6719,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.6681,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "049625a740042b18",
+          "location": "History of the territory of present-day Uzbekistan > Later states"
+        },
+        {
+          "rank": 5,
+          "score": 0.6645,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-kokand-founder-uz",
+      "query": "Qo'qon xonligiga kim asos solgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.656,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Zahiriddin Muhammad Bobur"
+      ],
+      "contextWordsAtChatK": 161,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.656,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "0f184fb9b6cc61d0",
+          "location": "Temuriylar davri > Zahiriddin Muhammad Bobur"
+        },
+        {
+          "rank": 2,
+          "score": 0.6343,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 3,
+          "score": 0.6333,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 4,
+          "score": 0.631,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "981ba88c137e1236",
+          "location": "Scholars, writers and historians connected to the region > Zahiriddin Muhammad Babur"
+        },
+        {
+          "rank": 5,
+          "score": 0.6283,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "049625a740042b18",
+          "location": "History of the territory of present-day Uzbekistan > Later states"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-kopkari-uz",
+      "query": "Ko'pkari o'yini qanday o'tkaziladi?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6002,
+      "topFile": "07_music_dance_oral_traditions.md",
+      "topHeadingPath": [
+        "Music, dance and oral traditions",
+        "Askiya"
+      ],
+      "contextWordsAtChatK": 220,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6002,
+          "relevant": false,
+          "file": "07_music_dance_oral_traditions.md",
+          "id": "1620154f64177ddb",
+          "location": "Music, dance and oral traditions > Askiya"
+        },
+        {
+          "rank": 2,
+          "score": 0.5965,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "0e3fc59cb9aba05c",
+          "location": "Culture and social life > Hospitality"
+        },
+        {
+          "rank": 3,
+          "score": 0.5928,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "b5be9a30bf63d55b",
+          "location": "Culture and social life > Mahalla"
+        },
+        {
+          "rank": 4,
+          "score": 0.5926,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "1fe46e7aec83102d",
+          "location": "Crafts, textiles and material culture > Ceramics"
+        },
+        {
+          "rank": 5,
+          "score": 0.591,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "d2ea81829553a22a",
+          "location": "Culture and social life > Navruz"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-observatory-ruin-uz",
+      "query": "Ulug'bek rasadxonasi qachon vayron bo'lgan va qachon qayta topilgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6932,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Mirzo Ulug'bek",
+        "Ulug'bek rasadxonasi"
+      ],
+      "contextWordsAtChatK": 178,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6932,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "8d4553b97942e0f7",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Ulug'bek rasadxonasi"
+        },
+        {
+          "rank": 2,
+          "score": 0.6674,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        },
+        {
+          "rank": 3,
+          "score": 0.6524,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        },
+        {
+          "rank": 4,
+          "score": 0.6314,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "f1bd4dccb316d494",
+          "location": "Temuriylar davri > Registon maydoni"
+        },
+        {
+          "rank": 5,
+          "score": 0.6311,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-metro-architect-en",
+      "query": "Who designed the stations of the Tashkent metro?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6616,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Toshkent metropoliteni"
+      ],
+      "contextWordsAtChatK": 202,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6616,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "0eec2b613f936524",
+          "location": "Qiziqarli faktlar > Toshkent metropoliteni"
+        },
+        {
+          "rank": 2,
+          "score": 0.6013,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 3,
+          "score": 0.5958,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "3e1ff4fbfe1f7421",
+          "location": "Modern history and independence > Uzbek SSR"
+        },
+        {
+          "rank": 4,
+          "score": 0.5825,
+          "relevant": false,
+          "file": "01_history_overview.md",
+          "id": "b23d827861a44fa5",
+          "location": "History of the territory of present-day Uzbekistan > Russian conquest"
+        },
+        {
+          "rank": 5,
+          "score": 0.5785,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-temur-children-uz",
+      "query": "Amir Temurning nechta o'g'li bo'lgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.6978,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Amir Temur",
+        "Tug'ilishi va saltanati"
+      ],
+      "contextWordsAtChatK": 210,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.6978,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        },
+        {
+          "rank": 2,
+          "score": 0.6839,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "16c6f9285721e521",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Tug'ilishi va Samarqand hokimligi"
+        },
+        {
+          "rank": 3,
+          "score": 0.6732,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.6665,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        },
+        {
+          "rank": 5,
+          "score": 0.6512,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "2052b4ee9872f5ac",
+          "location": "Temuriylar davri > Amir Temur > Anqara jangi"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-palov-ratio-en",
+      "query": "What is the exact ratio of rice to meat in Samarkand-style palov?",
+      "language": "en",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.7105,
+      "topFile": "06_culture_and_social_life.md",
+      "topHeadingPath": [
+        "Culture and social life",
+        "Palov"
+      ],
+      "contextWordsAtChatK": 175,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7105,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "76a8d1fba59587e1",
+          "location": "Culture and social life > Palov"
+        },
+        {
+          "rank": 2,
+          "score": 0.6343,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "2dabfc2652e1cb64",
+          "location": "Qiziqarli faktlar > Palov (osh)"
+        },
+        {
+          "rank": 3,
+          "score": 0.6093,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "d024e38855407789",
+          "location": "Historic cities and architecture > Registan"
+        },
+        {
+          "rank": 4,
+          "score": 0.6057,
+          "relevant": false,
+          "file": "05_cities_and_heritage.md",
+          "id": "cebcdb042f65c5b5",
+          "location": "Historic cities and architecture > Samarkand"
+        },
+        {
+          "rank": 5,
+          "score": 0.5997,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "479a21971ace1cb8",
+          "location": "Timurid era > Samarkand under the Timurids"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-fitrat-novel-uz",
+      "query": "Fitrat qaysi romani bilan mashhur?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.7071,
+      "topFile": "04_jadids_and_reformers.md",
+      "topHeadingPath": [
+        "Jadidism and modern reformers",
+        "Abdurauf Fitrat"
+      ],
+      "contextWordsAtChatK": 203,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.7071,
+          "relevant": false,
+          "file": "04_jadids_and_reformers.md",
+          "id": "4a1aecc906d3f049",
+          "location": "Jadidism and modern reformers > Abdurauf Fitrat"
+        },
+        {
+          "rank": 2,
+          "score": 0.6336,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "615ce6c422393050",
+          "location": "Scholars, writers and historians connected to the region > Abdulla Qodiriy"
+        },
+        {
+          "rank": 3,
+          "score": 0.6144,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "fba034aaad835074",
+          "location": "Uzbek language > Historical literary background"
+        },
+        {
+          "rank": 4,
+          "score": 0.6085,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bba6e5a63d5a4a03",
+          "location": "Scholars, writers and historians connected to the region > Alisher Navoi"
+        },
+        {
+          "rank": 5,
+          "score": 0.6065,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "neg-ibnsina-death-uz",
+      "query": "Ibn Sino qayerda vafot etgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "in-domain-unsupported",
+      "tags": [],
+      "topScore": 0.677,
+      "topFile": "03_scholars_writers_historians.md",
+      "topHeadingPath": [
+        "Scholars, writers and historians connected to the region",
+        "Ibn Sina / Avicenna"
+      ],
+      "contextWordsAtChatK": 229,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.677,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "ac60ba964460d47f",
+          "location": "Scholars, writers and historians connected to the region > Ibn Sina / Avicenna"
+        },
+        {
+          "rank": 2,
+          "score": 0.6431,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "fd81709b2edb537f",
+          "location": "Temuriylar davri > Amir Temur > Vafoti va Go'ri Amir maqbarasi"
+        },
+        {
+          "rank": 3,
+          "score": 0.613,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 4,
+          "score": 0.6125,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "4ec8f758daac056b",
+          "location": "Scholars, writers and historians connected to the region"
+        },
+        {
+          "rank": 5,
+          "score": 0.6021,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "13b3442f2e27b38a",
+          "location": "Temuriylar davri > Mirzo Ulug'bek > Vafoti va ilmiy merosi"
+        }
+      ],
+      "negativeType": "in-domain-unsupported",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "ood-monalisa-en",
+      "query": "Who painted the Mona Lisa?",
+      "language": "en",
+      "answerable": false,
+      "category": "out-of-domain",
+      "tags": [],
+      "topScore": 0.547,
+      "topFile": "02_timurid_era.md",
+      "topHeadingPath": [
+        "Timurid era",
+        "Amir Temur"
+      ],
+      "contextWordsAtChatK": 264,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.547,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "37edb5d54b6f10b5",
+          "location": "Timurid era > Amir Temur"
+        },
+        {
+          "rank": 2,
+          "score": 0.5398,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "ac60ba964460d47f",
+          "location": "Scholars, writers and historians connected to the region > Ibn Sina / Avicenna"
+        },
+        {
+          "rank": 3,
+          "score": 0.5389,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "981ba88c137e1236",
+          "location": "Scholars, writers and historians connected to the region > Zahiriddin Muhammad Babur"
+        },
+        {
+          "rank": 4,
+          "score": 0.5298,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "bba6e5a63d5a4a03",
+          "location": "Scholars, writers and historians connected to the region > Alisher Navoi"
+        },
+        {
+          "rank": 5,
+          "score": 0.5263,
+          "relevant": false,
+          "file": "02_timurid_era.md",
+          "id": "e563867918326feb",
+          "location": "Timurid era > Ulugh Beg"
+        }
+      ],
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "ood-photosynthesis-en",
+      "query": "How does photosynthesis work in plants?",
+      "language": "en",
+      "answerable": false,
+      "category": "out-of-domain",
+      "tags": [],
+      "topScore": 0.5189,
+      "topFile": "06_culture_and_social_life.md",
+      "topHeadingPath": [
+        "Culture and social life",
+        "Palov"
+      ],
+      "contextWordsAtChatK": 208,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5189,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "76a8d1fba59587e1",
+          "location": "Culture and social life > Palov"
+        },
+        {
+          "rank": 2,
+          "score": 0.5183,
+          "relevant": false,
+          "file": "03_scholars_writers_historians.md",
+          "id": "c2ec68473aef2c63",
+          "location": "Scholars, writers and historians connected to the region > Muhammad al-Khwarizmi"
+        },
+        {
+          "rank": 3,
+          "score": 0.5171,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "08844206b0a2969c",
+          "location": "Modern history and independence > Cotton and the Aral Sea"
+        },
+        {
+          "rank": 4,
+          "score": 0.5122,
+          "relevant": false,
+          "file": "10_modern_history_and_independence.md",
+          "id": "a337e5f2e4540222",
+          "location": "Modern history and independence > Soviet modernization"
+        },
+        {
+          "rank": 5,
+          "score": 0.5093,
+          "relevant": false,
+          "file": "08_uzbek_language.md",
+          "id": "1538870dfd12737f",
+          "location": "Uzbek language > Grammar"
+        }
+      ],
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "ood-bitcoin-uz",
+      "query": "Bugun bitkoin narxi qancha?",
+      "language": "uz",
+      "answerable": false,
+      "category": "out-of-domain",
+      "tags": [],
+      "topScore": 0.5962,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Usmon Qur'oni"
+      ],
+      "contextWordsAtChatK": 116,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5962,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "bbc859e86d7fede4",
+          "location": "Qiziqarli faktlar > Usmon Qur'oni"
+        },
+        {
+          "rank": 2,
+          "score": 0.5907,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "19b133dbfdaa3da1",
+          "location": "Qiziqarli faktlar > Muruntau oltin koni"
+        },
+        {
+          "rank": 3,
+          "score": 0.5849,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "928768348d4a7a20",
+          "location": "Qiziqarli faktlar > Navro'z bayrami"
+        },
+        {
+          "rank": 4,
+          "score": 0.5831,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "998193862b6a17b3",
+          "location": "Qiziqarli faktlar > Samarqandning qadimiyligi"
+        },
+        {
+          "rank": 5,
+          "score": 0.5826,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "233341dfaccc5996",
+          "location": "Qiziqarli faktlar > Ikki karra dengizga chiqish yo'li yo'q davlat"
+        }
+      ],
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "ood-worldcup2022-uz",
+      "query": "2022-yilgi futbol bo'yicha jahon chempionatini kim yutgan?",
+      "language": "uz",
+      "answerable": false,
+      "category": "out-of-domain",
+      "tags": [],
+      "topScore": 0.5558,
+      "topFile": "temuriylar.md",
+      "topHeadingPath": [
+        "Temuriylar davri",
+        "Amir Temur",
+        "Anqara jangi"
+      ],
+      "contextWordsAtChatK": 133,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5558,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "2052b4ee9872f5ac",
+          "location": "Temuriylar davri > Amir Temur > Anqara jangi"
+        },
+        {
+          "rank": 2,
+          "score": 0.5554,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "bbc859e86d7fede4",
+          "location": "Qiziqarli faktlar > Usmon Qur'oni"
+        },
+        {
+          "rank": 3,
+          "score": 0.5543,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "d6f5e6b6bd986836",
+          "location": "Qiziqarli faktlar > YUNESKO Jahon merosi ro'yxatidagi shaharlar"
+        },
+        {
+          "rank": 4,
+          "score": 0.5515,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "233341dfaccc5996",
+          "location": "Qiziqarli faktlar > Ikki karra dengizga chiqish yo'li yo'q davlat"
+        },
+        {
+          "rank": 5,
+          "score": 0.5387,
+          "relevant": false,
+          "file": "temuriylar.md",
+          "id": "aa482fed6c49a713",
+          "location": "Temuriylar davri > Amir Temur > Tug'ilishi va saltanati"
+        }
+      ],
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    },
+    {
+      "id": "ood-pizza-uz",
+      "query": "Uyda pitsa qanday tayyorlanadi?",
+      "language": "uz",
+      "answerable": false,
+      "category": "out-of-domain",
+      "tags": [],
+      "topScore": 0.5944,
+      "topFile": "qiziqarli-faktlar.md",
+      "topHeadingPath": [
+        "Qiziqarli faktlar",
+        "Palov (osh)"
+      ],
+      "contextWordsAtChatK": 180,
+      "top": [
+        {
+          "rank": 1,
+          "score": 0.5944,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "2dabfc2652e1cb64",
+          "location": "Qiziqarli faktlar > Palov (osh)"
+        },
+        {
+          "rank": 2,
+          "score": 0.5929,
+          "relevant": false,
+          "file": "qiziqarli-faktlar.md",
+          "id": "928768348d4a7a20",
+          "location": "Qiziqarli faktlar > Navro'z bayrami"
+        },
+        {
+          "rank": 3,
+          "score": 0.5802,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "76a8d1fba59587e1",
+          "location": "Culture and social life > Palov"
+        },
+        {
+          "rank": 4,
+          "score": 0.5714,
+          "relevant": false,
+          "file": "09_crafts_textiles_and_food.md",
+          "id": "1fe46e7aec83102d",
+          "location": "Crafts, textiles and material culture > Ceramics"
+        },
+        {
+          "rank": 5,
+          "score": 0.5596,
+          "relevant": false,
+          "file": "06_culture_and_social_life.md",
+          "id": "0e3fc59cb9aba05c",
+          "location": "Culture and social life > Hospitality"
+        }
+      ],
+      "negativeType": "out-of-domain",
+      "negativeTypeInferred": false,
+      "expected": [],
+      "firstRelevantRank": null,
+      "bestRelevantScore": null,
+      "precisionAtChatK": null
+    }
+  ]
+}
