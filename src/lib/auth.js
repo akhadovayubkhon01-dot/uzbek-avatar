@@ -47,3 +47,27 @@ export async function saveTeacherName(name) {
   if (error) throw error
   return data.user
 }
+
+// Email a password-reset link. The link opens the app again, where the person
+// sets a new password (see onPasswordRecovery and updatePassword).
+export async function sendPasswordReset(email) {
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: window.location.origin,
+  })
+  if (error) throw error
+}
+
+// Set a new password for the signed-in user (after opening a reset link).
+export async function updatePassword(password) {
+  const { data, error } = await supabase.auth.updateUser({ password })
+  if (error) throw error
+  return data.user
+}
+
+// Run a callback when someone arrives through a password-reset link.
+export function onPasswordRecovery(callback) {
+  const { data } = supabase.auth.onAuthStateChange((event) => {
+    if (event === 'PASSWORD_RECOVERY') callback()
+  })
+  return () => data.subscription.unsubscribe()
+}

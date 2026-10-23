@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Avatar from './components/Avatar'
 import AvatarMenuBar from './components/AvatarMenuBar'
 import Chat from './components/Chat'
+import ChatSidebar from './components/ChatSidebar'
+import ResetPasswordDialog from './components/ResetPasswordDialog'
 import NamePrompt from './components/NamePrompt'
 import Games from './pages/Games'
 import Duels from './pages/Duels'
@@ -14,6 +16,7 @@ import {
   getCurrentUser,
   getSavedTeacherName,
   onAuthChange,
+  onPasswordRecovery,
   saveTeacherName,
   signOut,
 } from './lib/auth'
@@ -23,9 +26,34 @@ import {
   loadMessages,
   saveMessage,
 } from './lib/history'
+import { authLinkError, recoveryLinkInUrl } from './lib/supabase'
 
 const LOCAL_NAME_KEY = 'teacherName'
 const LANGUAGE_KEY = 'language'
+const SIDEBAR_KEY = 'chatSidebarOpen'
+const NARROW_SCREEN = '(max-width: 768px)'
+
+const isNarrowScreen = () => typeof window !== 'undefined' && window.matchMedia(NARROW_SCREEN).matches
+
+// Chat history starts open on wide screens (unless the person closed it) and
+// closed on phones, where it slides over the page.
+function readSidebarOpen() {
+  if (isNarrowScreen()) return false
+  try {
+    return localStorage.getItem(SIDEBAR_KEY) !== '0'
+  } catch {
+    return true
+  }
+}
+
+function writeSidebarOpen(open) {
+  if (isNarrowScreen()) return
+  try {
+    localStorage.setItem(SIDEBAR_KEY, open ? '1' : '0')
+  } catch {
+    // Not persisted; the choice still applies for this visit.
+  }
+}
 
 // The language the visitor last chose, so a reload doesn't reset it.
 function readLanguage() {
@@ -82,9 +110,15 @@ export default function App() {
   const [loading, setLoading] = useState(false)
   const [speaking, setSpeaking] = useState(false)
   const [listening, setListening] = useState(false)
-  const [autoSpeak, setAutoSpeak] = useState(true)
+  // Reading answers aloud starts off; the 🔊 button turns it on.
+  const [autoSpeak, setAutoSpeak] = useState(false)
   const [activeTopic, setActiveTopic] = useState(null)
   const [lastModel, setLastModel] = useState(null)
+  const [sidebarOpen, setSidebarOpen] = useState(readSidebarOpen)
+  // Opening the password-reset email link lands here: ask for a new password.
+  const [passwordReset, setPasswordReset] = useState(
+    recoveryLinkInUrl || authLinkError ? { linkError: Boolean(authLinkError) } : null,
+  )
 
   // Signed-in users carry their name in their account; visitors keep it locally.
   const teacherName = resolveTeacherName({
@@ -108,6 +142,8 @@ export default function App() {
     const unsubscribe = onAuthChange(setUser)
     return unsubscribe
   }, [])
+
+  useEffect(() => onPasswordRecovery(() => setPasswordReset({ linkError: false })), [])
 
   useEffect(() => {
     if (!user) {
@@ -225,8 +261,21 @@ export default function App() {
     ],
   )
 
+  const toggleSidebar = () => {
+    setSidebarOpen((open) => {
+      writeSidebarOpen(!open)
+      return !open
+    })
+  }
+
+  // On phones the sidebar covers the chat, so it closes after a choice.
+  const closeSidebarOnPhone = () => {
+    if (isNarrowScreen()) setSidebarOpen(false)
+  }
+
   const handleSelectConversation = async (id) => {
     stopSpeaking()
+    closeSidebarOnPhone()
     setConversationId(id)
 
     try {
@@ -244,6 +293,7 @@ export default function App() {
 
   const handleNewChat = () => {
     stopSpeaking()
+    closeSidebarOnPhone()
     setConversationId(null)
     setActiveTopic(null)
     setMessages([welcome()])
@@ -327,10 +377,9 @@ export default function App() {
           await signOut()
           setAuthOpen(false)
         }}
-        conversations={conversations}
-        conversationId={conversationId}
-        onSelectConversation={handleSelectConversation}
-        onNewChat={handleNewChat}
+        sidebarAvailable={Boolean(user)}
+        sidebarOpen={Boolean(user) && sidebarOpen}
+        onToggleSidebar={toggleSidebar}
         autoSpeak={autoSpeak}
         onToggleSpeak={() => setAutoSpeak((v) => !v)}
         onTopicSelect={handleTopic}
@@ -338,7 +387,26 @@ export default function App() {
         lastModel={lastModel}
       />
 
-      <main className="main-layout">
+      <main className={`main-layout ${user && sidebarOpen ? 'with-sidebar' : ''}`}>
+        {user && sidebarOpen && (
+          <>
+            <ChatSidebar
+              language={language}
+              conversations={conversations}
+              conversationId={conversationId}
+              onSelect={handleSelectConversation}
+              onNewChat={handleNewChat}
+              onClose={toggleSidebar}
+            />
+            <button
+              type="button"
+              className="sidebar-backdrop"
+              onClick={toggleSidebar}
+              aria-label={language === 'uz' ? 'Suhbatlar tarixini yopish' : 'Close chat history'}
+            />
+          </>
+        )}
+
         <section className="avatar-column" aria-label="Teacher avatar">
           <Avatar
             speaking={speaking}
@@ -361,6 +429,14 @@ export default function App() {
           teacherName={teacherName}
         />
       </main>
+
+      {passwordReset && (
+        <ResetPasswordDialog
+          language={language}
+          linkError={passwordReset.linkError}
+          onDone={() => setPasswordReset(null)}
+        />
+      )}
 
       {namePrompt && (
         <NamePrompt

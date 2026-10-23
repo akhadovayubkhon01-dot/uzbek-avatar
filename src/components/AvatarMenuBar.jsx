@@ -17,10 +17,9 @@ export default function AvatarMenuBar({
   authOpen,
   onToggleAuth,
   onSignOut,
-  conversations,
-  conversationId,
-  onSelectConversation,
-  onNewChat,
+  sidebarAvailable,
+  sidebarOpen,
+  onToggleSidebar,
   autoSpeak,
   onToggleSpeak,
   onTopicSelect,
@@ -74,6 +73,18 @@ export default function AvatarMenuBar({
   return (
     <nav className="avatar-menu-bar" aria-label="App menu">
       <div className="menu-brand">
+        {sidebarAvailable && (
+          <button
+            type="button"
+            className={`menu-btn menu-btn-icon sidebar-toggle ${sidebarOpen ? 'active' : ''}`}
+            onClick={onToggleSidebar}
+            aria-expanded={sidebarOpen}
+            aria-label={language === 'uz' ? 'Suhbatlar tarixi' : 'Chat history'}
+            title={language === 'uz' ? 'Suhbatlar tarixi' : 'Chat history'}
+          >
+            ☰
+          </button>
+        )}
         <span className="menu-brand-name">{teacherName}</span>
       </div>
 
@@ -194,53 +205,6 @@ export default function AvatarMenuBar({
             </div>
           )}
         </div>
-
-        {user && (
-          <div className="menu-item">
-            <button
-              type="button"
-              className={`menu-btn ${openMenu === 'history' ? 'active' : ''}`}
-              onClick={() => toggle('history')}
-              aria-expanded={openMenu === 'history'}
-            >
-              {language === 'uz' ? 'Tarix' : 'History'}
-            </button>
-            {openMenu === 'history' && (
-              <div className="menu-dropdown menu-dropdown-history">
-                <button
-                  type="button"
-                  className="menu-dropdown-item"
-                  onClick={() => {
-                    onNewChat()
-                    close()
-                  }}
-                >
-                  {language === 'uz' ? '+ Yangi suhbat' : '+ New chat'}
-                </button>
-
-                {conversations.length === 0 ? (
-                  <p className="settings-status">
-                    {language === 'uz' ? 'Hozircha suhbatlar yo\'q' : 'No conversations yet'}
-                  </p>
-                ) : (
-                  conversations.map((conv) => (
-                    <button
-                      key={conv.id}
-                      type="button"
-                      className={`menu-dropdown-item ${conv.id === conversationId ? 'selected' : ''}`}
-                      onClick={() => {
-                        onSelectConversation(conv.id)
-                        close()
-                      }}
-                    >
-                      {conv.title}
-                    </button>
-                  ))
-                )}
-              </div>
-            )}
-          </div>
-        )}
 
         <div className="menu-item">
           <button
