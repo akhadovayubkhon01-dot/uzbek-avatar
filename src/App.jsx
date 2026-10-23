@@ -5,6 +5,7 @@ import AvatarMenuBar from './components/AvatarMenuBar'
 import Chat from './components/Chat'
 import ChatSidebar from './components/ChatSidebar'
 import ResetPasswordDialog from './components/ResetPasswordDialog'
+import VoiceNotice from './components/VoiceNotice'
 import NamePrompt from './components/NamePrompt'
 import Games from './pages/Games'
 import Duels from './pages/Duels'
@@ -27,6 +28,9 @@ import {
   saveMessage,
 } from './lib/history'
 import { authLinkError, recoveryLinkInUrl } from './lib/supabase'
+
+// Uzbek speech comes from the local model, which has only a female voice.
+const voiceAvailable = (language, gender) => !(language === 'uz' && gender === 'male')
 
 const LOCAL_NAME_KEY = 'teacherName'
 const LANGUAGE_KEY = 'language'
@@ -115,6 +119,7 @@ export default function App() {
   const [activeTopic, setActiveTopic] = useState(null)
   const [lastModel, setLastModel] = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(readSidebarOpen)
+  const [voiceNotice, setVoiceNotice] = useState(false)
   // Opening the password-reset email link lands here: ask for a new password.
   const [passwordReset, setPasswordReset] = useState(
     recoveryLinkInUrl || authLinkError ? { linkError: Boolean(authLinkError) } : null,
@@ -174,6 +179,8 @@ export default function App() {
 
   const readAloud = useCallback(
     (text) => {
+      // Uzbek speech has only a female voice for now; never fake the male one.
+      if (!voiceAvailable(language, voiceGender)) return
       stopSpeaking()
       stopSpeechRef.current?.()
 
@@ -310,19 +317,43 @@ export default function App() {
     }
   }
 
+  // If sound is on and the new language/voice has no speech yet (Uzbek male),
+  // turn sound off and explain why.
+  const checkVoice = (lang, gender) => {
+    if (autoSpeak && !voiceAvailable(lang, gender)) {
+      stopSpeaking()
+      stopSpeechRef.current?.()
+      setAutoSpeak(false)
+      setVoiceNotice(true)
+    }
+  }
+
   const handleVoiceGenderChange = (gender) => {
     setVoiceGender(gender)
+    checkVoice(language, gender)
     const suggestion = nameSuggestionFor(gender, teacherName)
     if (suggestion) setNamePrompt({ gender, suggestion })
   }
 
   // The voice setting stays the same across languages, so the avatar keeps
-  // its gender and name when switching. Note: Uzbek speech currently has only
-  // a female voice, so "male" in Uzbek still plays the female model until a
-  // male Uzbek model is added (see speech.js).
+  // its gender and name when switching. Uzbek speech currently has only a
+  // female voice, so sound can't be turned on for "Erkak" in Uzbek.
   const handleLanguageChange = (lang) => {
     setLanguage(lang)
     writeLanguage(lang)
+    checkVoice(lang, voiceGender)
+  }
+
+  const handleToggleSpeak = () => {
+    if (!autoSpeak && !voiceAvailable(language, voiceGender)) {
+      setVoiceNotice(true)
+      return
+    }
+    if (autoSpeak) {
+      stopSpeaking()
+      stopSpeechRef.current?.()
+    }
+    setAutoSpeak((v) => !v)
   }
 
   const handleTopic = (topic) => {
@@ -381,7 +412,7 @@ export default function App() {
         sidebarOpen={Boolean(user) && sidebarOpen}
         onToggleSidebar={toggleSidebar}
         autoSpeak={autoSpeak}
-        onToggleSpeak={() => setAutoSpeak((v) => !v)}
+        onToggleSpeak={handleToggleSpeak}
         onTopicSelect={handleTopic}
         topicsDisabled={loading}
         lastModel={lastModel}
@@ -429,6 +460,17 @@ export default function App() {
           teacherName={teacherName}
         />
       </main>
+
+      {voiceNotice && (
+        <VoiceNotice
+          onClose={() => setVoiceNotice(false)}
+          onUseFemale={() => {
+            setVoiceNotice(false)
+            handleVoiceGenderChange('female')
+            setAutoSpeak(true)
+          }}
+        />
+      )}
 
       {passwordReset && (
         <ResetPasswordDialog
