@@ -54,6 +54,31 @@ export default function AvatarMenuBar({
     }
   }
 
+  // Inline name editor next to the avatar's name in the menu bar.
+  const [editingName, setEditingName] = useState(false)
+  const [inlineName, setInlineName] = useState('')
+  const [inlineError, setInlineError] = useState('')
+
+  const startEditingName = () => {
+    setInlineName(teacherName)
+    setInlineError('')
+    setEditingName(true)
+  }
+
+  const submitInlineName = async () => {
+    setSavingName(true)
+    setInlineError('')
+    try {
+      // An empty name goes back to the default (Asilbek).
+      await onSaveName(inlineName.trim() === teacherName ? savedName ?? '' : inlineName)
+      setEditingName(false)
+    } catch (err) {
+      setInlineError(err.message)
+    } finally {
+      setSavingName(false)
+    }
+  }
+
   useEffect(() => {
     checkAiStatus().then(({ ok, ai, chunks }) => {
       setServerOk(ok)
@@ -85,7 +110,64 @@ export default function AvatarMenuBar({
             ☰
           </button>
         )}
-        <span className="menu-brand-name">{teacherName}</span>
+        {editingName ? (
+          <form
+            className="brand-name-form"
+            onSubmit={(e) => {
+              e.preventDefault()
+              submitInlineName()
+            }}
+          >
+            <input
+              type="text"
+              className="brand-name-input"
+              value={inlineName}
+              maxLength={24}
+              placeholder={language === 'uz' ? 'Avatar ismi' : 'Avatar name'}
+              onChange={(e) => setInlineName(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Escape') setEditingName(false)
+              }}
+              disabled={savingName}
+              autoFocus
+              aria-label={language === 'uz' ? 'Avatar ismi' : 'Avatar name'}
+              aria-invalid={Boolean(inlineError)}
+              title={inlineError || undefined}
+            />
+            <button
+              type="submit"
+              className="brand-name-btn"
+              disabled={savingName}
+              aria-label={language === 'uz' ? 'Saqlash' : 'Save'}
+              title={language === 'uz' ? 'Saqlash' : 'Save'}
+            >
+              ✓
+            </button>
+            <button
+              type="button"
+              className="brand-name-btn"
+              onClick={() => setEditingName(false)}
+              disabled={savingName}
+              aria-label={language === 'uz' ? 'Bekor qilish' : 'Cancel'}
+              title={language === 'uz' ? 'Bekor qilish' : 'Cancel'}
+            >
+              ✕
+            </button>
+          </form>
+        ) : (
+          <>
+            <span className="menu-brand-name">{teacherName}</span>
+            <button
+              type="button"
+              className="brand-name-edit"
+              onClick={startEditingName}
+              aria-label={language === 'uz' ? 'Avatar ismini o\'zgartirish' : 'Change avatar name'}
+              title={language === 'uz' ? 'Ismni o\'zgartirish' : 'Change name'}
+            >
+              ✎
+            </button>
+          </>
+        )}
       </div>
 
       <div className="menu-items">
