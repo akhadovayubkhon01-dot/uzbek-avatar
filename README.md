@@ -1,83 +1,103 @@
-# Asilbek — Uzbek History & Culture AI Avatar
+# UzAvatar: an AI teacher for Uzbek history and culture
 
-An interactive web app featuring **Asilbek**, a bilingual (Uzbek / English) AI teacher focused on Uzbek history, culture, and traditions. He is rendered as an illustrated portrait that lip-syncs to the generated Uzbek speech.
+UzAvatar is a bilingual (Uzbek and English) web app where an illustrated AI
+teacher, **Asilbek**, answers questions about Uzbek history, culture and
+traditions. Answers are grounded in a curated knowledge base, can be read
+aloud in Uzbek, and the avatar's mouth moves with the speech.
 
-## Features
+I made it as a capstone project, with the goal of helping preserve and teach
+the Uzbek language and history. Along the way it became a study of a practical
+question: how do you make an AI teacher for a lower-resource language that
+answers from checked sources instead of guessing?
 
-- Animated teacher avatar with speaking / listening states
-- Chat in **O'zbek** or **English** — replies match your language
-- Six curated topic cards (Silk Road, Timurids, Navoi, cuisine, textiles, Bukhara & Khiva)
-- **Demo mode** works without API keys (hand-written lesson content)
-- **AI mode** with OpenAI (`gpt-4o-mini`) for open-ended questions
-- Text-to-speech read-aloud (browser voices; optional KotibAI for Uzbek)
-- Voice input via Web Speech API (Chrome / Edge recommended)
+**Live demo:** [uzavatar.onrender.com](https://uzavatar.onrender.com)
+(free hosting: the first visit can take about a minute to wake the server, and
+the AI has a small daily answer limit).
 
-## Quick start
+![UzAvatar answering a question in Uzbek](docs/screenshot.png)
+
+## What it does
+
+- **Bilingual chat.** Ask in Uzbek or English; the answer comes back in the same language.
+- **Answers from a curated knowledge base.** 12 Markdown files on history, scholars, cities, language, crafts and modern history (`knowledge/`). Each question retrieves the 4 most relevant passages, which are given to the model. See [How it works](#how-it-works).
+- **Uzbek voice with lip-sync.** Uzbek answers are spoken by an open-source Uzbek speech model running locally, sentence by sentence so speech starts quickly. The avatar's mouth follows the audio. English uses the browser's built-in voices.
+- **Customisable teacher.** Male or female portrait and voice (Asilbek or Dilafruz), and any name you like. The Uzbek speech model has only a female voice so far.
+- **Topics and a quiz game.** Six topic shortcuts, and *Duels*: 5 AI-generated multiple-choice questions against a 60-second timer per question.
+- **Accounts.** Sign in to keep a chat history sidebar and your chosen avatar name across devices, with password reset by email.
+- **Voice input** through the browser's speech recognition (Chrome or Edge).
+
+## Evaluation
+
+I measured the retrieval step with 95 test questions in Uzbek and English.
+Splitting documents by their headings raised the share of questions whose
+best passage ranked first from **88.2% to 97.1%**, and halved the text sent
+to the model. The tests also showed that similarity scores cannot tell when
+the knowledge base lacks the requested fact, which shaped the next step of the
+project.
+
+Full method, results and limits: **[docs/evaluation.md](docs/evaluation.md)**.
+
+## How it works
+
+```
+Browser (React)
+  │  question
+  ▼
+Express server ──► Gemini embeddings ──► search the knowledge-base index
+  │                                      (server/data/vectors.json)
+  │  question + top 4 passages
+  ▼
+Gemini chat model ──► answer ──► browser
+                                   │ Uzbek answer
+                                   ▼
+                     Local Uzbek speech service (port 8000) ──► audio + lip-sync
+```
+
+- **Frontend:** React and Vite (`src/`). Sign-in and chat history use Supabase.
+- **Backend:** Node.js and Express (`server/`). The API key stays on the server.
+- **Knowledge base:** `knowledge/*.md`, split into one piece per heading section (`server/lib/chunking.js`) and embedded with `gemini-embedding-001`.
+- **Retrieval:** cosine similarity over all pieces, top 4 sent to the model (`server/lib/knowledge.js`, `server/chat.js`).
+- **Speech:** `tts-service/` wraps an Uzbek VITS speech model in a small FastAPI service. Lip-sync analyses the audio itself (`src/lib/lipsync.js`), so it works for any language.
+
+## Run it locally
+
+Requirements: Node.js, a Gemini API key, and a Supabase project for sign-in.
 
 ```bash
-cd uzbek-avatar
 npm install
-npm run dev
+cp .env.example .env      # then fill in the values
+npm run index             # optional: rebuild the search index after editing knowledge/
+npm run dev               # app at http://localhost:5173
 ```
 
-Open http://localhost:5173
+Without a Gemini key the app runs in demo mode with prewritten answers.
 
-### Enable full AI
+Sign-in and chat history need a Supabase project with `conversations` and
+`messages` tables (see `src/lib/history.js` for the fields used).
 
-1. Copy `.env.example` to `.env` and set `VITE_OPENAI_API_KEY`, **or**
-2. Click ⚙️ in the app and paste your key (stored in localStorage)
+The Uzbek voice is optional and runs separately. See
+[tts-service/README.md](tts-service/README.md). Without it, Uzbek answers use
+the browser's voice.
 
-### Better Uzbek voice
+To deploy, run `npm run build`; `npm start` then serves the built app and the
+API from one server.
 
-Sign up at [KotibAI](https://developer.kotib.ai) and set `VITE_KOTIBAI_API_KEY` in `.env`.
+## Credits
 
-## Roadmap
+- **Chat and embeddings:** Google Gemini API.
+- **Uzbek speech model and its helper code:** [3936010/STT-TTS-Uz](https://github.com/3936010/STT-TTS-Uz). They are not included in this repository; only my service wrapper (`tts-service/tts_service.py`) is.
+- **Knowledge base:** `knowledge/`. Each English file lists its sources at the end.
+- **Libraries:** React, Vite, Express, Supabase.
+- **Avatar portraits:** AI-generated images (most likely made with ChatGPT; the exact tool was not recorded).
 
-| Phase | Goal |
-|-------|------|
-| **Now** | 2D avatar, chat, demo + OpenAI, bilingual UI |
-| **Next** | 3D VRM avatar with lip sync (Three.js / Khavee SDK) |
-| **Later** | RAG knowledge base from verified Uzbek history sources |
-| **Later** | Real-time voice conversation (OpenAI Realtime API) |
+## How this was built
 
-## Project structure
-
-```
-src/
-  assets/       asilbek.jpg — the avatar artwork
-  components/   Avatar, Chat, AvatarMenuBar
-  data/         Topics and demo lesson content
-  lib/          AI chat, speech, lip-sync, system prompts
-```
-
-## Avatar & lip-sync
-
-Asilbek is a single illustrated portrait. The mouth is an SVG overlay drawn on
-top of the artwork, positioned in the image's own pixel space so it stays
-aligned at any size.
-
-He is painted mid-smile with his upper teeth showing, so the overlay does not
-try to replace his mouth. It is anchored just below the teeth and grows
-downward, the way a real jaw moves, leaving the smile intact. The edge is
-feathered so the shape sits in the painting rather than looking pasted on.
-
-Lip-sync is driven by the audio itself, not by phonemes: `src/lib/lipsync.js`
-runs the playing speech through a Web Audio `AnalyserNode` and reads the
-spectrum each frame. Loudness sets how far the mouth opens and the spectral
-centroid decides whether the shape is rounded ("o", "u") or wide ("i", "e").
-Because it never looks at the text, it works for Uzbek as well as any other
-language.
-
-When nothing is being spoken the overlay is hidden entirely, so the untouched
-painting shows through.
-
-This only applies to Uzbek replies, which come from the local TTS service as
-real audio. English uses the browser's speech synthesis, which exposes no audio
-stream, so there is nothing to analyse there.
-
-If you replace `src/assets/asilbek.jpg`, update the mouth coordinates at the top
-of `src/components/Avatar.jsx` to match the new artwork.
+Most of the code was written with AI coding assistants (Claude and Cursor),
+and ChatGPT and Claude helped plan the evaluation. I decided what the app
+should do, directed and checked the changes, tested it, deployed it and ran
+the evaluations.
 
 ## License
 
-Private — for personal / educational use.
+Copyright © 2026 Ayubkhon Akhadov. All rights reserved. The code is public so
+it can be viewed; please ask before reusing it. See [LICENSE](LICENSE).
